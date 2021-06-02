@@ -1,5 +1,5 @@
 /decl/crafting_stage/secbot_signaller
-	begins_with_object_type = /obj/item/clothing/head/helmet
+	begins_with_object_type = /obj/item/clothing/head/helmet/solgov/security
 	completion_trigger_type = /obj/item/device/assembly/signaler
 	progress_message = "You add the signaler to the helmet."
 	item_icon_state = "secbot_1"
