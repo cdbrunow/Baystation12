@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;procedural&#x2F;jp_DungeonRegion - Space Station 13 - Baystation 12</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Space Station 13 - Baystation 12</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/procedural/jp_DungeonRegion.html#proc">Proc Details</a></header>
+<main>
+<h1>jp_DungeonRegion <aside>/<a href="obj.html">obj</a>/<a href="obj/procedural/jp_DungeonRegion.html">procedural/jp_DungeonRegion</a></aside>
+        
+    
+            <a href="https://github.com/cdbrunow/Baystation12/blob/f021c5c12186562c15c1a6d8c6a5cec107de16c2/code/modules/random_map/dungeon/jp_dungeon_gen.dm#L1006">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;random_map&#x2F;dungeon&#x2F;jp_dungeon_gen.dm 1006"/></a></h1>
+
+<p>This object is used to represent a 'region' in the dungeon - a set of contiguous floor turfs,
+along with the walls that border them. This object is used extensively by the generator, and
+has several assumptions embedded in it - think carefully before making changes</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj/procedural/jp_DungeonRegion.html#proc/New">New</a></th><td>Make a new jp_DungeonRegion, and set its reference to its generator object</td></tr>
+            <tr><th><a href="obj/procedural/jp_DungeonRegion.html#proc/addBorder">addBorder</a></th><td>Adds a list of turfs to the border of the region.</td></tr>
+            <tr><th><a href="obj/procedural/jp_DungeonRegion.html#proc/addTurfs">addTurfs</a></th><td>Add a list of turfs to the region, optionally without adding the walls around
+them to the list of borders</td></tr>
+            <tr><th><a href="obj/procedural/jp_DungeonRegion.html#proc/getBorder">getBorder</a></th><td>Returns the list of walls bordering the floors in this region</td></tr>
+            <tr><th><a href="obj/procedural/jp_DungeonRegion.html#proc/getTurfs">getTurfs</a></th><td>Returns the list of floors in this region</td></tr></table><h2 id="proc">Proc Details</h2><h3 id="proc/New">New<aside>(/<a href="obj.html">obj</a>/<a href="obj/procedural/jp_DungeonGenerator.html">procedural/jp_DungeonGenerator</a>/g) 
+        
+    
+            <a href="https://github.com/cdbrunow/Baystation12/blob/f021c5c12186562c15c1a6d8c6a5cec107de16c2/code/modules/random_map/dungeon/jp_dungeon_gen.dm#L1015">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;random_map&#x2F;dungeon&#x2F;jp_dungeon_gen.dm 1015"/></a></aside>
+        </h3>
+        <p>Make a new jp_DungeonRegion, and set its reference to its generator object</p><h3 id="proc/addBorder"><aside class="declaration">proc </aside>addBorder<aside>(/list/turf/l) 
+        
+    
+            <a href="https://github.com/cdbrunow/Baystation12/blob/f021c5c12186562c15c1a6d8c6a5cec107de16c2/code/modules/random_map/dungeon/jp_dungeon_gen.dm#L1035">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;random_map&#x2F;dungeon&#x2F;jp_dungeon_gen.dm 1035"/></a></aside>
+        </h3>
+        <p>Adds a list of turfs to the border of the region.</p><h3 id="proc/addTurfs"><aside class="declaration">proc </aside>addTurfs<aside>(/list/turf/l, noborder) 
+        
+    
+            <a href="https://github.com/cdbrunow/Baystation12/blob/f021c5c12186562c15c1a6d8c6a5cec107de16c2/code/modules/random_map/dungeon/jp_dungeon_gen.dm#L1023">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;random_map&#x2F;dungeon&#x2F;jp_dungeon_gen.dm 1023"/></a></aside>
+        </h3>
+        <p>Add a list of turfs to the region, optionally without adding the walls around
+them to the list of borders</p><h3 id="proc/getBorder"><aside class="declaration">proc </aside>getBorder<aside>() 
+        
+    
+            <a href="https://github.com/cdbrunow/Baystation12/blob/f021c5c12186562c15c1a6d8c6a5cec107de16c2/code/modules/random_map/dungeon/jp_dungeon_gen.dm#L1047">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;random_map&#x2F;dungeon&#x2F;jp_dungeon_gen.dm 1047"/></a></aside>
+        </h3>
+        <p>Returns the list of walls bordering the floors in this region</p><h3 id="proc/getTurfs"><aside class="declaration">proc </aside>getTurfs<aside>() 
+        
+    
+            <a href="https://github.com/cdbrunow/Baystation12/blob/f021c5c12186562c15c1a6d8c6a5cec107de16c2/code/modules/random_map/dungeon/jp_dungeon_gen.dm#L1041">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;random_map&#x2F;dungeon&#x2F;jp_dungeon_gen.dm 1041"/></a></aside>
+        </h3>
+        <p>Returns the list of floors in this region</p></main>
+<footer>
+    baystation12.dme
+    <a href="https://github.com/cdbrunow/Baystation12/tree/f021c5c12186562c15c1a6d8c6a5cec107de16c2">f021c5c</a>
+        (dev) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>
