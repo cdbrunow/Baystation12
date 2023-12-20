@@ -148,6 +148,9 @@
 /obj/floor_decal/techfloor{
 	dir = 5
 	},
+/obj/floor_decal/industrial/radiation{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "cj" = (
@@ -897,6 +900,9 @@
 /obj/floor_decal/techfloor{
 	dir = 6
 	},
+/obj/floor_decal/industrial/radiation{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "lK" = (
@@ -1287,6 +1293,9 @@
 /obj/floor_decal/techfloor/corner{
 	dir = 4
 	},
+/obj/floor_decal/industrial/radiation/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "pB" = (
@@ -1413,6 +1422,9 @@
 /obj/floor_decal/techfloor{
 	dir = 5
 	},
+/obj/floor_decal/industrial/radiation{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "rv" = (
@@ -1527,10 +1539,11 @@
 /obj/structure/sign/solgov{
 	pixel_y = 32
 	},
-/obj/structure/catwalk,
 /obj/structure/railing{
 	dir = 4
 	},
+/obj/structure/ladder,
+/obj/catwalk_plated/dark,
 /turf/simulated/open,
 /area/space)
 "sO" = (
@@ -2112,7 +2125,8 @@
 	id_tag = "RubbishOuter";
 	name = "Reactor room emergency shutters"
 	},
-/turf/simulated/floor/airless,
+/obj/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/techfloor,
 /area/space)
 "zR" = (
 /obj/floor_decal/corner_techfloor_grid,
@@ -3626,10 +3640,11 @@
 /obj/structure/sign/solgov{
 	pixel_y = -32
 	},
-/obj/structure/catwalk,
 /obj/structure/railing{
 	dir = 4
 	},
+/obj/structure/ladder,
+/obj/catwalk_plated/dark,
 /turf/simulated/open,
 /area/space)
 "QA" = (
@@ -3971,6 +3986,7 @@
 /obj/floor_decal/techfloor{
 	dir = 6
 	},
+/obj/floor_decal/industrial/radiation,
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "Va" = (
@@ -4354,6 +4370,7 @@
 	},
 /obj/floor_decal/corner_techfloor_grid,
 /obj/floor_decal/techfloor/corner,
+/obj/floor_decal/industrial/radiation/corner,
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "Zv" = (
