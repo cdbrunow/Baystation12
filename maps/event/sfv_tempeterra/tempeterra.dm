@@ -1,0 +1,25 @@
+#include "tempeterra_shuttles.dm"
+
+/datum/map_template/ruin/sfv_tempeterra
+	name = "SFV Tempe Terra"
+	id = "sfv_tempeterra"
+	description = "A small, fairly modern dagger-shaped Lexington-class corvette, broadcasting SCGF codes and the designation 'SFV Tempe-Terra, LXC-7, Battle Group Bravo'"
+	suffixes = list("maps/event/sfv_tempeterra/Fleet_Corvette_1.dmm", "maps/event/sfv_tempeterra/Fleet_Corvette_2.dmm", "maps/event/sfv_tempeterra/Fleet_Corvette_3.dmm")
+	shuttles_to_initialise = list("datum/shuttle/autodock/overmap/bumblebee")
+
+/obj/overmap/visitable/sector/sfv_tempeterra_jump
+	name = "Jump Drive Signature"
+	desc = "Sensors readings on this sector indicate a jump pattern consistant with that of a fast moving fleet vessel."
+	icon_state = "event"
+	hide_from_reports = TRUE
+	sensor_visibility = 10
+
+/obj/overmap/visitable/ship/landable/sfv_tempeterra
+	name = "SFV Tempe Terra"
+	desc = "A small, fairly modern dagger-shaped Lexington-class corvette, broadcasting SCGF codes and the designation 'SFV Tempe-Terra, LXC-7, Battle Group Bravo'"
+	shuttle = "SFV Tempe Terra"
+	icon_state = "ship"
+	moving_state = "ship_moving"
+	fore_dir = WEST
+	vessel_size = SHIP_SIZE_SMALL
+	vessel_mass = 1000
