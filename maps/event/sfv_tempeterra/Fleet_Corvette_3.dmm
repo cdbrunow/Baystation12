@@ -861,6 +861,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
+/obj/structure/bed/chair/office/comfy/blue{
+	dir = 8
+	},
 /turf/simulated/floor/airless,
 /area/space)
 "lR" = (
@@ -1792,17 +1795,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
-"zG" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	dir = 1;
-	target_pressure = 200
-	},
-/obj/floor_decal/industrial/hatch/yellow,
-/obj/floor_decal/industrial/radiation{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/space)
 "zH" = (
 /obj/machinery/floor_light/mapped_on,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2162,7 +2154,6 @@
 "Eh" = (
 /obj/structure/table/rack,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/bed/chair/office/comfy/blue,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/space)
 "Et" = (
@@ -2414,6 +2405,17 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
+/area/space)
+"IC" = (
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 1;
+	target_pressure = 200
+	},
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/floor_decal/industrial/radiation{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
 /area/space)
 "IG" = (
 /obj/catwalk_plated/dark,
@@ -8586,7 +8588,7 @@ UW
 MM
 Tn
 sb
-zG
+IC
 Kz
 FO
 FO
