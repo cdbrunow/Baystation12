@@ -215,7 +215,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/seconddeck/hallway/midships)
 "cb" = (
-/obj/floor_decal/floordetail/edgedrain,
+/obj/floor_decal/borderfloorblack,
 /turf/simulated/floor/reinforced,
 /area/tempeterra/engineering/reactor/onecore)
 "ch" = (
@@ -1574,9 +1574,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/engineering/reactor/twocore)
-"kU" = (
-/turf/simulated/shuttle/wall,
-/area/tempeterra/engineering/reactor/twocore)
 "kY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -1997,7 +1994,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/armsmen/locker)
 "nf" = (
-/obj/floor_decal/floordetail/edgedrain{
+/obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
@@ -3866,7 +3863,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "zC" = (
-/obj/floor_decal/floordetail/edgedrain{
+/obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
@@ -5592,7 +5589,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/twocore)
 "Jr" = (
-/obj/floor_decal/floordetail/edgedrain,
+/obj/floor_decal/borderfloorblack,
 /turf/simulated/floor/reinforced,
 /area/tempeterra/engineering/reactor/twocore)
 "Jt" = (
@@ -6071,9 +6068,6 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
-/area/tempeterra/engineering/reactor/onecore)
-"LP" = (
-/turf/simulated/shuttle/wall,
 /area/tempeterra/engineering/reactor/onecore)
 "LW" = (
 /obj/floor_decal/borderfloorblack,
@@ -7562,9 +7556,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "US" = (
-/turf/simulated/shuttle/wall{
-	name = "Bunk"
-	},
+/turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/lounge)
 "UX" = (
 /obj/floor_decal/floordetail/edgedrain,
@@ -17696,9 +17688,9 @@ iK
 iK
 iK
 ki
-LP
-LP
-LP
+HS
+HS
+HS
 ki
 iK
 TT
@@ -17710,9 +17702,9 @@ TT
 TT
 SY
 yk
-kU
-kU
-kU
+ZL
+ZL
+ZL
 yk
 SY
 SY
@@ -17777,11 +17769,11 @@ oG
 iK
 iK
 nf
-LP
-LP
-LP
-LP
-LP
+HS
+HS
+HS
+HS
+HS
 cb
 TT
 TT
@@ -17791,11 +17783,11 @@ TT
 TT
 TT
 zC
-kU
-kU
-kU
-kU
-kU
+ZL
+ZL
+ZL
+ZL
+ZL
 Jr
 SY
 SY
@@ -17859,11 +17851,11 @@ oG
 iK
 iK
 nf
-LP
-LP
-LP
-LP
-LP
+HS
+HS
+HS
+HS
+HS
 cb
 TT
 TT
@@ -17873,11 +17865,11 @@ TT
 TT
 TT
 zC
-kU
-kU
-kU
-kU
-kU
+ZL
+ZL
+ZL
+ZL
+ZL
 Jr
 SY
 SY
@@ -17941,11 +17933,11 @@ oG
 iK
 iK
 nf
-LP
-LP
-LP
-LP
-LP
+HS
+HS
+HS
+HS
+HS
 cb
 yA
 oG
@@ -17955,11 +17947,11 @@ Sj
 oG
 yA
 zC
-kU
-kU
-kU
-kU
-kU
+ZL
+ZL
+ZL
+ZL
+ZL
 Jr
 SY
 SY

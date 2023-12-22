@@ -365,9 +365,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/it/maint)
 "dy" = (
-/turf/simulated/shuttle/wall{
-	name = "Missile Storage Rack"
-	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/armaments/storage/starboard)
 "dL" = (
 /obj/structure/table/steel_reinforced,
@@ -2897,9 +2895,7 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/it/sensors)
 "MP" = (
-/turf/simulated/shuttle/wall{
-	name = "Missile Storage Rack"
-	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/armaments/storage/port)
 "MQ" = (
 /turf/simulated/floor/tiled/dark,
