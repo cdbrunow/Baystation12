@@ -3321,7 +3321,6 @@
 #include "maps\_map_include.dm"
 #include "maps\_maps.dm"
 #include "maps\event\sfv_tempeterra\tempeterra.dm"
-#include "maps\event\sfv_tempeterra\tempeterra_areas.dm"
 #include "maps\event\sfv_tempeterra\tempeterra_shuttles.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
