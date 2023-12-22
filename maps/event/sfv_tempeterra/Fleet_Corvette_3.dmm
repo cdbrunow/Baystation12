@@ -1056,13 +1056,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/space)
 "qu" = (
-/obj/catwalk_plated/dark,
 /obj/machinery/floor_light/mapped_on,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/obj/catwalk_plated/dark,
 /turf/simulated/floor/airless,
 /area/space)
 "qB" = (
@@ -1349,17 +1349,15 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/space)
 "tN" = (
-/obj/catwalk_plated/dark,
 /obj/machinery/floor_light/mapped_on,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/obj/catwalk_plated/dark,
 /turf/simulated/floor/airless,
 /area/space)
 "tQ" = (
@@ -1525,6 +1523,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "wq" = (
@@ -2502,8 +2501,8 @@
 /obj/floor_decal/corner/b_green/half{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
@@ -2811,6 +2810,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/space)
 "Oj" = (
+/obj/machinery/atmospherics/binary/pump/on{
+	target_pressure = 200
+	},
+/obj/floor_decal/industrial/outline/yellow,
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
@@ -2928,7 +2931,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/space)
 "PW" = (
-/obj/catwalk_plated/dark,
 /obj/machinery/floor_light/mapped_on,
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 8
@@ -2939,6 +2941,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
+/obj/catwalk_plated/dark,
 /turf/simulated/floor/airless,
 /area/space)
 "Qc" = (
@@ -3424,14 +3427,8 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/space)
 "WY" = (
-/obj/machinery/door/airlock,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/space,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/turf/simulated/wall/r_wall,
 /area/space)
 "WZ" = (
 /obj/machinery/floor_light/mapped_on,
@@ -8723,7 +8720,7 @@ FO
 Mg
 Mg
 Mg
-WY
+QN
 Mg
 Mg
 Mg
@@ -12493,7 +12490,7 @@ FO
 Sf
 JQ
 wg
-Mg
+WY
 Oj
 tN
 ZO
