@@ -1,3 +1,4 @@
+#include "tempeterra_area.dm"
 #include "tempeterra_shuttles.dm"
 
 /datum/map_template/ruin/sfv_tempeterra
@@ -14,12 +15,17 @@
 	hide_from_reports = TRUE
 	sensor_visibility = 10
 
-/obj/overmap/visitable/ship/landable/sfv_tempeterra
+/obj/overmap/visitable/ship/sfv_tempeterra
 	name = "SFV Tempe Terra"
 	desc = "A small, fairly modern dagger-shaped Lexington-class corvette, broadcasting SCGF codes and the designation 'SFV Tempe-Terra, LXC-7, Battle Group Bravo'"
-	shuttle = "SFV Tempe Terra"
-	icon_state = "ship"
-	moving_state = "ship_moving"
 	fore_dir = WEST
 	vessel_size = SHIP_SIZE_SMALL
-	vessel_mass = 1000
+	vessel_mass = 40000
+
+	initial_generic_waypoints = list(
+		"nav_tempeterra_one",
+		"nav_tempeterra_two",
+		"nav_tempeterra_three",
+		"nav_tempeterra_four",
+		"nav_tempeterra_five"
+	)
