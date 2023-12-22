@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "al" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -37,7 +37,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 10
 	},
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "aL" = (
@@ -50,7 +50,7 @@
 	tag_north = 2;
 	tag_south = 1
 	},
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "bb" = (
@@ -64,7 +64,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/atmos/monitoring)
 "be" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -74,7 +74,7 @@
 	req_access = list(list("ACCESS_EXPLO_HELM"));
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/structure/railing{
@@ -94,7 +94,7 @@
 /area/tempeterra/brig/starboard)
 "bu" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 6
 	},
@@ -121,7 +121,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "bN" = (
@@ -132,7 +132,7 @@
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
 "bP" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/tank{
@@ -152,7 +152,7 @@
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "bS" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
@@ -174,10 +174,10 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/supply,
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -198,7 +198,7 @@
 /area/tempeterra/hallway/firstdeck/stairs)
 "cl" = (
 /obj/structure/railing,
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -250,7 +250,7 @@
 	dir = 8
 	},
 /obj/floor_decal/industrial/outline/yellow,
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -259,7 +259,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -297,7 +297,7 @@
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 5
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -353,14 +353,14 @@
 	dir = 8
 	},
 /obj/floor_decal/techfloor,
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
 /obj/structure/railing,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "eA" = (
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	icon_state = "pdoor0";
@@ -415,7 +415,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/fore/port)
 "fA" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
@@ -441,10 +441,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "fS" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation/corner,
+/obj/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "fW" = (
@@ -466,7 +466,7 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -547,7 +547,7 @@
 "hw" = (
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
-/obj/floor_decal/industrial/radiation/corner,
+/obj/floor_decal/industrial/warning/corner,
 /obj/structure/table/steel_reinforced,
 /obj/item/paper_bin,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -617,24 +617,24 @@
 /obj/structure/bed/chair/shuttle/black{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/floor_decal/techfloor{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "in" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/tempeterra/atmos/atmos)
 "ir" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "is" = (
 /obj/machinery/mech_recharger,
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
@@ -666,7 +666,7 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/floor_decal/floordetail/edgedrain{
@@ -701,7 +701,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 5
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -787,7 +787,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -830,7 +830,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -861,13 +861,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/stairs)
 "kZ" = (
-/obj/floor_decal/industrial/radiation/corner,
+/obj/floor_decal/industrial/warning/corner,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -941,7 +941,7 @@
 /turf/simulated/floor,
 /area/tempeterra/hangar)
 "ly" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/unary/vent_pump/tank{
 	dir = 1;
 	external_pressure_bound = 0;
@@ -991,11 +991,11 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/brig/starboard)
 "mr" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "ms" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -1023,7 +1023,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 6
 	},
-/obj/floor_decal/industrial/radiation/corner,
+/obj/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "mS" = (
@@ -1048,7 +1048,7 @@
 /obj/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/structure/railing{
@@ -1066,7 +1066,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 6
 	},
@@ -1076,7 +1076,7 @@
 /obj/machinery/atmospherics/valve/shutoff/supply,
 /obj/machinery/atmospherics/valve/shutoff/scrubbers,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /obj/floor_decal/industrial/shutoff,
@@ -1103,7 +1103,7 @@
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/atmos/atmos)
 "nE" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
@@ -1118,13 +1118,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/brig/starboard)
 "nQ" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 6
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "nZ" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
@@ -1133,13 +1133,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/fore/starboard)
 "oo" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "ox" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 9
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
@@ -1149,7 +1149,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/shuttle)
 "oH" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -1174,7 +1174,7 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1213,7 +1213,7 @@
 /turf/space,
 /area/tempeterra/atmos/atmos)
 "pD" = (
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	icon_state = "pdoor0";
@@ -1240,17 +1240,17 @@
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "pX" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/tempeterra/atmos/atmos)
 "pY" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /turf/simulated/floor/reinforced/oxygen,
@@ -1361,9 +1361,9 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/structure/railing,
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -1412,7 +1412,7 @@
 	dir = 4
 	},
 /obj/floor_decal/industrial/outline/yellow,
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/structure/railing{
@@ -1461,7 +1461,7 @@
 /turf/simulated/floor,
 /area/tempeterra/atmos/monitoring)
 "sQ" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 6
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
@@ -1478,11 +1478,11 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation/corner,
+/obj/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "sY" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -1529,7 +1529,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/robotics)
 "tj" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -1601,10 +1601,10 @@
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 5
 	},
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -1660,7 +1660,7 @@
 /area/tempeterra/atmos/monitoring)
 "uO" = (
 /obj/machinery/shipsensors,
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/structure/railing{
 	dir = 8
 	},
@@ -1668,7 +1668,7 @@
 /turf/simulated/floor/reinforced,
 /area/tempeterra/shuttle)
 "uV" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/floor_decal/techfloor,
@@ -1688,7 +1688,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "vf" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -1696,7 +1696,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/fore/port)
 "vi" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1777,7 +1777,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -1796,7 +1796,7 @@
 /area/tempeterra/atmos/atmos)
 "wh" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -1824,7 +1824,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "wy" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /obj/machinery/vending/robotics{
@@ -1851,7 +1851,7 @@
 /area/tempeterra/atmos/monitoring)
 "wP" = (
 /obj/machinery/mech_recharger,
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
@@ -1869,10 +1869,10 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/storage)
 "xb" = (
@@ -1892,7 +1892,7 @@
 /area/tempeterra/brig/port)
 "xf" = (
 /obj/structure/bed/chair/shuttle/black,
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/floor_decal/techfloor,
@@ -1900,7 +1900,7 @@
 /area/tempeterra/shuttle)
 "xo" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "xp" = (
@@ -1998,7 +1998,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "yy" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden{
@@ -2070,7 +2070,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/ladder/starboard)
 "zW" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
@@ -2094,13 +2094,13 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "Ao" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/tank{
@@ -2128,7 +2128,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/ladder/port)
 "AP" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/structure/railing{
@@ -2137,7 +2137,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation/corner,
+/obj/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "AX" = (
@@ -2174,7 +2174,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -2184,13 +2184,13 @@
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/brig/port)
 "Bv" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "Bz" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/black,
@@ -2201,7 +2201,7 @@
 	dir = 4
 	},
 /obj/floor_decal/industrial/outline/yellow,
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/structure/railing,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
@@ -2238,7 +2238,7 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /obj/structure/table/steel_reinforced,
@@ -2263,7 +2263,7 @@
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/atmos/atmos)
 "Cy" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/floor_decal/techfloor{
 	dir = 1
 	},
@@ -2334,7 +2334,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/floor_decal/techfloor{
@@ -2412,7 +2412,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "DV" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 9
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
@@ -2431,7 +2431,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -2445,7 +2445,7 @@
 /turf/simulated/floor,
 /area/tempeterra/atmos/monitoring)
 "EH" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -2471,7 +2471,7 @@
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -2489,7 +2489,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "Fo" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -2574,7 +2574,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "Gn" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/engine{
@@ -2583,7 +2583,7 @@
 /turf/simulated/floor/reinforced,
 /area/tempeterra/shuttle)
 "GG" = (
-/obj/floor_decal/industrial/radiation/cee{
+/obj/floor_decal/industrial/warning/cee{
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2667,7 +2667,7 @@
 /area/tempeterra/hangar)
 "HK" = (
 /obj/machinery/porta_turret/stationary,
-/obj/floor_decal/industrial/radiation/cee,
+/obj/floor_decal/industrial/warning/cee,
 /turf/simulated/floor/reinforced,
 /area/tempeterra/shuttle)
 "HM" = (
@@ -2680,7 +2680,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -2702,7 +2702,7 @@
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
 "Iv" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
@@ -2725,7 +2725,7 @@
 /turf/simulated/floor,
 /area/tempeterra/hangar)
 "IH" = (
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/machinery/door/blast/regular{
 	dir = 4
 	},
@@ -2733,7 +2733,7 @@
 /area/tempeterra/hangar)
 "II" = (
 /obj/machinery/porta_turret/stationary,
-/obj/floor_decal/industrial/radiation/cee{
+/obj/floor_decal/industrial/warning/cee{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
@@ -2769,7 +2769,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/stairs)
 "Jy" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 9
 	},
 /obj/machinery/atmospherics/unary/vent_pump/tank{
@@ -2802,7 +2802,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -2822,7 +2822,7 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2881,7 +2881,7 @@
 	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2890,7 +2890,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/stairs)
 "La" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 10
 	},
 /obj/machinery/atmospherics/unary/vent_pump/tank{
@@ -2961,7 +2961,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
 "Lx" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/tank{
@@ -2992,14 +2992,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/meeting)
 "LD" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 6
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -3085,8 +3085,8 @@
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 10
 	},
-/obj/floor_decal/industrial/radiation/corner,
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning/corner,
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -3188,7 +3188,7 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/structure/closet/medical_wall/filled{
@@ -3212,7 +3212,7 @@
 "NZ" = (
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
@@ -3323,7 +3323,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -3364,7 +3364,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -3377,7 +3377,7 @@
 	dir = 8
 	},
 /obj/floor_decal/techfloor,
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/structure/railing,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
@@ -3401,7 +3401,7 @@
 /area/tempeterra/atmos/monitoring)
 "Ql" = (
 /obj/floor_decal/floordetail/edgedrain,
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
 "Qw" = (
@@ -3439,10 +3439,10 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/storage)
 "QZ" = (
@@ -3471,7 +3471,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "Rk" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "Ro" = (
@@ -3492,7 +3492,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/meeting)
 "RD" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/structure/railing{
@@ -3559,7 +3559,7 @@
 /area/tempeterra/robotics)
 "Se" = (
 /obj/machinery/porta_turret/stationary,
-/obj/floor_decal/industrial/radiation/cee{
+/obj/floor_decal/industrial/warning/cee{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
@@ -3629,7 +3629,7 @@
 	},
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 9
 	},
@@ -3675,13 +3675,13 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "Tk" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 10
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "Ts" = (
-/obj/floor_decal/industrial/radiation/cee,
+/obj/floor_decal/industrial/warning/cee,
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "Ty" = (
@@ -3701,7 +3701,7 @@
 /turf/space,
 /area/space)
 "TK" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3728,10 +3728,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "TQ" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
@@ -3765,7 +3765,7 @@
 /obj/machinery/atmospherics/binary/passive_gate/on{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation/fulltile,
+/obj/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "Ud" = (
@@ -3782,7 +3782,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -3808,7 +3808,7 @@
 /turf/simulated/floor,
 /area/tempeterra/hangar)
 "UA" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -3840,7 +3840,7 @@
 /turf/space,
 /area/tempeterra/atmos/atmos)
 "UR" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 6
 	},
 /turf/simulated/floor/reinforced/oxygen,
@@ -3888,7 +3888,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 8
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3903,13 +3903,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/hangar)
 "Vz" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 6
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/tempeterra/atmos/atmos)
 "VR" = (
-/obj/floor_decal/industrial/radiation/cee{
+/obj/floor_decal/industrial/warning/cee{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced/hydrogen/fuel,
@@ -3921,7 +3921,7 @@
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 10
 	},
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -3948,7 +3948,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 5
 	},
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "Wl" = (
@@ -3972,7 +3972,7 @@
 /obj/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /obj/structure/railing{
@@ -4023,14 +4023,14 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/brig/port)
 "WV" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/reinforced/oxygen,
 /area/tempeterra/atmos/atmos)
 "WY" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10
 	},
@@ -4069,7 +4069,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -4093,7 +4093,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/ladder/port)
 "XR" = (
-/obj/floor_decal/industrial/radiation,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "XT" = (
@@ -4108,7 +4108,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "XY" = (
-/obj/floor_decal/industrial/radiation/corner{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4150,7 +4150,7 @@
 	dir = 1
 	},
 /obj/floor_decal/industrial/hatch/yellow,
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -4163,7 +4163,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "YO" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4218,7 +4218,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/robotics)
 "ZB" = (
-/obj/floor_decal/industrial/radiation{
+/obj/floor_decal/industrial/warning{
 	dir = 10
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
