@@ -17,6 +17,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
+"aq" = (
+/turf/simulated/floor,
+/area/space)
 "at" = (
 /obj/floor_decal/techfloor{
 	dir = 4
@@ -44,13 +47,13 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/space)
 "bb" = (
-/obj/floor_decal/corner/paleblue{
-	dir = 1
-	},
 /obj/structure/bed/chair/office/comfy/blue{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/floor_decal/corner/paleblue{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "be" = (
@@ -208,13 +211,13 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/space)
 "cA" = (
-/obj/floor_decal/corner/paleblue{
-	dir = 4
-	},
 /obj/structure/bed/chair/office/comfy/blue{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/floor_decal/corner/paleblue{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "cB" = (
@@ -308,10 +311,10 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/floor_decal/corner/paleblue/mono,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/floor_decal/corner/paleblue/mono,
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/space)
@@ -348,7 +351,7 @@
 /obj/structure/sign/warning/lethal_turrets{
 	pixel_y = -32
 	},
-/turf/simulated/floor/airless,
+/turf/simulated/floor,
 /area/space)
 "ff" = (
 /obj/structure/railing,
@@ -366,8 +369,8 @@
 	sensor_name = "Hydrogen Supply";
 	sensor_tag = "tox_sensor"
 	},
-/obj/floor_decal/corner/paleblue/mono,
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/floor_decal/corner/paleblue/mono,
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/space)
@@ -1028,8 +1031,8 @@
 	sensor_name = "Hydrogen Supply";
 	sensor_tag = "tox_sensor"
 	},
-/obj/floor_decal/corner/paleblue/mono,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/floor_decal/corner/paleblue/mono,
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/space)
@@ -1809,7 +1812,7 @@
 /obj/structure/sign/warning/lethal_turrets{
 	pixel_y = 32
 	},
-/turf/simulated/floor/airless,
+/turf/simulated/floor,
 /area/space)
 "xH" = (
 /obj/machinery/door/blast/regular{
@@ -8638,15 +8641,15 @@ No
 XT
 XT
 XR
-Fw
-Fw
-Fw
-Fw
-Fw
-Fw
-Fw
-Fw
-Fw
+aq
+aq
+aq
+aq
+aq
+aq
+aq
+aq
+aq
 tj
 XT
 XT
@@ -8720,15 +8723,15 @@ No
 XT
 XT
 XR
-Fw
-Fw
+aq
+aq
 qM
 CN
 CN
 CN
 qM
 uO
-Fw
+aq
 tj
 XT
 XT
@@ -8802,7 +8805,7 @@ No
 XT
 XT
 XR
-Fw
+aq
 qM
 qM
 NT
@@ -8810,7 +8813,7 @@ iF
 iF
 qM
 qM
-Fw
+aq
 tj
 XT
 XT
@@ -9294,7 +9297,7 @@ XT
 XT
 Uo
 TU
-Fw
+aq
 ni
 mS
 XC
@@ -9302,7 +9305,7 @@ mS
 mS
 mS
 ni
-Fw
+aq
 Cz
 CT
 XT
@@ -9704,7 +9707,7 @@ XT
 XT
 yv
 Gl
-Fw
+aq
 qM
 qM
 qM
@@ -9712,7 +9715,7 @@ qM
 qM
 qM
 qM
-Fw
+aq
 Dx
 Af
 XT
@@ -9786,15 +9789,15 @@ XT
 XT
 yv
 Gl
-Fw
-Fw
+aq
+aq
 qM
 Gn
 Gn
 Gn
 qM
-Fw
-Fw
+aq
+aq
 Dx
 Af
 XT
