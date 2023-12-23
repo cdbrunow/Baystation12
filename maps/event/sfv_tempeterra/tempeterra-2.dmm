@@ -3327,9 +3327,8 @@
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/crew/head)
 "wB" = (
-/turf/simulated/shuttle/wall{
-	name = "Launch Tube"
-	},
+/obj/paint/silver,
+/turf/simulated/wall/ocp_wall,
 /area/tempeterra/seconddeck/armaments/starboard)
 "wE" = (
 /obj/catwalk_plated/dark,
@@ -7010,9 +7009,8 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/reactor/powerdistone)
 "Ri" = (
-/turf/simulated/shuttle/wall{
-	name = "Launch Tube"
-	},
+/obj/paint/silver,
+/turf/simulated/wall/ocp_wall,
 /area/tempeterra/seconddeck/armaments/port)
 "Rj" = (
 /obj/floor_decal/industrial/warning{
@@ -7472,18 +7470,18 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/locker)
 "Uk" = (
-/obj/item/gun/projectile/automatic/bullpup_rifle/light,
-/obj/item/gun/projectile/automatic/bullpup_rifle/light,
-/obj/item/gun/projectile/automatic/bullpup_rifle/light,
-/obj/item/storage/box/ammo/light_bullpup,
-/obj/item/storage/box/ammo/light_bullpup,
-/obj/item/storage/box/ammo/light_bullpup,
-/obj/item/storage/box/ammo/light_bullpup,
 /obj/floor_decal/industrial/outline/grey,
 /obj/structure/closet/secure_closet/guncabinet{
 	req_access = list("ACCESS_SYNDICATE");
 	name = "rifle cabinet"
 	},
+/obj/item/gun/projectile/automatic/bullpup_rifle,
+/obj/item/gun/projectile/automatic/bullpup_rifle,
+/obj/item/gun/projectile/automatic/bullpup_rifle,
+/obj/item/storage/box/ammo/heavy_bullpup,
+/obj/item/storage/box/ammo/heavy_bullpup,
+/obj/item/storage/box/ammo/heavy_bullpup,
+/obj/item/storage/box/ammo/heavy_bullpup,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/armsmen/armory)
 "Ut" = (

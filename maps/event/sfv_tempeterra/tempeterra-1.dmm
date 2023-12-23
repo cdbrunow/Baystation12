@@ -663,13 +663,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/floor_decal/corner/paleblue/border{
-	dir = 4
-	},
-/obj/floor_decal/industrial/warning{
-	dir = 8
-	},
-/obj/floor_decal/floordetail/edgedrain{
+/obj/floor_decal/techfloor{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -761,14 +755,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "jy" = (
-/obj/floor_decal/borderfloorblack{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/obj/floor_decal/corner/paleblue/border{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
+/obj/structure/handrail,
 /turf/simulated/floor/tiled/dark,
-/area/tempeterra/hallway/firstdeck/fore/starboard)
+/area/tempeterra/brig/port)
 "jz" = (
 /obj/structure/ladder/up,
 /obj/floor_decal/industrial/outline/yellow,
@@ -3073,10 +3068,17 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/hangar)
 "MF" = (
-/obj/floor_decal/borderfloorblack,
-/obj/floor_decal/corner/paleblue/border,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/handrail{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
-/area/tempeterra/hallway/firstdeck/fore/port)
+/area/tempeterra/brig/starboard)
 "MI" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -3189,12 +3191,6 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/floor_decal/corner/paleblue/border{
-	dir = 4
-	},
-/obj/floor_decal/industrial/warning{
-	dir = 8
-	},
 /obj/structure/closet/medical_wall/filled{
 	pixel_y = 32
 	},
@@ -3204,13 +3200,13 @@
 /obj/item/storage/firstaid/combat,
 /obj/item/storage/firstaid/combat,
 /obj/item/storage/firstaid/combat,
-/obj/floor_decal/floordetail/edgedrain{
+/obj/item/storage/firstaid/stab,
+/obj/item/storage/firstaid/stab,
+/obj/item/storage/firstaid/stab,
+/obj/item/storage/firstaid/stab,
+/obj/floor_decal/techfloor{
 	dir = 8
 	},
-/obj/item/storage/firstaid/stab,
-/obj/item/storage/firstaid/stab,
-/obj/item/storage/firstaid/stab,
-/obj/item/storage/firstaid/stab,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
 "NZ" = (
@@ -10420,7 +10416,7 @@ No
 No
 aL
 aL
-jy
+qI
 GP
 oh
 oh
@@ -10434,7 +10430,7 @@ fo
 mT
 mT
 vH
-MF
+BZ
 Kd
 Kd
 No
@@ -10502,7 +10498,7 @@ No
 No
 aL
 aL
-jy
+qI
 by
 rk
 ap
@@ -10516,7 +10512,7 @@ rY
 UP
 GK
 mX
-MF
+BZ
 Kd
 Kd
 No
@@ -10831,7 +10827,7 @@ No
 eK
 eK
 jL
-bp
+MF
 tp
 OC
 rY
@@ -10843,7 +10839,7 @@ rY
 rY
 ts
 vk
-xc
+jy
 WS
 Bp
 Bp
