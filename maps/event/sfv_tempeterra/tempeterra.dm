@@ -5,7 +5,7 @@
 	name = "SFV Tempe Terra"
 	id = "sfv_tempeterra"
 	description = "A small, fairly modern dagger-shaped Lexington-class corvette, broadcasting SCGF codes and the designation 'SFV Tempe-Terra, LXC-7, Battle Group Bravo'"
-	suffixes = list("maps/event/sfv_tempeterra/Fleet_Corvette_1.dmm", "maps/event/sfv_tempeterra/Fleet_Corvette_2.dmm", "maps/event/sfv_tempeterra/Fleet_Corvette_3.dmm")
+	suffixes = list("maps/event/sfv_tempeterra/tempeterra-1.dmm","maps/event/sfv_tempeterra/tempeterra-2.dmm","maps/event/sfv_tempeterra/tempeterra-3.dmm")
 	shuttles_to_initialise = list("datum/shuttle/autodock/overmap/bumblebee")
 
 /obj/overmap/visitable/sector/sfv_tempeterra_jump
