@@ -393,14 +393,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/material)
 "dr" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/onecore)
@@ -521,6 +522,9 @@
 	dir = 8
 	},
 /obj/floor_decal/industrial/outline/yellow,
+/obj/structure/railing/mapped{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/tempeterra/engineering/reactor/fuel)
 "el" = (
@@ -590,7 +594,7 @@
 "eD" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/catwalk,
-/obj/structure/railing,
+/obj/structure/railing/mapped,
 /turf/simulated/open,
 /area/tempeterra/engineering/reactor/fuel)
 "eI" = (
@@ -770,14 +774,15 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/foyer)
 "fW" = (
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/starboard)
@@ -921,14 +926,15 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
 "gF" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/onecore)
@@ -1042,11 +1048,12 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/armsmen/locker)
 "hE" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/onecore)
@@ -1173,10 +1180,11 @@
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/engineering/reactor/onecore)
 "iL" = (
-/obj/structure/railing{
-	dir = 8
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
-/obj/structure/railing{
+/obj/structure/railing/mapped{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -1285,12 +1293,12 @@
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas,
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/storage/box/handcuffs,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/railing/mapped{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/armsmen/locker)
 "jq" = (
@@ -1311,14 +1319,15 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
 "jB" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/starboard)
@@ -1450,9 +1459,6 @@
 /obj/structure/roller_bed,
 /obj/floor_decal/corner/paleblue/mono,
 /obj/floor_decal/industrial/outline,
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -1512,14 +1518,15 @@
 "kD" = (
 /obj/structure/table/steel_reinforced,
 /obj/floor_decal/corner/paleblue/half,
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/machinery/chemical_dispenser/bar_coffee/full{
 	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/lounge)
@@ -1911,7 +1918,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/lounge)
 "mD" = (
-/obj/structure/railing,
 /obj/floor_decal/techfloor{
 	dir = 1
 	},
@@ -1921,6 +1927,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/port)
 "mE" = (
@@ -2097,14 +2104,15 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/crew/seating)
 "nX" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 1
 	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/industrial/outline/yellow,
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/engineering/reactor/fuel)
 "oc" = (
@@ -2128,20 +2136,22 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/twocore)
 "oo" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/port)
 "oq" = (
-/obj/structure/railing{
-	dir = 8
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/port)
@@ -2296,14 +2306,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "pa" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/port)
@@ -2344,7 +2355,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/material)
 "pj" = (
-/obj/structure/railing{
+/obj/structure/railing/mapped{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -2368,7 +2379,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/tempeterra/medical/storage)
 "ps" = (
-/obj/structure/railing,
 /obj/floor_decal/corner_techfloor_grid{
 	dir = 4
 	},
@@ -2381,6 +2391,8 @@
 /obj/machinery/atmospherics/valve{
 	dir = 8
 	},
+/obj/structure/railing/mapped,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "pu" = (
@@ -2655,8 +2667,7 @@
 "rx" = (
 /obj/floor_decal/borderfloorblack/corner,
 /obj/machinery/suit_storage_unit,
-/obj/floor_decal/industrial/outline/blue,
-/obj/structure/railing,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
 "rz" = (
@@ -2679,13 +2690,15 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/tool)
 "rH" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/starboard)
 "rI" = (
@@ -2702,15 +2715,16 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/gym)
 "rT" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/floor_decal/industrial/warning/fulltile,
 /obj/floor_decal/techfloor{
 	dir = 8
 	},
 /obj/machinery/fusion_fuel_injector/mapped{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
@@ -2757,7 +2771,7 @@
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/medical/chemistry)
 "st" = (
-/obj/structure/railing{
+/obj/structure/railing/mapped{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -2817,9 +2831,6 @@
 /obj/structure/sign/solgov{
 	pixel_y = 32
 	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/structure/ladder,
 /obj/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2827,6 +2838,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/structure/railing/mapped{
+	dir = 4
 	},
 /turf/simulated/open,
 /area/tempeterra/engineering/reactor/fuel)
@@ -2976,14 +2990,15 @@
 /obj/floor_decal/corner/red/half{
 	dir = 8
 	},
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/armory)
@@ -3214,13 +3229,15 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/lounge)
 "vF" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/starboard)
 "vI" = (
@@ -3263,10 +3280,10 @@
 /obj/item/clothing/suit/armor/pcarrier/navy,
 /obj/floor_decal/corner/paleblue/mono,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/railing{
+/obj/item/clothing/under/solgov/utility/fleet/combat,
+/obj/structure/railing/mapped{
 	dir = 8
 	},
-/obj/item/clothing/under/solgov/utility/fleet/combat,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/locker)
 "vU" = (
@@ -3532,12 +3549,12 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/tempeterra/engineering/reactor/powerdistone)
 "xD" = (
-/obj/structure/railing,
 /obj/floor_decal/floordetail/edgedrain,
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
 /obj/floor_decal/industrial/outline/yellow,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/engineering/reactor/fuel)
 "xI" = (
@@ -3734,11 +3751,12 @@
 /obj/structure/roller_bed,
 /obj/floor_decal/corner/paleblue/mono,
 /obj/floor_decal/industrial/outline,
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/tempeterra/medical/hallway)
@@ -3820,11 +3838,12 @@
 /obj/structure/bed/chair/shuttle/black{
 	dir = 1
 	},
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/seating)
 "zm" = (
@@ -3868,13 +3887,13 @@
 /turf/simulated/floor/reinforced,
 /area/tempeterra/engineering/reactor/twocore)
 "zE" = (
-/obj/structure/railing,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/twocore)
 "zF" = (
@@ -3901,11 +3920,12 @@
 "zJ" = (
 /obj/random/ironing_board_structure,
 /obj/item/ironing_iron,
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/floor_decal/corner/paleblue/half{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/head)
@@ -3981,12 +4001,13 @@
 /obj/item/device/radio,
 /obj/item/crowbar/prybar,
 /obj/item/device/radio,
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
 	level = 2
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/armsmen/locker)
@@ -4091,10 +4112,10 @@
 /obj/item/clothing/suit/armor/pcarrier/navy,
 /obj/floor_decal/corner/paleblue/mono,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/railing{
+/obj/item/clothing/under/solgov/utility/fleet/combat,
+/obj/structure/railing/mapped{
 	dir = 4
 	},
-/obj/item/clothing/under/solgov/utility/fleet/combat,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/locker)
 "AA" = (
@@ -4145,11 +4166,13 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/tempeterra/medical/storage)
 "Be" = (
-/obj/structure/railing{
-	dir = 8
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
 	},
-/obj/structure/railing{
-	dir = 4
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/starboard)
@@ -4297,16 +4320,18 @@
 /obj/machinery/fusion_fuel_injector/mapped{
 	dir = 1
 	},
-/obj/structure/railing{
-	dir = 4
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "BV" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/catwalk,
-/obj/structure/railing{
-	dir = 1
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/tempeterra/engineering/reactor/fuel)
@@ -4672,14 +4697,15 @@
 /area/tempeterra/seconddeck/armaments/starboard)
 "Ed" = (
 /obj/structure/bed/chair/shuttle/black,
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/seating)
@@ -4799,9 +4825,9 @@
 	dir = 4
 	},
 /obj/machinery/suit_storage_unit,
-/obj/floor_decal/industrial/outline/blue,
-/obj/structure/railing{
-	dir = 1
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
@@ -5030,6 +5056,16 @@
 /obj/catwalk_plated/dark,
 /turf/simulated/floor/airless,
 /area/tempeterra/crew/lounge)
+"Gd" = (
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/tempeterra/seconddeck/armaments/starboard)
 "Gh" = (
 /obj/structure/table/rack,
 /obj/item/rig/ert/fleet,
@@ -5267,14 +5303,15 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "Hx" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/floor_decal/industrial/warning/fulltile,
 /obj/floor_decal/techfloor{
 	dir = 8
 	},
 /obj/machinery/fusion_fuel_injector/mapped,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "Hz" = (
@@ -5439,10 +5476,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/seconddeck/hallway/midships)
 "Is" = (
-/obj/structure/railing,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
 	},
+/obj/structure/railing/mapped,
+/obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "Iy" = (
@@ -5542,23 +5580,28 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/seconddeck/hallway/midships)
 "Jg" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/port)
 "Ji" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
@@ -5582,9 +5625,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/port)
 "Jo" = (
-/obj/structure/railing,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/twocore)
 "Jr" = (
@@ -5756,8 +5799,9 @@
 /obj/floor_decal/corner/red/half{
 	dir = 8
 	},
-/obj/structure/railing{
-	dir = 8
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/armory)
@@ -5967,11 +6011,11 @@
 /obj/structure/bed/chair/shuttle/black{
 	dir = 1
 	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
+/obj/structure/railing/mapped{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/seating)
 "Lm" = (
@@ -5999,15 +6043,16 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/reactor/control)
 "Lp" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/floor_decal/techfloor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/starboard)
@@ -6241,6 +6286,9 @@
 /obj/machinery/power/smes/buildable/preset/torch/substation_full{
 	RCon_tag = "Substation - Atmospherics"
 	},
+/obj/structure/railing/mapped{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/tempeterra/engineering/reactor/fuel)
 "MO" = (
@@ -6414,14 +6462,14 @@
 /area/tempeterra/crew/locker)
 "NV" = (
 /obj/structure/bed/chair/shuttle/black,
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/seating)
@@ -6601,8 +6649,7 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit,
-/obj/floor_decal/industrial/outline/blue,
-/obj/structure/railing,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
 "Pj" = (
@@ -6679,9 +6726,9 @@
 	dir = 1
 	},
 /obj/machinery/suit_storage_unit,
-/obj/floor_decal/industrial/outline/blue,
-/obj/structure/railing{
-	dir = 1
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
@@ -6869,9 +6916,6 @@
 /obj/structure/sign/solgov{
 	pixel_y = -32
 	},
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/structure/ladder,
 /obj/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -6879,6 +6923,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
+	},
+/obj/structure/railing/mapped{
+	dir = 4
 	},
 /turf/simulated/open,
 /area/tempeterra/engineering/reactor/fuel)
@@ -7088,6 +7135,9 @@
 /obj/machinery/power/smes/buildable/preset/torch/substation_full{
 	RCon_tag = "Substation - Atmospherics"
 	},
+/obj/structure/railing/mapped{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/tempeterra/engineering/reactor/fuel)
 "RI" = (
@@ -7237,10 +7287,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/seconddeck/hallway/midships)
 "SJ" = (
-/obj/structure/railing,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/twocore)
 "SP" = (
@@ -7320,8 +7370,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/head)
 "Tq" = (
-/obj/structure/railing{
-	dir = 8
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/starboard)
@@ -7619,8 +7670,9 @@
 	dir = 4
 	},
 /obj/machinery/fusion_fuel_injector/mapped,
-/obj/structure/railing{
-	dir = 4
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
@@ -7642,11 +7694,11 @@
 /obj/floor_decal/corner/paleblue/half{
 	dir = 1
 	},
-/obj/structure/railing,
 /obj/machinery/chemical_dispenser/bar_soft/full{
 	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/lounge)
 "Vt" = (
@@ -7755,8 +7807,8 @@
 /obj/item/grenade/chem_grenade/metalfoam,
 /obj/item/grenade/chem_grenade/metalfoam,
 /obj/item/grenade/chem_grenade/metalfoam,
-/obj/structure/railing,
 /obj/floor_decal/industrial/outline/yellow,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/tool)
 "Wh" = (
@@ -8196,14 +8248,14 @@
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/tool)
 "YW" = (
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
+	},
+/obj/structure/railing/mapped{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/seconddeck/armaments/port)
@@ -8238,14 +8290,18 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/seating)
 "Zl" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/floor_decal/corner_techfloor_grid,
 /obj/floor_decal/techfloor/corner,
 /obj/floor_decal/industrial/warning/corner,
 /obj/machinery/atmospherics/valve{
 	dir = 8
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
@@ -14652,7 +14708,7 @@ oG
 ol
 ol
 DZ
-Be
+Gd
 vF
 uF
 oC
@@ -14816,7 +14872,7 @@ oG
 ol
 ol
 DZ
-Be
+Gd
 Be
 HG
 oC
@@ -14980,7 +15036,7 @@ oG
 ol
 ol
 DZ
-Be
+Gd
 rH
 lA
 oC
