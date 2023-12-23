@@ -125,10 +125,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "bN" = (
-/obj/floor_decal/floordetail/edgedrain,
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/floor_decal/techfloor/orange,
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
 "bP" = (
@@ -541,11 +541,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/stairs)
-"hq" = (
-/obj/structure/lattice,
-/obj/machinery/nav_light/starboard,
-/turf/space,
-/area/space)
 "hw" = (
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
@@ -665,7 +660,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/floor_decal/techfloor{
+/obj/floor_decal/techfloor/orange{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -758,18 +753,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
-"jy" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/handrail{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/tempeterra/brig/starboard)
 "jz" = (
 /obj/structure/ladder/up,
 /obj/floor_decal/industrial/outline/yellow,
@@ -1371,10 +1354,10 @@
 	dir = 8
 	},
 /obj/floor_decal/industrial/warning,
-/obj/structure/railing,
 /obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "re" = (
@@ -1426,8 +1409,9 @@
 /obj/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/railing{
-	dir = 1
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
@@ -1606,9 +1590,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "uc" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 5
 	},
@@ -1620,6 +1601,10 @@
 	},
 /obj/floor_decal/industrial/warning{
 	dir = 8
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
@@ -2150,13 +2135,14 @@
 /obj/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 8
 	},
 /obj/floor_decal/industrial/warning/corner,
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "AX" = (
@@ -2221,7 +2207,7 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/floor_decal/industrial/warning,
-/obj/structure/railing,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "BI" = (
@@ -2680,12 +2666,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/storage)
 "HB" = (
-/obj/floor_decal/floordetail/edgedrain{
+/obj/floor_decal/borderfloorblack,
+/obj/floor_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/floor_decal/borderfloorblack,
 /obj/machinery/door/blast/regular{
-	dir = 4
+	dir = 4;
+	name = "Hangar Bay Door"
 	},
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
@@ -2716,12 +2703,13 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/tempeterra/shuttle)
 "Ih" = (
-/obj/floor_decal/floordetail/edgedrain,
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/floor_decal/techfloor/orange,
 /obj/machinery/door/blast/regular{
-	dir = 4
+	dir = 4;
+	name = "Hangar Bay Door"
 	},
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
@@ -2751,7 +2739,8 @@
 "IH" = (
 /obj/floor_decal/industrial/warning/fulltile,
 /obj/machinery/door/blast/regular{
-	dir = 4
+	dir = 4;
+	name = "Hangar Bay Door"
 	},
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
@@ -3098,23 +3087,22 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/hangar)
 "MF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/structure/handrail,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/handrail{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
-/area/tempeterra/brig/port)
+/area/tempeterra/brig/starboard)
 "MI" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/stairs)
 "MJ" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 10
@@ -3122,6 +3110,10 @@
 /obj/floor_decal/industrial/warning/corner,
 /obj/floor_decal/industrial/warning{
 	dir = 8
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
@@ -3142,10 +3134,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/ladder/port)
 "Nb" = (
-/obj/floor_decal/floordetail/edgedrain{
+/obj/floor_decal/borderfloorblack,
+/obj/floor_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/floor_decal/borderfloorblack,
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
 "Ne" = (
@@ -3233,7 +3225,7 @@
 /obj/item/storage/firstaid/stab,
 /obj/item/storage/firstaid/stab,
 /obj/item/storage/firstaid/stab,
-/obj/floor_decal/techfloor{
+/obj/floor_decal/techfloor/orange{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -3525,11 +3517,12 @@
 /obj/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 6
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
@@ -3730,9 +3723,15 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/hangar)
 "TE" = (
-/obj/structure/lattice,
-/turf/space,
-/area/space)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/handrail,
+/turf/simulated/floor/tiled/dark,
+/area/tempeterra/brig/port)
 "TK" = (
 /obj/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -3853,11 +3852,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
-"UI" = (
-/obj/structure/lattice,
-/obj/machinery/nav_light/port,
-/turf/space,
-/area/space)
 "UP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -3887,6 +3881,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/brig/port)
 "UY" = (
+/obj/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
 "Ve" = (
@@ -4113,7 +4113,7 @@
 /area/tempeterra/hangar)
 "Xv" = (
 /obj/structure/lattice,
-/obj/machinery/nav_light/ventral,
+/obj/machinery/nav_light,
 /turf/space,
 /area/space)
 "XC" = (
@@ -8407,7 +8407,6 @@ No
 No
 No
 No
-hq
 No
 No
 No
@@ -8417,7 +8416,8 @@ No
 No
 No
 No
-UI
+No
+No
 No
 No
 No
@@ -8489,7 +8489,7 @@ No
 No
 No
 No
-TE
+Xv
 No
 No
 No
@@ -8499,7 +8499,7 @@ No
 No
 No
 No
-TE
+Xv
 No
 No
 No
@@ -10866,7 +10866,7 @@ No
 eK
 eK
 jL
-jy
+MF
 tp
 OC
 rY
@@ -10878,7 +10878,7 @@ rY
 rY
 ts
 vk
-MF
+TE
 WS
 Bp
 Bp
