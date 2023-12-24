@@ -27,7 +27,8 @@
 		"nav_tempeterra_two",
 		"nav_tempeterra_three",
 		"nav_tempeterra_four",
-		"nav_tempeterra_five"
+		"nav_tempeterra_five",
+		"nav_tempeterra_six"
 	)
 
 /obj/machinery/power/apc/tempeterra
