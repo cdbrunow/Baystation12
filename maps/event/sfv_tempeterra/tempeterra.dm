@@ -29,3 +29,6 @@
 		"nav_tempeterra_four",
 		"nav_tempeterra_five"
 	)
+
+/obj/machinery/power/apc/tempeterra
+	req_access = list(access_fleet_engineering)
