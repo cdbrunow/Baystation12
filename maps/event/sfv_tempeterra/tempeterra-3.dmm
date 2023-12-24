@@ -2990,6 +2990,12 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/eva)
+"Ls" = (
+/obj/landmark/map_data{
+	height = 3
+	},
+/turf/simulated/open,
+/area/tempeterra/command/flight)
 "Lz" = (
 /obj/floor_decal/borderfloorblack{
 	dir = 1
@@ -3058,10 +3064,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/janitorial)
-"Mu" = (
-/obj/overmap/visitable/ship/sfv_tempeterra,
-/turf/simulated/open,
-/area/tempeterra/command/flight)
 "MM" = (
 /obj/structure/sign/warning/vacuum{
 	dir = 4;
@@ -3539,6 +3541,10 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/it/sensors)
+"RC" = (
+/obj/overmap/visitable/ship/sfv_tempeterra,
+/turf/simulated/open,
+/area/tempeterra/command/flight)
 "RL" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -10650,7 +10656,7 @@ DZ
 DZ
 dp
 YQ
-Mu
+RC
 Ey
 jJ
 DZ
@@ -10732,7 +10738,7 @@ DZ
 DZ
 gW
 YQ
-Zh
+Ls
 Ey
 Nm
 DZ
