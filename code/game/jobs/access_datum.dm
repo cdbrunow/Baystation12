@@ -481,18 +481,18 @@ var/global/const/access_merchant = "ACCESS_MERCHANT" //301
 
 var/global/const/access_fleet_engineering = "ACCESS_FLEET_ENGINEERING" //350
 /datum/access/fleet_engi
-	id = access_fleet_engi
+	id = access_fleet_engineering
 	desc = "Fleet Engineering"
 	access_type = ACCESS_TYPE_FLEET
 
 var/global/const/access_fleet_medical = "ACCESS_FLEET_MEDICAL" //351
 /datum/access/fleet_med
-	id = access_fleet_med
+	id = access_fleet_medical
 	desc = "Fleet Medical"
 	access_type = ACCESS_TYPE_FLEET
 
 var/global/const/access_fleet_armsmen = "ACCESS_FLEET_ARMS" //352
 /datum/access/fleet_arms
-	id = access_fleet_arms
+	id = access_fleet_armsmen
 	desc = "Fleet Armsmen"
 	access_type = ACCESS_TYPE_FLEET
