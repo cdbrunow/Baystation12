@@ -450,7 +450,6 @@
 /turf/simulated/floor/reinforced/hydrogen/fuel,
 /area/tempeterra/atmos/atmos)
 "fW" = (
-/obj/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -459,7 +458,8 @@
 	name = "Breifing Room Shutters";
 	opacity = 0
 	},
-/turf/simulated/floor/airless,
+/obj/wallframe_spawn/reinforced,
+/turf/simulated/floor,
 /area/tempeterra/meeting)
 "fX" = (
 /obj/floor_decal/borderfloorblack{
@@ -738,7 +738,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "ji" = (
-/obj/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	icon_state = "pdoor0";
@@ -746,7 +745,8 @@
 	name = "Holding Blast Shutters";
 	opacity = 0
 	},
-/turf/simulated/floor/airless,
+/obj/wallframe_spawn/reinforced,
+/turf/simulated/floor,
 /area/tempeterra/brig/port)
 "jp" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
@@ -833,9 +833,6 @@
 	},
 /turf/simulated/floor,
 /area/tempeterra/hallway/firstdeck/fore/starboard)
-"kI" = (
-/turf/simulated/wall/r_wall,
-/area/tempeterra/meeting)
 "kN" = (
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
@@ -969,7 +966,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
 "mi" = (
-/obj/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	icon_state = "pdoor0";
@@ -977,7 +973,8 @@
 	name = "Holding Blast Shutters";
 	opacity = 0
 	},
-/turf/simulated/floor/airless,
+/obj/wallframe_spawn/reinforced,
+/turf/simulated/floor,
 /area/tempeterra/brig/starboard)
 "mr" = (
 /obj/floor_decal/industrial/warning,
@@ -1338,8 +1335,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "qS" = (
-/obj/wallframe_spawn/reinforced/hull,
-/turf/simulated/floor/airless,
+/obj/wallframe_spawn/reinforced,
+/turf/simulated/floor,
 /area/tempeterra/hangar)
 "qW" = (
 /obj/machinery/atmospherics/unary/freezer{
@@ -11197,13 +11194,13 @@ XT
 re
 Ni
 Xd
-kI
+Kl
 uC
 AX
 Nu
 Vn
 cX
-kI
+Kl
 XD
 SB
 rD
@@ -11279,13 +11276,13 @@ XT
 MN
 Ld
 rR
-kI
+Kl
 iZ
 jc
 SH
 iW
 hi
-kI
+Kl
 MY
 vp
 Av
