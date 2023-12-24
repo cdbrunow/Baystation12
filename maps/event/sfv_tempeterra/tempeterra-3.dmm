@@ -3058,6 +3058,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/janitorial)
+"Mu" = (
+/obj/overmap/visitable/ship/sfv_tempeterra,
+/turf/simulated/open,
+/area/tempeterra/command/flight)
 "MM" = (
 /obj/structure/sign/warning/vacuum{
 	dir = 4;
@@ -10646,7 +10650,7 @@ DZ
 DZ
 dp
 YQ
-Zh
+Mu
 Ey
 jJ
 DZ
