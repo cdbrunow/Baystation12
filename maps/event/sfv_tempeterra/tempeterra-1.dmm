@@ -2204,7 +2204,7 @@
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
-/obj/floor_decal/industrial/outline/yellow,
+/obj/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/atmos/atmos)
 "zU" = (

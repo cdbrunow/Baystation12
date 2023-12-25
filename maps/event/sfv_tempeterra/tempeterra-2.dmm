@@ -332,6 +332,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
+/obj/structure/fireaxecabinet{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/tool)
 "cl" = (
@@ -683,6 +686,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/light/small/red{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/reactor/twocore)
@@ -8016,6 +8022,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light/small/red,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/reactor/onecore)
 "ML" = (
