@@ -185,6 +185,10 @@
 /obj/shuttle_landmark/escape_pod/out/pod7,
 /turf/space,
 /area/space)
+"zP" = (
+/obj/shuttle_landmark/transit/bumblebee,
+/turf/space,
+/area/space)
 "zU" = (
 /obj/step_trigger/teleporter/random{
 	affect_ghosts = 1;
@@ -38406,7 +38410,7 @@ fu
 Vj
 Vj
 Vj
-fu
+zP
 Vj
 Vj
 Vj

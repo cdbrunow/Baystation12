@@ -22,7 +22,7 @@
 	fuel_consumption = 2
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	flags = SHUTTLE_FLAGS_PROCESS | SHUTTLE_FLAGS_ZERO_G
-	defer_initialisation = FALSE
+	defer_initialisation = TRUE
 
 /obj/shuttle_landmark/bumblebee
 	name = "TempeTerra Hangar"

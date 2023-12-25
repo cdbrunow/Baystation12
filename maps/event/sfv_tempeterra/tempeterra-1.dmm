@@ -3,6 +3,16 @@
 /obj/floor_decal/industrial/warning{
 	dir = 5
 	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
 "ap" = (
@@ -194,6 +204,12 @@
 /obj/machinery/atmospherics/pipe/zpipe/up/fuel{
 	dir = 1
 	},
+/obj/structure/cable{
+	d1 = 16;
+	d2 = 0;
+	icon_state = "16-0"
+	},
+/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/tempeterra/hallway/firstdeck/stairs)
 "cl" = (
@@ -257,6 +273,7 @@
 /obj/floor_decal/industrial/warning{
 	dir = 8
 	},
+/obj/shuttle_landmark/bumblebee,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "cL" = (
@@ -515,6 +532,16 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/stairs)
@@ -1199,6 +1226,11 @@
 /area/tempeterra/atmos/atmos)
 "oG" = (
 /obj/machinery/door/airlock,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/shuttle)
 "oH" = (
@@ -1240,6 +1272,15 @@
 	dir = 1;
 	pixel_y = 24
 	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/stairs)
 "pc" = (
@@ -1249,6 +1290,11 @@
 /obj/item/reagent_containers/food/condiment/small/packet/crayon/orange{
 	pixel_y = 6;
 	pixel_x = -6
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
@@ -1445,9 +1491,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/fore/starboard)
 "rp" = (
-/obj/shuttle_landmark/bumblebee,
-/turf/simulated/floor,
-/area/tempeterra/hangar)
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/tempeterra/shuttle)
 "rw" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/floor_decal/corner_techfloor_gray{
@@ -2416,10 +2466,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
 "CS" = (
-/obj/machinery/recharger/wallcharger{
-	dir = 1;
-	pixel_x = 3;
-	pixel_y = -23
+/obj/machinery/power/apc/tempeterra{
+	pixel_y = -24
+	},
+/obj/structure/cable/cyan{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle)
@@ -2446,8 +2498,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/stairs)
 "Dn" = (
+/obj/structure/cable/cyan,
 /obj/machinery/power/smes/buildable/preset/torch/shuttle{
-	RCon_tag = "Shuttle - Charon"
+	RCon_tag = "Shuttle - BumbleBee"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
@@ -2628,10 +2681,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/meeting)
 "FD" = (
-/obj/machinery/computer/shuttle_control/explore/exploration_shuttle,
 /obj/machinery/turretid/lethal{
 	pixel_y = 32
 	},
+/obj/machinery/computer/shuttle_control/explore/sfv_bumblebee,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/tempeterra/shuttle)
 "FF" = (
@@ -2824,6 +2877,7 @@
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 1
 	},
+/obj/overmap/visitable/ship/landable/bumblebee,
 /turf/simulated/floor/tiled/steel_grid,
 /area/tempeterra/shuttle)
 "Ih" = (
@@ -2917,6 +2971,11 @@
 "Jr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/stairs)
 "Jy" = (
@@ -3403,6 +3462,11 @@
 /obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/stairs)
 "Oe" = (
@@ -3424,6 +3488,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 10
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating,
 /area/tempeterra/hallway/firstdeck/stairs)
@@ -3581,6 +3650,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/stairs)
@@ -4418,6 +4492,14 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/fore/starboard)
+"Yg" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/tempeterra/shuttle)
 "Yo" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -9166,7 +9248,7 @@ aq
 aq
 aq
 aq
-rp
+aq
 aq
 aq
 aq
@@ -9987,7 +10069,7 @@ qM
 bi
 al
 oG
-vC
+rp
 pc
 qM
 qM
@@ -10070,7 +10152,7 @@ HQ
 DE
 mS
 vC
-vC
+Yg
 Dn
 qM
 tZ
