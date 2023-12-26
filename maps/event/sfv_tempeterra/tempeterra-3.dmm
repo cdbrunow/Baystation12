@@ -633,16 +633,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/kitchen)
-"fl" = (
-/obj/structure/closet/jcloset_torch,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/floor_decal/corner/green/mono,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/tempeterra/crew/janitorial)
 "fm" = (
 /obj/structure/table/rack,
 /obj/item/storage/box/mousetraps,
@@ -3020,15 +3010,6 @@
 	},
 /turf/simulated/open,
 /area/tempeterra/command/flight)
-"EM" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/floor_decal/corner/b_green/mono,
-/obj/floor_decal/industrial/hatch/yellow,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/tempeterra/crew/hydro)
 "EX" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/canister/air/airlock,
@@ -13903,7 +13884,7 @@ AB
 eL
 Te
 Sp
-EM
+LT
 LT
 lK
 jW
@@ -13911,7 +13892,7 @@ PW
 LM
 lK
 UX
-fl
+UX
 cR
 Mp
 QW
