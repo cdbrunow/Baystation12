@@ -319,15 +319,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/ladder/port)
-"di" = (
-/obj/floor_decal/borderfloorblack,
-/obj/floor_decal/corner/paleblue/border,
-/obj/structure/table/steel_reinforced,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/tempeterra/hallway/firstdeck/fore/port)
 "dw" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black,
 /obj/floor_decal/corner_techfloor_gray{
@@ -3560,6 +3551,15 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/fore/starboard)
+"OH" = (
+/obj/floor_decal/borderfloorblack,
+/obj/floor_decal/corner/paleblue/border,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/tempeterra/hallway/firstdeck/fore/port)
 "OI" = (
 /obj/machinery/portable_atmospherics/canister,
 /obj/floor_decal/industrial/hatch/yellow,
@@ -4555,6 +4555,9 @@
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
+	},
+/obj/machinery/computer/cryopod/robot{
+	pixel_y = 26
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/robotics)
@@ -10669,7 +10672,7 @@ fo
 mT
 OV
 hh
-di
+OH
 Kd
 Kd
 No
