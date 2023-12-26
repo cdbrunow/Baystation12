@@ -79,14 +79,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/crew/disposals)
 "aN" = (
-/obj/machinery/computer{
-	dir = 1
-	},
 /obj/machinery/oxygen_pump{
 	pixel_y = -32
 	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
+/obj/machinery/computer/ship/sensors{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
 "aT" = (
@@ -633,6 +633,9 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/kitchen)
+"fl" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/tempeterra/thirddeck/hallway/ladder/port)
 "fm" = (
 /obj/structure/table/rack,
 /obj/item/storage/box/mousetraps,
@@ -733,7 +736,6 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "gd" = (
-/obj/machinery/computer,
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
@@ -743,6 +745,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/machinery/computer/ship/engines,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
 "gn" = (
@@ -1145,7 +1148,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/tempeterra/thirddeck/hallway/ladder/starboard)
+/area/tempeterra/thirddeck/hallway/ladder/port)
 "lt" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/medical,
@@ -1705,10 +1708,6 @@
 /turf/simulated/floor,
 /area/tempeterra/crew/janitorial)
 "sy" = (
-/obj/machinery/computer/ship/helm{
-	dir = 4;
-	req_access = list(list("ACCESS_TORCH_HELM"))
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
 	level = 2
@@ -1721,6 +1720,10 @@
 	},
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/machinery/computer/ship/helm{
+	dir = 4;
+	req_access = list(list("ACCESS_TORCH_HELM"))
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
@@ -3198,9 +3201,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/engineering/it/sensors)
 "Hj" = (
-/obj/machinery/computer/ship/sensors{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
@@ -3212,6 +3212,10 @@
 	},
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/machinery/computer/ship/helm{
+	dir = 4;
+	req_access = list(list("ACCESS_TORCH_HELM"))
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
@@ -3478,7 +3482,6 @@
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "JM" = (
-/obj/machinery/computer/ship/engines,
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
 	},
@@ -3488,6 +3491,7 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
+/obj/machinery/computer/ship/sensors,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
 "JP" = (
@@ -4284,13 +4288,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/eva)
 "Rn" = (
-/obj/machinery/computer{
-	dir = 1
-	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
 /obj/structure/window/reinforced{
 	dir = 4
+	},
+/obj/machinery/computer/ship/engines{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
@@ -12664,12 +12668,12 @@ Ip
 jn
 Ip
 Ip
-mF
+fl
 lc
-mF
-Xr
-Xr
-Xr
+fl
+NV
+NV
+NV
 Qp
 Qp
 Qp

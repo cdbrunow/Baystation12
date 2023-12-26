@@ -54,6 +54,20 @@
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/hallway/firstdeck/fore/starboard)
+"aM" = (
+/obj/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/floor_decal/corner/paleblue/border{
+	dir = 1
+	},
+/obj/structure/table/steel_reinforced,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/item/storage/box/handcuffs{
+	pixel_y = 7
+	},
+/turf/simulated/floor/tiled/dark,
+/area/tempeterra/hallway/firstdeck/fore/starboard)
 "aS" = (
 /obj/machinery/atmospherics/omni/filter{
 	tag_east = 5;
@@ -222,16 +236,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/robotics)
 "ct" = (
-/obj/floor_decal/borderfloorblack{
-	dir = 1
-	},
-/obj/floor_decal/corner/paleblue/border{
-	dir = 1
-	},
+/obj/floor_decal/borderfloorblack,
+/obj/floor_decal/corner/paleblue/border,
 /obj/structure/table/steel_reinforced,
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/item/storage/box/trackimp{
+	pixel_y = 7
+	},
 /turf/simulated/floor/tiled/dark,
-/area/tempeterra/hallway/firstdeck/fore/starboard)
+/area/tempeterra/hallway/firstdeck/fore/port)
 "cy" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/paint_sprayer,
@@ -458,6 +470,19 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/atmos/monitoring)
+"fk" = (
+/obj/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/floor_decal/corner/paleblue/border{
+	dir = 1
+	},
+/obj/structure/table/steel_reinforced,
+/obj/item/storage/box/trackimp{
+	pixel_y = 7
+	},
+/turf/simulated/floor/tiled/dark,
+/area/tempeterra/hallway/firstdeck/fore/starboard)
 "fo" = (
 /obj/structure/closet/secure_closet/brig,
 /obj/floor_decal/industrial/outline/red,
@@ -3551,15 +3576,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/hallway/firstdeck/fore/starboard)
-"OH" = (
-/obj/floor_decal/borderfloorblack,
-/obj/floor_decal/corner/paleblue/border,
-/obj/structure/table/steel_reinforced,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/tempeterra/hallway/firstdeck/fore/port)
 "OI" = (
 /obj/machinery/portable_atmospherics/canister,
 /obj/floor_decal/industrial/hatch/yellow,
@@ -4263,6 +4279,18 @@
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/tempeterra/atmos/atmos)
+"VK" = (
+/obj/floor_decal/borderfloorblack,
+/obj/floor_decal/corner/paleblue/border,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/item/storage/box/handcuffs{
+	pixel_y = 7
+	},
+/turf/simulated/floor/tiled/dark,
+/area/tempeterra/hallway/firstdeck/fore/port)
 "VR" = (
 /obj/floor_decal/industrial/warning/cee{
 	dir = 1
@@ -10658,7 +10686,7 @@ No
 No
 aL
 aL
-ct
+aM
 kA
 Qw
 oh
@@ -10672,7 +10700,7 @@ fo
 mT
 OV
 hh
-OH
+VK
 Kd
 Kd
 No
@@ -10740,7 +10768,7 @@ No
 No
 aL
 aL
-qI
+fk
 GP
 oh
 oh
@@ -10754,7 +10782,7 @@ hN
 mT
 mT
 vH
-BZ
+ct
 Kd
 Kd
 No
