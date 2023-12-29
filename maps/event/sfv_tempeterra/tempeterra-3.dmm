@@ -361,14 +361,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/catwalk_plated/dark,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment,
+/obj/catwalk_plated/dark,
 /turf/simulated/floor,
 /area/tempeterra/thirddeck/hallway/ladder/port)
 "cR" = (
@@ -525,7 +524,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/thirddeck/hallway/midships)
@@ -1174,19 +1172,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/thirddeck/hallway/ladder/port)
-"lm" = (
-/obj/machinery/door/airlock,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/tempeterra/thirddeck/hallway/midships)
 "lt" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/medical,
@@ -1276,6 +1261,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/kitchen)
+"mo" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/tempeterra/thirddeck/hallway/midships)
 "mF" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/tempeterra/thirddeck/hallway/ladder/starboard)
@@ -12616,7 +12613,7 @@ tZ
 Yi
 bA
 dP
-lm
+mo
 cE
 Rg
 Sw
