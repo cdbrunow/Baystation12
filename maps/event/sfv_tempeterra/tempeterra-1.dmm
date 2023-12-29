@@ -357,6 +357,15 @@
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/atmos/monitoring)
+"dO" = (
+/obj/floor_decal/techfloor/orange{
+	dir = 8
+	},
+/obj/floor_decal/techfloor{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/tempeterra/shuttle)
 "dU" = (
 /obj/structure/bed/chair/shuttle/black{
 	dir = 1
@@ -772,13 +781,23 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/atmos/monitoring)
 "iF" = (
-/obj/floor_decal/borderfloorblack{
-	dir = 4
-	},
 /obj/floor_decal/techfloor/orange{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor,
+/obj/floor_decal/techfloor{
+	dir = 4
+	},
+/obj/structure/closet/walllocker{
+	pixel_y = -32
+	},
+/obj/floor_decal/industrial/warning,
+/obj/item/storage/box/handcuffs{
+	pixel_y = 7
+	},
+/obj/item/storage/box/handcuffs{
+	pixel_y = 7
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "iW" = (
 /obj/structure/table/steel_reinforced,
@@ -1823,7 +1842,7 @@
 	dir = 1
 	},
 /obj/floor_decal/techfloor,
-/obj/machinery/recharge_station,
+/obj/structure/bed/chair/shuttle/black,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "vc" = (
@@ -2465,7 +2484,9 @@
 /obj/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/mech_recharger,
+/obj/structure/bed/chair/shuttle/black{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "Cz" = (
@@ -2675,13 +2696,20 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "EU" = (
+/obj/floor_decal/techfloor{
+	dir = 4
+	},
+/obj/floor_decal/techfloor{
+	dir = 8
+	},
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
 /obj/floor_decal/industrial/warning{
-	dir = 1
+	dir = 1;
+	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "EX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3466,9 +3494,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "NT" = (
-/obj/floor_decal/borderfloorblack{
-	dir = 4
-	},
 /obj/structure/closet/medical_wall/filled{
 	pixel_y = 32
 	},
@@ -3485,7 +3510,17 @@
 /obj/floor_decal/techfloor/orange{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor,
+/obj/floor_decal/techfloor{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "NZ" = (
 /obj/floor_decal/borderfloorblack,
@@ -3722,9 +3757,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/atmos/monitoring)
 "Ql" = (
+/obj/floor_decal/techfloor{
+	dir = 4
+	},
+/obj/floor_decal/techfloor{
+	dir = 8
+	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle)
 "Qw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -9463,7 +9504,7 @@ aq
 qM
 qM
 NT
-iF
+dO
 iF
 qM
 qM

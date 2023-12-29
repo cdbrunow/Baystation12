@@ -348,9 +348,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/obj/structure/fireaxecabinet{
-	pixel_y = 32
-	},
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/tool)
 "cl" = (
@@ -3481,9 +3479,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/tempeterra/medical/sugery)
 "rp" = (
-/obj/floor_decal/industrial/warning/corner{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -4330,9 +4325,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/reactor/twocore)
 "vT" = (
-/obj/structure/closet/secure_closet/security{
-	name = "armsman's locker"
-	},
 /obj/item/storage/backpack/rucksack/navy,
 /obj/item/storage/belt/holster/security/tactical,
 /obj/item/clothing/suit/armor/pcarrier/navy,
@@ -4341,6 +4333,9 @@
 /obj/item/clothing/under/solgov/utility/fleet/combat,
 /obj/structure/railing/mapped{
 	dir = 8
+	},
+/obj/structure/closet{
+	name = "armsman's locker"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/locker)
@@ -5361,9 +5356,6 @@
 /turf/simulated/floor,
 /area/tempeterra/command/cic)
 "Au" = (
-/obj/structure/closet/secure_closet/security{
-	name = "armsman's locker"
-	},
 /obj/item/storage/backpack/rucksack/navy,
 /obj/item/storage/belt/holster/security/tactical,
 /obj/item/clothing/suit/armor/pcarrier/navy,
@@ -5380,6 +5372,9 @@
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
+	},
+/obj/structure/closet{
+	name = "armsman's locker"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/locker)
@@ -5644,6 +5639,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/locker)
@@ -5947,6 +5946,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
+"CS" = (
+/obj/catwalk_plated/dark,
+/obj/machinery/floor_light/mapped_on,
+/obj/structure/fireaxecabinet{
+	pixel_y = -32
+	},
+/turf/simulated/floor,
+/area/tempeterra/engineering/material)
 "CV" = (
 /obj/structure/table/rack,
 /obj/item/towel/random,
@@ -6999,6 +7006,10 @@
 	dir = 4;
 	pixel_x = 24
 	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/seating)
 "Hz" = (
@@ -7153,9 +7164,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/armsmen/eva)
 "HW" = (
-/obj/structure/closet/secure_closet/security{
-	name = "armsman's locker"
-	},
 /obj/item/storage/backpack/rucksack/navy,
 /obj/item/storage/belt/holster/security/tactical,
 /obj/item/clothing/suit/armor/pcarrier/navy,
@@ -7165,6 +7173,9 @@
 	pixel_y = 32
 	},
 /obj/item/clothing/under/solgov/utility/fleet/combat,
+/obj/structure/closet{
+	name = "armsman's locker"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/locker)
 "HX" = (
@@ -7198,12 +7209,17 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/catwalk_plated/dark,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/catwalk_plated/dark,
 /turf/simulated/floor,
 /area/tempeterra/crew/seating)
 "Iq" = (
@@ -8434,9 +8450,6 @@
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/medical/hallway)
 "NF" = (
-/obj/structure/closet/secure_closet/security{
-	name = "armsman's locker"
-	},
 /obj/item/storage/backpack/rucksack/navy,
 /obj/item/storage/belt/holster/security/tactical,
 /obj/item/clothing/suit/armor/pcarrier/navy,
@@ -8446,6 +8459,9 @@
 	pixel_y = 32
 	},
 /obj/item/clothing/under/solgov/utility/fleet/combat,
+/obj/structure/closet{
+	name = "armsman's locker"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/armsmen/locker)
 "NG" = (
@@ -9784,9 +9800,6 @@
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/engineering/reactor/fuel)
-"TW" = (
-/turf/simulated/wall/r_wall,
-/area/tempeterra/crew/lounge)
 "TX" = (
 /obj/floor_decal/corner_techfloor_grid{
 	dir = 4
@@ -16037,13 +16050,13 @@ WC
 WC
 ys
 WC
-TW
+rI
 Le
 Fh
 Hi
 TY
 my
-TW
+rI
 uD
 ci
 KQ
@@ -18838,7 +18851,7 @@ dk
 OE
 mF
 mF
-mF
+CS
 cZ
 cZ
 oG
