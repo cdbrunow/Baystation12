@@ -269,17 +269,18 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/atmos/monitoring)
 "cB" = (
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id_tag = "RubbishOuter";
-	name = "Reactor room emergency shutters";
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "EngineBlast";
+	name = "Blast Door";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/atmos/atmos)
 "cH" = (
@@ -1362,9 +1363,9 @@
 "pt" = (
 /obj/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/blast/regular{
-	dir = 4
+	dir = 8
 	},
-/turf/space,
+/turf/simulated/floor/airless,
 /area/tempeterra/atmos/atmos)
 "pD" = (
 /obj/floor_decal/industrial/warning/fulltile,
@@ -2092,17 +2093,18 @@
 /turf/simulated/floor,
 /area/tempeterra/hangar)
 "xH" = (
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id_tag = "RubbishOuter";
-	name = "Reactor room emergency shutters";
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "EngineBlast";
+	name = "Blast Door";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/atmos/atmos)
 "xS" = (
@@ -2500,10 +2502,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hangar)
 "CF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/blast/regular,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/space,
+/turf/simulated/floor/airless,
 /area/tempeterra/atmos/atmos)
 "CN" = (
 /obj/machinery/door/airlock/external,
@@ -3619,7 +3621,7 @@
 "OQ" = (
 /obj/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/blast/regular,
-/turf/space,
+/turf/simulated/floor/airless,
 /area/tempeterra/atmos/atmos)
 "OT" = (
 /obj/machinery/door/airlock,
@@ -3781,13 +3783,6 @@
 /area/tempeterra/hallway/firstdeck/fore/starboard)
 "QC" = (
 /obj/machinery/door/airlock,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id_tag = "RubbishOuter";
-	name = "Reactor room emergency shutters";
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -3795,6 +3790,14 @@
 	dir = 4
 	},
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "EngineBlast";
+	name = "Blast Door";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/atmos/atmos)
 "QJ" = (
@@ -4044,14 +4047,14 @@
 /turf/simulated/floor,
 /area/tempeterra/meeting)
 "SJ" = (
-/obj/wallframe_spawn/reinforced_phoron,
-/obj/machinery/door/blast/regular{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 8
 	},
-/turf/space,
+/obj/wallframe_spawn/reinforced_phoron,
+/obj/machinery/door/blast/regular{
+	dir = 8
+	},
+/turf/simulated/floor/airless,
 /area/tempeterra/atmos/atmos)
 "SW" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -4238,10 +4241,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/hallway/firstdeck/fore/port)
 "UQ" = (
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /obj/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/blast/regular,
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/space,
+/turf/simulated/floor/airless,
 /area/tempeterra/atmos/atmos)
 "UR" = (
 /obj/floor_decal/industrial/warning{
