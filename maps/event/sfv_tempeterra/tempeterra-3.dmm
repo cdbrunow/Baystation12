@@ -87,6 +87,9 @@
 /obj/machinery/computer/ship/sensors{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
 "aT" = (
@@ -189,6 +192,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment/bent,
 /turf/simulated/floor,
 /area/tempeterra/thirddeck/hallway/midships)
 "bH" = (
@@ -363,6 +367,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor,
 /area/tempeterra/thirddeck/hallway/ladder/port)
 "cR" = (
@@ -455,6 +461,9 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
 "dp" = (
@@ -516,6 +525,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/thirddeck/hallway/midships)
 "er" = (
@@ -890,6 +901,9 @@
 	dir = 9
 	},
 /obj/machinery/light,
+/obj/structure/disposalpipe/segment/bent{
+	dir = 8
+	},
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "hV" = (
@@ -917,6 +931,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment/bent,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
 "iu" = (
@@ -935,6 +950,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/flight)
@@ -1066,6 +1084,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "jW" = (
@@ -1105,6 +1126,7 @@
 	dir = 1
 	},
 /obj/floor_decal/industrial/outline/yellow,
+/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/crew/disposals)
 "ku" = (
@@ -1147,8 +1169,24 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/thirddeck/hallway/ladder/port)
+"lm" = (
+/obj/machinery/door/airlock,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/tempeterra/thirddeck/hallway/midships)
 "lt" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/medical,
@@ -1191,6 +1229,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/crew/disposals)
 "lK" = (
@@ -1206,6 +1247,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/crew/disposals)
@@ -1355,6 +1399,9 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/thirddeck/hallway/ladder/port)
@@ -1512,11 +1559,17 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
 "qD" = (
 /obj/structure/table/steel_reinforced,
 /obj/floor_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment/bent{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2159,11 +2212,14 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
-/obj/catwalk_plated/dark,
 /obj/structure/cable{
 	d1 = 32;
 	icon_state = "32-1"
 	},
+/obj/structure/disposalpipe/down{
+	dir = 8
+	},
+/obj/catwalk_plated/dark,
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "wx" = (
@@ -2183,6 +2239,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/flight)
 "wH" = (
@@ -2381,6 +2438,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/flight)
 "yT" = (
@@ -2570,6 +2630,9 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/crew/disposals)
 "Af" = (
@@ -2681,6 +2744,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
@@ -2815,6 +2881,9 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/crew/disposals)
 "CG" = (
@@ -2878,6 +2947,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
 "Dp" = (
@@ -2910,6 +2982,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment/bent,
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
 "DG" = (
@@ -2933,6 +3006,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/flight)
 "DJ" = (
@@ -2946,6 +3022,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -3479,6 +3558,9 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 4
+	},
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "JM" = (
@@ -3534,6 +3616,9 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/thirddeck/hallway/midships)
@@ -3597,6 +3682,9 @@
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/crew/disposals)
@@ -3781,6 +3869,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "Ny" = (
@@ -3951,6 +4042,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/tempeterra/thirddeck/hallway/midships)
 "Oc" = (
@@ -3974,6 +4068,9 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
@@ -4276,6 +4373,9 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/thirddeck/hallway/ladder/port)
 "Rj" = (
@@ -4295,6 +4395,9 @@
 	},
 /obj/machinery/computer/ship/engines{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/command/flight)
@@ -4406,6 +4509,9 @@
 	dir = 5
 	},
 /obj/machinery/light,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "SV" = (
@@ -4526,6 +4632,7 @@
 "Un" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/open,
 /area/tempeterra/command/flight)
 "Up" = (
@@ -4576,6 +4683,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
@@ -5134,6 +5244,9 @@
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/crew/storage)
@@ -12503,7 +12616,7 @@ tZ
 Yi
 bA
 dP
-tZ
+lm
 cE
 Rg
 Sw

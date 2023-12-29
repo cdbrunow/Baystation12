@@ -62,6 +62,9 @@
 /area/tempeterra/engineering/reactor/twocore)
 "ay" = (
 /obj/catwalk_plated,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/reactor/fuel)
 "az" = (
@@ -219,6 +222,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/tempeterra/engineering/reactor/control)
 "bp" = (
@@ -287,6 +293,7 @@
 	dir = 10
 	},
 /obj/floor_decal/corner/paleblue/border,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "bY" = (
@@ -618,6 +625,9 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 5
 	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "dO" = (
@@ -713,6 +723,9 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/structure/railing/mapped{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -1213,6 +1226,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
 "gF" = (
@@ -2205,6 +2221,9 @@
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "lm" = (
@@ -2273,6 +2292,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/floor_decal/techfloor/corner,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "ly" = (
@@ -2357,6 +2377,7 @@
 	dir = 6
 	},
 /obj/floor_decal/corner/paleblue/border,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "lL" = (
@@ -2409,6 +2430,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/catwalk_plated,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/reactor/fuel)
 "lU" = (
@@ -3243,6 +3267,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/tempeterra/engineering/reactor/control)
 "pK" = (
@@ -3545,6 +3572,9 @@
 	dir = 9
 	},
 /obj/catwalk_plated,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/reactor/fuel)
 "rB" = (
@@ -3609,6 +3639,9 @@
 	dir = 1
 	},
 /obj/structure/bed/chair/shuttle/blue{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -3800,6 +3833,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "sZ" = (
@@ -3858,6 +3894,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/tempeterra/engineering/reactor/fuel)
 "tf" = (
@@ -3884,6 +3923,9 @@
 	icon_state = "16-0"
 	},
 /obj/structure/cable,
+/obj/structure/disposalpipe/up{
+	dir = 8
+	},
 /turf/simulated/floor/airless,
 /area/tempeterra/command/cic)
 "tg" = (
@@ -4045,6 +4087,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/tempeterra/engineering/foyer)
 "ud" = (
@@ -4170,6 +4215,9 @@
 	},
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
@@ -4494,6 +4542,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -4924,6 +4975,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/reactor/control)
 "yJ" = (
@@ -4961,6 +5015,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
@@ -5746,6 +5803,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/structure/disposalpipe/segment/bent,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "Cr" = (
@@ -6283,6 +6341,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/reactor/control)
 "EA" = (
@@ -6358,6 +6419,9 @@
 	},
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
@@ -6507,6 +6571,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/reactor/control)
@@ -6867,6 +6934,9 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "Hb" = (
@@ -6978,6 +7048,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
@@ -7388,6 +7461,9 @@
 /obj/floor_decal/industrial/warning{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "Jj" = (
@@ -7517,6 +7593,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/engineering/foyer)
 "JG" = (
@@ -7550,6 +7629,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
 "JO" = (
@@ -7578,6 +7660,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -8199,6 +8284,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
 "ME" = (
@@ -8687,6 +8775,9 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
 "OK" = (
@@ -8833,6 +8924,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/reactor/control)
 "Pu" = (
@@ -8857,6 +8951,9 @@
 	dir = 1
 	},
 /obj/machinery/computer/prisoner{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment/bent{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -9017,6 +9114,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/reactor/control)
@@ -9583,6 +9683,9 @@
 	dir = 8
 	},
 /obj/catwalk_plated/dark,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/tempeterra/engineering/reactor/control)
 "Sy" = (
@@ -10045,6 +10148,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment/bent{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "Va" = (
@@ -10078,6 +10184,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
@@ -10240,6 +10349,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
@@ -10523,6 +10635,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
 "WX" = (
@@ -10787,6 +10902,9 @@
 "Yo" = (
 /obj/catwalk_plated,
 /obj/machinery/atmospherics/valve,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/airless,
 /area/tempeterra/engineering/reactor/fuel)
 "Ys" = (
@@ -10916,6 +11034,9 @@
 /obj/floor_decal/industrial/warning{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "Zo" = (
@@ -10969,6 +11090,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "ZA" = (
