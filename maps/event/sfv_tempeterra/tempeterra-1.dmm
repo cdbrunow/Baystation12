@@ -1569,9 +1569,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/atmos/atmos)
 "pU" = (
-/obj/floor_decal/corner/black{
-	dir = 5
-	},
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
@@ -3414,9 +3411,6 @@
 /turf/simulated/floor/reinforced,
 /area/tempeterra/hangar)
 "HK" = (
-/obj/floor_decal/corner/black{
-	dir = 10
-	},
 /obj/structure/railing/mapped,
 /obj/floor_decal/industrial/loading{
 	dir = 4
