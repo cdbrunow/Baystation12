@@ -6068,6 +6068,21 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/engineering/reactor/twocore)
+"Do" = (
+/obj/floor_decal/borderfloorblack,
+/obj/floor_decal/corner/paleblue/border,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/machinery/light,
+/obj/machinery/computer/modular/preset/security{
+	dir = 1
+	},
+/obj/machinery/turretid/lethal{
+	pixel_y = -25
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/tempeterra/command/cic)
 "Dp" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/portables_connector{
@@ -7186,25 +7201,10 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
-/obj/machinery/button{
-	pixel_y = 8;
-	pixel_x = -5
-	},
-/obj/machinery/button{
-	pixel_y = 8;
-	pixel_x = 5
-	},
-/obj/machinery/button{
-	pixel_y = -2;
-	pixel_x = -5
-	},
-/obj/machinery/button{
-	pixel_x = 5;
-	pixel_y = -2
-	},
 /obj/structure/sign/solgov{
 	pixel_y = 32
 	},
+/obj/machinery/photocopier/faxmachine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
 "HR" = (
@@ -10117,23 +10117,31 @@
 /obj/floor_decal/corner/paleblue/border,
 /obj/structure/table/steel_reinforced,
 /obj/machinery/button{
-	pixel_y = -2;
+	pixel_y = -4;
 	pixel_x = -5
 	},
 /obj/machinery/button{
 	pixel_x = 5;
-	pixel_y = -2
+	pixel_y = -4
 	},
 /obj/machinery/button{
-	pixel_y = 8;
+	pixel_y = 3;
 	pixel_x = -5
 	},
 /obj/machinery/button{
-	pixel_y = 8;
+	pixel_y = 3;
 	pixel_x = 5
 	},
 /obj/structure/sign/solgov{
 	pixel_y = -32
+	},
+/obj/machinery/button{
+	pixel_y = 10;
+	pixel_x = -5
+	},
+/obj/machinery/button{
+	pixel_y = 10;
+	pixel_x = 5
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/command/cic)
@@ -17820,7 +17828,7 @@ NH
 ML
 nS
 Ha
-ZI
+Do
 oC
 oC
 Dt
