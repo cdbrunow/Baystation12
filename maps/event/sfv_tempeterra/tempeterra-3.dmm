@@ -256,6 +256,12 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/it/maint)
+"bZ" = (
+/obj/floor_decal/borderfloorblack/corner{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/space)
 "cd" = (
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 9
@@ -742,6 +748,9 @@
 /area/tempeterra/crew/mess)
 "fZ" = (
 /obj/floor_decal/corner/black/mono,
+/obj/floor_decal/borderfloorblack{
+	dir = 1
+	},
 /turf/simulated/floor/reinforced,
 /area/space)
 "gd" = (
@@ -801,6 +810,10 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/engineering/it/maint)
+"gs" = (
+/obj/machinery/nav_light/port,
+/turf/simulated/floor/reinforced,
+/area/space)
 "gz" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/tempeterra/thirddeck/hallway/midships)
@@ -3266,6 +3279,10 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/armaments/maint)
+"GZ" = (
+/obj/machinery/nav_light/dorsal,
+/turf/simulated/floor/reinforced,
+/area/space)
 "Hc" = (
 /obj/floor_decal/techfloor{
 	dir = 8
@@ -3526,6 +3543,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/kitchen)
+"JA" = (
+/obj/machinery/nav_light/ventral,
+/turf/simulated/floor/reinforced,
+/area/space)
 "JI" = (
 /obj/floor_decal/corner_techfloor_gray{
 	dir = 9
@@ -3819,6 +3840,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/janitorial)
+"Mu" = (
+/obj/floor_decal/borderfloorblack/corner,
+/turf/simulated/floor/reinforced,
+/area/space)
 "MM" = (
 /obj/structure/sign/warning/vacuum{
 	dir = 4;
@@ -4206,6 +4231,11 @@
 /obj/structure/cable/cyan,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/it/sensors)
+"PL" = (
+/obj/floor_decal/corner/black/mono,
+/obj/floor_decal/borderfloorblack,
+/turf/simulated/floor/reinforced,
+/area/space)
 "PO" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5348,6 +5378,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/crew/storage)
+"ZW" = (
+/obj/machinery/nav_light/starboard,
+/turf/simulated/floor/reinforced,
+/area/space)
 "ZX" = (
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/ocp_wall,
@@ -7937,7 +7971,7 @@ Qp
 Nh
 Qp
 Qp
-Qp
+JA
 Qp
 Qp
 Nh
@@ -8015,6 +8049,7 @@ Nh
 Nh
 Nh
 Qp
+JA
 Qp
 Qp
 Qp
@@ -8022,8 +8057,7 @@ Qp
 Qp
 Qp
 Qp
-Qp
-Qp
+JA
 Qp
 Nh
 Nh
@@ -11043,7 +11077,7 @@ Nh
 Nh
 Nh
 Nh
-Qp
+ZW
 Qp
 Qp
 VL
@@ -11063,7 +11097,7 @@ VL
 VL
 Qp
 Qp
-Qp
+gs
 Nh
 Nh
 Nh
@@ -12519,7 +12553,7 @@ Nh
 Nh
 Nh
 Nh
-Qp
+ZW
 hV
 Qp
 Xr
@@ -12539,7 +12573,7 @@ NV
 NV
 Qp
 hV
-Qp
+gs
 Nh
 Nh
 Nh
@@ -13339,7 +13373,7 @@ Nh
 Nh
 Qp
 Qp
-Qp
+Mu
 cw
 cw
 yf
@@ -13359,7 +13393,7 @@ dj
 TW
 KO
 KO
-Qp
+bZ
 Qp
 Qp
 Nh
@@ -13421,7 +13455,7 @@ Nh
 Nh
 Qp
 Qp
-Qp
+PL
 wx
 wx
 oO
@@ -13441,7 +13475,7 @@ lJ
 xa
 ZX
 ZX
-Qp
+fZ
 Qp
 Qp
 Nh
@@ -13503,7 +13537,7 @@ Nh
 Nh
 Qp
 Qp
-Qp
+PL
 wx
 wx
 kU
@@ -13523,7 +13557,7 @@ Ad
 OQ
 ZX
 ZX
-Qp
+fZ
 Qp
 Qp
 Nh
@@ -13585,7 +13619,7 @@ Nh
 Nh
 Qp
 Qp
-Qp
+PL
 wx
 wx
 kU
@@ -13605,7 +13639,7 @@ Cj
 ez
 ZX
 ZX
-Qp
+fZ
 Qp
 Qp
 Nh
@@ -13667,7 +13701,7 @@ Nh
 Qp
 Qp
 Qp
-Qp
+PL
 wx
 wx
 hC
@@ -13687,7 +13721,7 @@ KA
 WE
 ZX
 ZX
-Qp
+fZ
 Qp
 Qp
 Qp
@@ -13749,7 +13783,7 @@ Nh
 Qp
 Qp
 Qp
-Qp
+PL
 wx
 wx
 Bz
@@ -13769,7 +13803,7 @@ DJ
 Ww
 ZX
 ZX
-Qp
+fZ
 Qp
 Qp
 Qp
@@ -13831,7 +13865,7 @@ Nh
 Qp
 NF
 Qp
-Qp
+PL
 wx
 wx
 ND
@@ -13851,7 +13885,7 @@ lO
 lz
 ZX
 ZX
-Qp
+fZ
 Qp
 NF
 Qp
@@ -13913,7 +13947,7 @@ Nh
 Qp
 Qp
 Qp
-Qp
+PL
 wx
 wx
 oO
@@ -13933,7 +13967,7 @@ HT
 xa
 ZX
 ZX
-Qp
+fZ
 Qp
 Qp
 Qp
@@ -13995,7 +14029,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 AB
 AB
 eL
@@ -14077,7 +14111,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 AB
 AB
 AB
@@ -14159,7 +14193,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 Qp
 AB
 AB
@@ -14241,7 +14275,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 AB
@@ -14323,7 +14357,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14405,7 +14439,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14487,7 +14521,7 @@ Nh
 Qp
 NF
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14501,7 +14535,7 @@ bh
 rd
 yg
 qP
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14569,7 +14603,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14583,7 +14617,7 @@ db
 Wn
 yg
 qP
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14651,7 +14685,7 @@ Nh
 Qp
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14665,7 +14699,7 @@ aT
 aT
 yg
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14733,7 +14767,7 @@ Nh
 Nh
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14747,7 +14781,7 @@ Oy
 Oy
 Qd
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14815,7 +14849,7 @@ Nh
 Nh
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14829,7 +14863,7 @@ Qp
 Qp
 Qp
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14895,23 +14929,9 @@ Nh
 Nh
 Nh
 Nh
+GZ
 Qp
-Qp
-fZ
-Qp
-Qp
-Qp
-Qp
-Qp
-fZ
-Qp
-Nh
-Nh
-Nh
-Nh
-Nh
-Qp
-fZ
+PL
 Qp
 Qp
 Qp
@@ -14919,7 +14939,21 @@ Qp
 Qp
 fZ
 Qp
+Nh
+Nh
+Nh
+Nh
+Nh
 Qp
+PL
+Qp
+Qp
+Qp
+Qp
+Qp
+fZ
+Qp
+GZ
 Nh
 Nh
 Nh
@@ -14979,7 +15013,7 @@ Nh
 Nh
 Nh
 Qp
-fZ
+PL
 Qp
 Qp
 Qp
