@@ -53,11 +53,12 @@
 	if(panel_open)
 		AddOverlays("[icon_state]_panel")
 	if(is_powered())
-		AddOverlays(emissive_appearance(icon, "[icon_state]_lights"))
-		AddOverlays("[icon_state]_lights")
-	else if(busy)
-		AddOverlays(emissive_appearance(icon, "[icon_state]_lights_working"))
-		AddOverlays("[icon_state]_lights_working")
+		if (busy)
+			AddOverlays(emissive_appearance(icon, "[icon_state]_lights_working"))
+			AddOverlays("[icon_state]_lights_working")
+		else
+			AddOverlays(emissive_appearance(icon, "[icon_state]_lights"))
+			AddOverlays("[icon_state]_lights")
 
 /obj/machinery/robotics_fabricator/dismantle()
 	for(var/f in materials)
@@ -145,10 +146,10 @@
 		return SPAN_NOTICE("\The [src] is busy. Please wait for completion of previous operation.")
 	return ..()
 
-/obj/machinery/robotics_fabricator/attackby(obj/item/I, mob/user)
+/obj/machinery/robotics_fabricator/use_tool(obj/item/I, mob/living/user, list/click_params)
 	if(busy)
 		to_chat(user, SPAN_NOTICE("\The [src] is busy. Please wait for completion of previous operation."))
-		return 1
+		return TRUE
 	if(!istype(I, /obj/item/stack/material))
 		return ..()
 
@@ -163,7 +164,7 @@
 
 	if(!(material in materials))
 		to_chat(user, SPAN_WARNING("\The [src] does not accept [stack_plural]!"))
-		return
+		return TRUE
 
 	if(materials[material] + amnt <= res_max_amount)
 		if(stack && stack.can_use(1))
@@ -180,6 +181,7 @@
 			update_busy()
 	else
 		to_chat(user, "The fabricator cannot hold more [stack_plural].")// use the plural form even if the given sheet is singular
+	return TRUE
 
 
 /obj/machinery/robotics_fabricator/emag_act(remaining_charges, mob/user)
