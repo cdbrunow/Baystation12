@@ -7,7 +7,15 @@
 	icon_state = "hangar"
 
 /area/tempeterra/shuttle
-	name = "SFV BumbleBee"
+	name = "SFV Skiff Cockpit"
+	icon_state = "shuttle"
+
+/area/tempeterra/shuttle/fuel
+	name = "SFV Skiff Fuel Bay"
+	icon_state = "shuttle"
+
+/area/tempeterra/shuttle/airlock
+	name = "SFV Skiff Airlock"
 	icon_state = "shuttle"
 
 /area/tempeterra/hallway/firstdeck/fore/port
@@ -15,7 +23,7 @@
 	icon_state = "hallp"
 
 /area/tempeterra/hallway/firstdeck/fore/starboard
-	name = "TempetErra First Deck Starboard Hallway"
+	name = "TempeTerra First Deck Starboard Hallway"
 	icon_state = "halls"
 
 /area/tempeterra/hallway/firstdeck/stairs
@@ -48,7 +56,7 @@
 
 /area/tempeterra/atmos/monitoring
 	name = "TempeTerra Atmospherics Monitoring"
-	icon_state = "atmos_monitor"
+	icon_state = "atmos_monitoring"
 
 /area/tempeterra/atmos/atmos
 	name = "TempeTerra Atmospherics"
@@ -120,7 +128,7 @@
 
 /area/tempeterra/crew/gym
 	name = "TempeTerra Gym"
-	icon_state = "fitness_room"
+	icon_state = "fitness"
 
 /area/tempeterra/armsmen/eva
 	name = "TempeTerra Combat EVA Prep"
@@ -239,7 +247,7 @@
 
 /area/tempeterra/crew/disposals
 	name = "TempeTerra Disposals"
-	icon_state = "disposals"
+	icon_state = "disposal"
 
 /area/tempeterra/crew/janitorial
 	name = "TempeTerra Custodial"

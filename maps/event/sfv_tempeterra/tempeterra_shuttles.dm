@@ -1,7 +1,7 @@
 /obj/overmap/visitable/ship/landable/bumblebee
-	name = "SFS Bumble Bee"
+	name = "SFV BumbleBee"
 	desc = "A small agile shuttle designed for fast maneuvers"
-	shuttle = "Bumble Bee"
+	shuttle = "SFV BumbleBee"
 	fore_dir = WEST
 	color = "#001e70"
 	vessel_mass = 750
@@ -15,7 +15,7 @@
 	name = "SFV BumbleBee"
 	warmup_time = 5
 	move_time = 15
-	shuttle_area = list(/area/tempeterra/shuttle)
+	shuttle_area = list(/area/tempeterra/shuttle, /area/tempeterra/shuttle/fuel, /area/tempeterra/shuttle/airlock)
 	current_location = "nav_hangar_tempeterra"
 	landmark_transition = "nav_transit_bumblebee"
 	range = 1

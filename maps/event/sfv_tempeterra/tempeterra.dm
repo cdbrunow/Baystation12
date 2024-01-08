@@ -33,3 +33,6 @@
 
 /obj/machinery/power/apc/tempeterra
 	req_access = list(access_fleet_engineering)
+
+/obj/machinery/alarm
+	req_access = list(access_fleet_engineering)
