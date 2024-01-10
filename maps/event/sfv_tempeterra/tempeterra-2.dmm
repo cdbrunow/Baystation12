@@ -354,7 +354,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/obj/machinery/ship_map,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/tool)
 "cl" = (
