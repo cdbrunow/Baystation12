@@ -6,7 +6,7 @@
 	id = "sfv_tempeterra"
 	description = "A small, fairly modern dagger-shaped Lexington-class corvette, broadcasting SCGF codes and the designation 'SFV Tempe-Terra, LXC-7, Battle Group Bravo'"
 	suffixes = list("maps/event/sfv_tempeterra/tempeterra-1.dmm","maps/event/sfv_tempeterra/tempeterra-2.dmm","maps/event/sfv_tempeterra/tempeterra-3.dmm")
-	shuttles_to_initialise = list("datum/shuttle/autodock/overmap/bumblebee")
+	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/sfv_bumblebee)
 
 /obj/overmap/visitable/sector/sfv_tempeterra_jump
 	name = "Jump Drive Signature"
@@ -31,8 +31,12 @@
 		"nav_tempeterra_six"
 	)
 
+	initial_restricted_waypoints = list(
+		"SFV BumbleBee" = list("nav_hangar_tempeterra")
+	)
+
 /obj/machinery/power/apc/tempeterra
 	req_access = list(access_fleet_engineering)
 
-/obj/machinery/alarm
+/obj/machinery/alarm/tempeterra
 	req_access = list(access_fleet_engineering)

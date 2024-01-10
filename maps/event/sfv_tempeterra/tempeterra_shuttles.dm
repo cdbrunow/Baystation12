@@ -3,7 +3,7 @@
 	desc = "A small agile shuttle designed for fast maneuvers"
 	shuttle = "SFV BumbleBee"
 	fore_dir = WEST
-	color = "#001e70"
+	color = "#d4ad00"
 	vessel_mass = 750
 	vessel_size = SHIP_SIZE_TINY
 
