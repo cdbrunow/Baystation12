@@ -2156,7 +2156,7 @@
 	},
 /obj/item/stack/material/tritium/fifty,
 /obj/structure/closet/walllocker{
-	pixel_y = 20;
+	pixel_y = 30;
 	name = "Radioactive Fuel Locker"
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -2511,10 +2511,6 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/tempeterra/hangar)
-"zk" = (
-/obj/floor_decal/industrial/radiation/fulltile,
-/turf/simulated/floor,
 /area/tempeterra/hangar)
 "zo" = (
 /obj/floor_decal/borderfloorblack{
@@ -4550,7 +4546,6 @@
 /turf/simulated/floor,
 /area/tempeterra/hallway/firstdeck/ladder/starboard)
 "RS" = (
-/obj/floor_decal/industrial/outline/yellow,
 /obj/floor_decal/industrial/warning{
 	dir = 8
 	},
@@ -4563,6 +4558,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/floor_decal/techfloor{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/shuttle/airlock)
@@ -9989,11 +9987,11 @@ Pt
 GU
 aq
 aq
-zk
 aq
 aq
 aq
-zk
+aq
+aq
 aq
 aq
 GU
