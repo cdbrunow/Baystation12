@@ -537,24 +537,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/thirddeck/hallway/midships)
-"dU" = (
-/obj/machinery/alarm/tempeterra{
-	pixel_y = 24
-	},
-/obj/machinery/alarm/tempeterra{
-	dir = 1;
-	pixel_y = -22
-	},
-/obj/machinery/alarm/tempeterra{
-	dir = 8;
-	pixel_x = 24
-	},
-/obj/machinery/alarm/tempeterra{
-	dir = 4;
-	pixel_x = -23
-	},
-/turf/space,
-/area/space)
 "er" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
 	id_tag = "bridge_eva_pump";
@@ -617,6 +599,10 @@
 "eL" = (
 /obj/structure/closet/hydroponics_torch,
 /obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/hydro)
 "eN" = (
@@ -1500,15 +1486,6 @@
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
 	},
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	id_tag = "solar_bridge_airlock";
-	pixel_y = 24;
-	req_access = list("ACCESS_EXTERNAL");
-	tag_airpump = "solar_bridge_pump";
-	tag_chamber_sensor = "solar_bridge_sensor";
-	tag_exterior_door = "solar_bridge_outer";
-	tag_interior_door = "solar_bridge_inner"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/airlock)
 "nO" = (
@@ -1567,24 +1544,6 @@
 "oO" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/tempeterra/crew/fridge)
-"oV" = (
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
-	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 21
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -21
-	},
-/turf/space,
-/area/space)
 "pa" = (
 /obj/floor_decal/corner_techfloor_grid{
 	dir = 6
@@ -1791,11 +1750,6 @@
 	},
 /obj/floor_decal/borderfloorblack,
 /obj/floor_decal/corner/paleblue/border,
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "eva_airlock_sensor";
-	pixel_y = -25
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/airlock)
 "rH" = (
@@ -2855,7 +2809,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/alarm/tempeterra{
+/obj/machinery/alarm/tempeterra/cold{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -2918,6 +2872,10 @@
 	},
 /obj/machinery/light/spot{
 	dir = 8
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -21
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/eva)
@@ -3711,10 +3669,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
-	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/it/maint)
@@ -4634,6 +4588,7 @@
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/clothing/mask/plunger,
 /obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/janitorial)
 "Rb" = (
@@ -4641,7 +4596,7 @@
 /obj/item/reagent_containers/food/condiment/enzyme,
 /obj/floor_decal/borderfloor,
 /obj/floor_decal/corner/paleblue/border,
-/obj/machinery/alarm/tempeterra{
+/obj/machinery/alarm/tempeterra/cold{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -5143,9 +5098,6 @@
 	},
 /obj/floor_decal/industrial/warning/corner,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/it/maint)
 "VR" = (
@@ -13321,7 +13273,7 @@ Nh
 Nh
 Nh
 Nh
-dU
+Nh
 Nh
 Qp
 Qp
@@ -13813,7 +13765,7 @@ Nh
 Nh
 Nh
 Nh
-oV
+Nh
 Nh
 Qp
 Qp
