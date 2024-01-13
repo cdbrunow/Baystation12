@@ -1,38 +1,38 @@
-/obj/overmap/visitable/ship/landable/bumblebee
-	name = "SFV BumbleBee"
+/obj/overmap/visitable/ship/landable/sfc_wolfe
+	name = "SFC Wolfe"
 	desc = "A small agile shuttle designed for fast maneuvers"
-	shuttle = "SFV BumbleBee"
+	shuttle = "SFC Wolfe"
 	fore_dir = WEST
 	color = "#d4ad00"
 	vessel_mass = 750
 	vessel_size = SHIP_SIZE_TINY
 
-/obj/machinery/computer/shuttle_control/explore/sfv_bumblebee
+/obj/machinery/computer/shuttle_control/explore/sfc_wolfe
 	name = "landing control console"
-	shuttle_tag = "SFV BumbleBee"
+	shuttle_tag = "SFC Wolfe"
 
-/datum/shuttle/autodock/overmap/sfv_bumblebee
-	name = "SFV BumbleBee"
+/datum/shuttle/autodock/overmap/sfc_wolfe
+	name = "SFC Wolfe"
 	warmup_time = 5
 	move_time = 15
 	shuttle_area = list(/area/tempeterra/shuttle, /area/tempeterra/shuttle/fuel, /area/tempeterra/shuttle/airlock)
 	current_location = "nav_hangar_tempeterra"
-	landmark_transition = "nav_transit_bumblebee"
+	landmark_transition = "nav_transit_wolfe"
 	range = 1
 	fuel_consumption = 2
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	flags = SHUTTLE_FLAGS_PROCESS | SHUTTLE_FLAGS_ZERO_G
 	defer_initialisation = TRUE
 
-/obj/shuttle_landmark/bumblebee
+/obj/shuttle_landmark/sfc_wolfe
 	name = "TempeTerra Hangar"
 	landmark_tag = "nav_hangar_tempeterra"
 	base_area = /area/tempeterra/hangar
 	base_turf = /turf/simulated/floor/plating
 
-/obj/shuttle_landmark/transit/bumblebee
+/obj/shuttle_landmark/transit/sfc_wolfe
 	name = "In transit"
-	landmark_tag = "nav_transit_bumblebee"
+	landmark_tag = "nav_transit_wolfe"
 
 /obj/shuttle_landmark/tempeterra/generic
 	name = "Dock One"
