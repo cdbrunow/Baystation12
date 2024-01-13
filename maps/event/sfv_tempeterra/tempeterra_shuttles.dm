@@ -7,6 +7,9 @@
 	vessel_mass = 750
 	vessel_size = SHIP_SIZE_TINY
 
+/obj/machinery/computer/ship/helm/tempeterra
+	req_access = list(access_fleet_crew)
+
 /obj/machinery/computer/shuttle_control/explore/sfc_wolfe
 	name = "landing control console"
 	shuttle_tag = "SFC Wolfe"

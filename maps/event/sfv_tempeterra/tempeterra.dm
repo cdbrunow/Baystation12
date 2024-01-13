@@ -7,6 +7,11 @@
 	description = "A small, fairly modern dagger-shaped Lexington-class corvette, broadcasting SCGF codes and the designation 'SFV Tempe-Terra, LXC-7, Battle Group Bravo'"
 	suffixes = list("maps/event/sfv_tempeterra/tempeterra-1.dmm","maps/event/sfv_tempeterra/tempeterra-2.dmm","maps/event/sfv_tempeterra/tempeterra-3.dmm")
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/sfc_wolfe)
+	apc_test_exempt_areas = list(
+		/area/tempeterra/shuttle/airlock = NO_SCRUBBER|NO_VENT,
+		/area/tempeterra/armaments/storage/port = NO_SCRUBBER|NO_VENT,
+		/area/tempeterra/armaments/storage/starboard = NO_SCRUBBER|NO_VENT
+	)
 
 /obj/overmap/visitable/sector/sfv_tempeterra_jump
 	name = "Jump Drive Signature"

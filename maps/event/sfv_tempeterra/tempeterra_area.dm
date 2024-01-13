@@ -7,15 +7,15 @@
 	icon_state = "hangar"
 
 /area/tempeterra/shuttle
-	name = "SFV Skiff Cockpit"
+	name = "SFC Wolfe Cockpit"
 	icon_state = "shuttle"
 
 /area/tempeterra/shuttle/fuel
-	name = "SFV Skiff Fuel Bay"
+	name = "SFC Wolfe Fuel Bay"
 	icon_state = "shuttle"
 
 /area/tempeterra/shuttle/airlock
-	name = "SFV Skiff Airlock"
+	name = "SFC Wolfe Airlock"
 	icon_state = "shuttle"
 
 /area/tempeterra/hallway/firstdeck/fore/port
@@ -61,10 +61,6 @@
 /area/tempeterra/atmos/atmos
 	name = "TempeTerra Atmospherics"
 	icon_state = "atmos"
-
-/area/tempeterra/atmos/storage
-	name = "TempeTerra Atmospherics Storage"
-	icon_state = "atmos_storage"
 
 //deck 2
 
