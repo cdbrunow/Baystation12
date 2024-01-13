@@ -1023,6 +1023,10 @@
 /obj/structure/table/rack,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/storage/toolbox/mechanical,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/seconddeck/armaments/port)
 "fP" = (
@@ -1162,8 +1166,9 @@
 /turf/simulated/floor/plating,
 /area/tempeterra/medical/chemistry)
 "gp" = (
-/obj/machinery/computer{
-	dir = 1
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/railing/mapped{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/seconddeck/armaments/port)
@@ -1798,6 +1803,28 @@
 /obj/catwalk_plated/dark,
 /turf/simulated/floor,
 /area/tempeterra/armsmen/locker)
+"jE" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/tempeterra/seconddeck/armaments/port)
+"jI" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/railing/mapped{
+	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/tempeterra/seconddeck/armaments/starboard)
 "jJ" = (
 /obj/machinery/constructable_frame/machine_frame,
 /turf/simulated/floor/reinforced,
@@ -6391,7 +6418,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/tempeterra/engineering/foyer)
 "DZ" = (
-/obj/machinery/computer,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/railing/mapped{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/seconddeck/armaments/starboard)
 "Ed" = (
@@ -9821,6 +9851,10 @@
 /obj/structure/table/rack,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/storage/toolbox/mechanical,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/seconddeck/armaments/starboard)
 "Se" = (
@@ -17789,7 +17823,7 @@ oG
 oG
 ol
 ol
-DZ
+jI
 Be
 vF
 uF
@@ -17807,7 +17841,7 @@ oC
 Jl
 Jg
 iL
-gp
+jE
 Bj
 Bj
 oG
@@ -17953,7 +17987,7 @@ oG
 oG
 ol
 ol
-DZ
+jI
 Be
 Kq
 HG
@@ -17971,7 +18005,7 @@ oC
 lm
 iL
 iL
-gp
+jE
 Bj
 Bj
 oG
@@ -18117,7 +18151,7 @@ oG
 oG
 ol
 ol
-DZ
+jI
 Be
 rH
 lA
@@ -18135,7 +18169,7 @@ oC
 Dt
 pa
 iL
-gp
+jE
 Bj
 Bj
 oG
