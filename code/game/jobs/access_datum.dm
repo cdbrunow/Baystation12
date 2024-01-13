@@ -496,3 +496,9 @@ var/global/const/access_fleet_armsmen = "ACCESS_FLEET_ARMS" //352
 	id = access_fleet_armsmen
 	desc = "Fleet Armsmen"
 	access_type = ACCESS_TYPE_FLEET
+
+var/global/const/access_fleet_crew = "ACCESS_FLEET_CREW" //353
+/datum/access/fleet_crew
+	id = access_fleet_crew
+	desc = "Fleet Crewmen"
+	access_type = ACCESS_TYPE_FLEET

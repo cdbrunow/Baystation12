@@ -1,6 +1,6 @@
 /obj/overmap/visitable/ship/landable/sfc_wolfe
 	name = "SFC Wolfe"
-	desc = "A small agile shuttle designed for fast maneuvers"
+	desc = "A small CV-57 Boarding Craft, broadcasting SCGF codes and the callsign 'Tempe Terra-1 Wolfe'."
 	shuttle = "SFC Wolfe"
 	fore_dir = WEST
 	color = "#d4ad00"
