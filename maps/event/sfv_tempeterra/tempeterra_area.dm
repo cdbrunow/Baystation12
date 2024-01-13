@@ -1,6 +1,6 @@
 /area/tempeterra
 	icon = 'maps/event/sfv_tempeterra/tempeterra.dmi'
-	req_access = list(access_syndicate)
+	req_access = list(access_fleet_crew)
 
 /area/tempeterra/hangar
 	name = "TempeTerra Hangar"
