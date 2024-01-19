@@ -2255,6 +2255,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/shuttle/fuel)
+"vD" = (
+/obj/paint/sfv_arbiter,
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 8
+	},
+/turf/simulated/wall/r_titanium,
+/area/tempeterra/shuttle)
 "vF" = (
 /obj/machinery/door/airlock,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -11324,7 +11331,7 @@ Gl
 aq
 qM
 Hu
-Ox
+vD
 Ox
 bV
 eX
