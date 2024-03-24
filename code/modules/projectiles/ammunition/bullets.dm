@@ -205,3 +205,12 @@
 	spent_icon = "empshell-spent"
 	projectile_type  = /obj/item/projectile/ion
 	matter = list(MATERIAL_STEEL = 160, MATERIAL_URANIUM = 160)
+
+// One Time RPG
+
+/obj/item/ammo_casing/oneuse_rocket
+	name = "rocket shell"
+	desc = "A high explosive designed to be fired from a launcher."
+	icon_state = "rocketshell"
+	projectile_type = /obj/item/projectile/missile
+	caliber = CALIBER_ROCKET
