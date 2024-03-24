@@ -42,7 +42,7 @@
 /obj/item/gun/projectile/rocket/oneuse // One time use RPGs.
 	slot_flags = SLOT_BACK|SLOT_BELT
 	icon = 'icons/obj/weapons/launchers64.dmi' // RPG file for big boy RPGs.
-	icon_state = "disposable"
+	icon_state = "disposable_marine"
 	 // As a note, you can technically reload these, but you need an admin to spawn you the ammo, which is better than having them spawn you the rocket THEN delete the old one.
 	ammo_type = /obj/item/ammo_casing/oneuse_rocket
 	ununloadable = TRUE
