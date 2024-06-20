@@ -22,7 +22,7 @@
 //	causeerrorheresoifixthis
 	var/obj/item/master = null
 	var/list/origin_tech = null	//Used by R&D to determine what research bonuses it grants.
-	///Used in use_weapon() and attackby() to say how something was attacked "[x] has been [z.attack_verb] by [y] with [z]"
+	///Used in use_weapon() to say how something was attacked "[x] has been [z.attack_verb] by [y] with [z]"
 	var/list/attack_verb = list("attacked")
 	var/lock_picking_level = 0 //used to determine whether something can pick a lock, and how well.
 	var/force = 0
@@ -227,14 +227,15 @@
 		var/obj/item/organ/external/temp = H.organs_by_name[BP_R_HAND]
 		if (user.hand)
 			temp = H.organs_by_name[BP_L_HAND]
-		if(MUTATION_FERAL in user.mutations)
-			return
+		if((MUTATION_FERAL in user.mutations) && (MUTATION_CLUMSY in user.mutations))
+			to_chat(user, SPAN_WARNING("You don't have the dexterity to pick up \the [src]!"))
+			return TRUE
 		if(temp && !temp.is_usable())
 			to_chat(user, SPAN_NOTICE("You try to move your [temp.name], but cannot!"))
-			return
+			return TRUE
 		if(!temp)
 			to_chat(user, SPAN_NOTICE("You try to use your hand, but realize it is no longer attached!"))
-			return
+			return TRUE
 
 	var/old_loc = loc
 
@@ -277,29 +278,19 @@
 		R.activate_module(src)
 		R.hud_used.update_robot_modules_display()
 
-/obj/item/use_tool(obj/item/W, mob/living/user, list/click_params)
-	if(SSfabrication.try_craft_with(src, W, user))
+
+/obj/item/use_tool(obj/item/item, mob/living/user, list/click_params)
+	if (SSfabrication.try_craft_with(src, item, user))
 		return TRUE
-
-	if(istype(W, /obj/item/storage))
-		var/obj/item/storage/S = W
-		if (S.collection_mode && isturf(loc)) //Mode is set to collect all items
-			S.gather_all(loc, user)
-			return TRUE
-
-	return ..()
-
-///Eventually should be deleted in favor of use_tool; keeping duplicate until downstream attackbys are replaced.
-/obj/item/attackby(obj/item/W, mob/living/user, list/click_params)
-	if(SSfabrication.try_craft_with(src, W, user))
+	if (istype(item, /obj/item/storage) && isturf(loc))
+		var/obj/item/storage/storage = item
+		if (!storage.allow_quick_gather)
+			return ..()
+		if (!storage.quick_gather_single)
+			storage.gather_all(loc, user)
+		else if (storage.can_be_inserted(src, user))
+			storage.handle_item_insertion(src)
 		return TRUE
-
-	if(istype(W, /obj/item/storage))
-		var/obj/item/storage/S = W
-		if (S.collection_mode && isturf(loc)) //Mode is set to collect all items
-			S.gather_all(loc, user)
-			return TRUE
-
 	return ..()
 
 /obj/item/can_embed()
@@ -584,7 +575,8 @@ var/global/list/slot_flags_enumeration = list(
 	if(!istype(attacker))
 		return 0
 	attacker.apply_damage(force, damtype, attacker.hand ? BP_L_HAND : BP_R_HAND, used_weapon = src)
-	attacker.visible_message(SPAN_DANGER("[attacker] hurts \his hand on [src]!"))
+	var/datum/pronouns/pronouns = attacker.choose_from_pronouns()
+	attacker.visible_message(SPAN_DANGER("[attacker] hurts [pronouns.his] hand on \the [src]!"))
 	admin_attack_log(attacker, target, "Attempted to disarm but was blocked", "Was targeted with a disarm but blocked the attack", "attmpted to disarm but was blocked by")
 	playsound(target, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 	playsound(target, hitsound, 50, 1, -1)
@@ -702,19 +694,22 @@ var/global/list/slot_flags_enumeration = list(
 	return 1 //we applied blood to the item
 
 GLOBAL_LIST_EMPTY(blood_overlay_cache)
+#define BLOOD_OVERLAY_CACHE_INDEX "[icon]" + icon_state + blood_color
 
 /obj/item/proc/generate_blood_overlay(force = FALSE)
 	if(blood_overlay && !force)
 		return
-	if(GLOB.blood_overlay_cache["[icon]" + icon_state])
-		blood_overlay = GLOB.blood_overlay_cache["[icon]" + icon_state]
+	if(GLOB.blood_overlay_cache[BLOOD_OVERLAY_CACHE_INDEX])
+		blood_overlay = GLOB.blood_overlay_cache[BLOOD_OVERLAY_CACHE_INDEX]
 		return
 	var/icon/I = new /icon(icon, icon_state)
 	I.Blend(new /icon('icons/effects/blood.dmi', rgb(255,255,255)),ICON_ADD) //fills the icon_state with white (except where it's transparent)
 	I.Blend(new /icon('icons/effects/blood.dmi', "itemblood"),ICON_MULTIPLY) //adds blood and the remaining white areas become transparant
 	blood_overlay = image(I)
 	blood_overlay.appearance_flags |= NO_CLIENT_COLOR
-	GLOB.blood_overlay_cache["[icon]" + icon_state] = blood_overlay
+	GLOB.blood_overlay_cache[BLOOD_OVERLAY_CACHE_INDEX] = blood_overlay
+
+#undef BLOOD_OVERLAY_CACHE_INDEX
 
 /obj/item/proc/showoff(mob/user)
 	for (var/mob/M in view(user))

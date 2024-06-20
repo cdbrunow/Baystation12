@@ -66,8 +66,10 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	if (ismob(G.affecting))
 		var/mob/GM = G.affecting
 		var/mob/user = G.assailant
-		user.visible_message(SPAN_DANGER("\The [user] starts putting \the [GM.name] into the disposal."))
-		if (do_after(user, 2 SECONDS, src, DO_PUBLIC_UNIQUE))
+		if (!user_can_move_target_inside(G.affecting, user))
+			return
+		user.visible_message(SPAN_DANGER("\The [user] starts putting \the [GM] into the disposal."))
+		if (do_after(user, 2 SECONDS, src, DO_PUBLIC_UNIQUE) && user_can_move_target_inside(GM, user))
 			if (GM.client)
 				GM.client.perspective = EYE_PERSPECTIVE
 				GM.client.eye = src
@@ -253,7 +255,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 		return
 
 	var/ai = isAI(user)
-	var/dat = "<head><title>Waste Disposal Unit</title></head><body><TT><B>Waste Disposal Unit</B><HR>"
+	var/dat = ""
 
 	if(!ai)  // AI can't pull flush handle
 		if(flush)
@@ -276,8 +278,9 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 
 
 	user.set_machine(src)
-	show_browser(user, dat, "window=disposal;size=360x170")
-	onclose(user, "disposal")
+	var/datum/browser/popup = new(user, "disposal", "Waste Disposal Unit", 360, 170)
+	popup.set_content(dat)
+	popup.open()
 
 // handle machine interaction
 

@@ -152,17 +152,14 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 
 
 /obj/item/reagent_containers/food/condiment/psilocybin
-	label_text = "Psilocybin"
 	starting_reagents = list(/datum/reagent/drugs/psilocybin = 50)
 
 
 /obj/item/reagent_containers/food/condiment/mindbreaker
-	label_text = "Mindbreaker"
 	starting_reagents = list(/datum/reagent/drugs/mindbreaker = 50)
 
 
 /obj/item/reagent_containers/food/condiment/hextro
-	label_text = "Ambrosia"
 	starting_reagents = list(/datum/reagent/drugs/hextro = 50)
 
 
@@ -223,7 +220,7 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	item_state = "security"
 	storage_slots = 8
 	overlay_flags = BELT_OVERLAY_ITEMS|BELT_OVERLAY_HOLSTER
-	can_hold = list(
+	contents_allowed = list(
 		/obj/item/crowbar,
 		/obj/item/grenade,
 		/obj/item/reagent_containers/spray/pepper,

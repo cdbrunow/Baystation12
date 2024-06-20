@@ -113,7 +113,7 @@
 				o += "EAST: "
 			if(4)
 				o += "WEST: "
-		if(tile_info[index] == null)
+		if(isnull(tile_info[index]))
 			o += SPAN_WARNING("DATA UNAVAILABLE")
 			to_chat(user, o)
 			continue
@@ -144,13 +144,16 @@
 	return FALSE
 
 /obj/machinery/door/firedoor/attack_hand(mob/user)
-	add_fingerprint(user)
+	if(user.a_intent != I_HELP)
+		..()
+		return
 	if(operating)
 		return//Already doing something.
 
 	if(blocked)
 		to_chat(user, SPAN_WARNING("\The [src] is welded shut!"))
 		return
+
 	if(density && (inoperable())) //can still close without power
 		to_chat(user, "\The [src] is not functioning - you'll have to force it open manually.")
 		return
@@ -158,10 +161,11 @@
 	var/alarmed = lockdown
 	alarmed = get_alarm()
 
-	var/answer = alert(user, "Would you like to [density ? "open" : "close"] this [name]?[ alarmed && density ? "\nNote that by doing so, you acknowledge any damages from opening this\n[name] as being your own fault, and you will be held accountable under the law." : ""]",\
-	"\The [src]", "Yes, [density ? "open" : "close"]", "No")
-	if(answer == "No")
-		return
+	if(!allowed(user))
+		var/answer = alert(user, "Would you like to [density ? "open" : "close"] this [name]?[ alarmed && density ? "\nNote that by doing so, you acknowledge any damages from opening this\n[name] as being your own fault, and you will be held accountable under the law." : ""]",\
+		"\The [src]", "Yes, [density ? "open" : "close"]", "No")
+		if(answer == "No")
+			return
 	if(user.incapacitated() || !user.Adjacent(src) && !issilicon(user))
 		to_chat(user, SPAN_WARNING("You must remain able-bodied and close to \the [src] in order to use it."))
 		return
@@ -343,7 +347,7 @@
 		var/old_alerts = dir_alerts
 		for(var/index = 1; index <= 4; index++)
 			var/list/tileinfo = tile_info[index]
-			if(tileinfo == null)
+			if(isnull(tileinfo))
 				continue // Bad data.
 			var/celsius = convert_k2c(tileinfo[1])
 

@@ -710,7 +710,6 @@
 	update_icon()
 
 /obj/structure/hygiene/faucet/on_update_icon()
-	. = ..()
 	icon_state = icon_state = "[initial(icon_state)][open ? "-on" : ""]"
 
 /obj/item/faucet
@@ -721,7 +720,7 @@
 	obj_flags = OBJ_FLAG_ROTATABLE
 	var/constructed_type = /obj/structure/hygiene/faucet
 
-/obj/item/faucet/attackby(obj/item/thing, mob/user)
+/obj/item/faucet/use_tool(obj/item/thing, mob/living/user, list/click_params)
 	if(isWrench(thing))
 		var/turf/simulated/floor/F = loc
 		if (istype(F) && istype(F.flooring, /singleton/flooring/pool))

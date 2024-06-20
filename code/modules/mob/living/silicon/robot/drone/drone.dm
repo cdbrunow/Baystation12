@@ -38,7 +38,7 @@ var/global/list/mob_hat_cache = list()
 	req_access = list(access_engine, access_robotics)
 	integrated_light_power = 0.5
 	local_transmit = 1
-	possession_candidate = 1
+	possession_candidate = TRUE
 
 	can_pull_size = ITEM_SIZE_NORMAL
 	can_pull_mobs = MOB_PULL_SMALLER
@@ -278,7 +278,8 @@ var/global/list/mob_hat_cache = list()
 	clear_inherent_laws()
 	QDEL_NULL(laws)
 	laws = new /datum/ai_laws/syndicate_override
-	set_zeroth_law("Only [user.real_name] and people \he designates as being such are operatives.")
+	var/datum/pronouns/pronouns = user.choose_from_pronouns()
+	set_zeroth_law("Only [user.real_name] and people [pronouns.he] designates as being such are operatives.")
 
 //DRONE LIFE/DEATH
 //For some goddamn reason robots have this hardcoded. Redefining it for our fragile friends here.

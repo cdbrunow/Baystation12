@@ -647,6 +647,13 @@
 	return P
 
 
+/mob/proc/get_formal_pronouns()
+	var/datum/pronouns/P = GLOB.pronouns_from_gender[gender]
+	if (pronouns)
+		P = GLOB.pronouns.by_key[pronouns]
+	return P.formal_term
+
+
 /mob/proc/see(message)
 	if(!is_active())
 		return 0
@@ -671,9 +678,6 @@
 
 	if(client.holder)
 		if(statpanel("MC"))
-			stat("CPU:","[world.cpu]")
-			stat("Instances:","[length(world.contents)]")
-			stat(null)
 			var/time = Uptime()
 			if(Master)
 				Master.UpdateStat(time)
