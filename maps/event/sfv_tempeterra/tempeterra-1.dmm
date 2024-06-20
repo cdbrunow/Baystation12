@@ -1717,6 +1717,7 @@
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8
 	},
+/obj/machinery/portable_atmospherics/canister/empty/nitrogen,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "qo" = (
@@ -1854,6 +1855,7 @@
 	},
 /obj/floor_decal/techfloor,
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/canister/empty/oxygen,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "rD" = (
@@ -2053,6 +2055,7 @@
 	dir = 4
 	},
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/canister/empty/hydrogen,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "tY" = (
@@ -2542,6 +2545,7 @@
 	dir = 4
 	},
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/canister/empty/hydrogen,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "ys" = (
@@ -3157,6 +3161,15 @@
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/hallway/firstdeck/ladder/port)
+"DM" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/floor_decal/techfloor,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/canister/empty/carbon_dioxide,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/tempeterra/atmos/atmos)
 "DN" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 9
@@ -5246,6 +5259,7 @@
 	dir = 1
 	},
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/canister/empty/carbon_dioxide,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tempeterra/atmos/atmos)
 "Wh" = (
@@ -14034,7 +14048,7 @@ Ao
 bS
 CF
 FF
-rz
+DM
 Eq
 mD
 dw

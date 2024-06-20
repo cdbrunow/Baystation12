@@ -396,9 +396,6 @@
 /obj/item/storage/mirror{
 	pixel_y = -32
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/seconddeck/hallway/midships)
 "cy" = (
@@ -927,11 +924,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/seconddeck/hallway/midships)
@@ -1721,7 +1720,9 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/machinery/door/airlock,
+/obj/machinery/door/unpowered/simple/plastic{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/seconddeck/hallway/midships)
 "jl" = (
@@ -2119,10 +2120,6 @@
 	},
 /turf/simulated/floor,
 /area/tempeterra/engineering/reactor/powerdistone)
-"kG" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall/prepainted,
-/area/tempeterra/seconddeck/hallway/midships)
 "kI" = (
 /obj/floor_decal/borderfloorblack{
 	dir = 1
@@ -2355,13 +2352,17 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/reactor/fuel)
 "ly" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/light,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/head)
@@ -3977,7 +3978,6 @@
 /area/tempeterra/medical/hallway)
 "tb" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
@@ -4115,10 +4115,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/crew/lounge)
-"ty" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall/prepainted,
-/area/tempeterra/seconddeck/hallway/midships)
 "tA" = (
 /obj/floor_decal/corner/red/half{
 	dir = 8
@@ -4598,8 +4594,8 @@
 	dir = 8
 	},
 /obj/structure/curtain/open/shower,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
+/obj/floor_decal/floordetail/edgedrain{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/crew/head)
@@ -5049,10 +5045,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/reactor/control)
 "yn" = (
-/obj/floor_decal/borderfloorblack,
-/obj/machinery/door/airlock,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/crew/head)
 "ys" = (
@@ -5127,6 +5119,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/computer/modular/preset/engineering{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/reactor/control)
@@ -5631,6 +5626,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/command/cic)
+"AQ" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/floor_decal/corner/paleblue/half{
+	dir = 1
+	},
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/tempeterra/crew/head)
 "AS" = (
 /obj/structure/table/rack,
 /obj/floor_decal/techfloor,
@@ -5815,6 +5820,9 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/structure/sign/solgov{
+	pixel_x = 32
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/tempeterra/command/co)
@@ -6514,6 +6522,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /turf/simulated/wall/ocp_wall,
 /area/tempeterra/engineering/reactor/twocore)
+"Et" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/dark,
+/area/tempeterra/crew/head)
 "Eu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6699,12 +6714,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/engineering/reactor/powerdistone)
 "Fe" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -7007,6 +7016,17 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/medical/lockers)
+"Gu" = (
+/obj/structure/curtain/open/shower,
+/obj/structure/hygiene/shower{
+	dir = 8
+	},
+/obj/structure/railing/mapped,
+/obj/floor_decal/floordetail/edgedrain{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/tempeterra/crew/head)
 "Gv" = (
 /obj/catwalk_plated/white,
 /obj/machinery/floor_light/mapped_on,
@@ -8122,7 +8142,6 @@
 	pixel_x = 9;
 	pixel_y = -9
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -8520,15 +8539,8 @@
 /obj/item/towel/random,
 /obj/item/towel/random,
 /obj/item/towel/random,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
-/obj/machinery/alarm/tempeterra{
-	dir = 4;
-	pixel_x = -23
-	},
-/obj/machinery/firealarm{
-	pixel_y = 24
+/obj/floor_decal/floordetail/edgedrain{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/tempeterra/crew/head)
@@ -8574,6 +8586,17 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/lounge)
+"MG" = (
+/obj/structure/curtain/open/shower,
+/obj/structure/hygiene/shower{
+	dir = 8
+	},
+/obj/structure/railing/mapped,
+/obj/floor_decal/floordetail/edgedrain{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/tempeterra/crew/head)
 "MI" = (
 /obj/structure/table/steel_reinforced,
 /obj/floor_decal/borderfloorblack{
@@ -9244,14 +9267,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/engineering/reactor/powerdisttwo)
 "Px" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
 /obj/item/storage/box/detergent,
 /obj/item/storage/box/detergent,
 /obj/floor_decal/corner/paleblue/half{
 	dir = 1
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tempeterra/crew/head)
 "Pz" = (
@@ -10287,9 +10308,6 @@
 	pixel_x = 6;
 	pixel_y = 1
 	},
-/obj/item/tableflag/rainbow/pride{
-	pixel_x = -6
-	},
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
@@ -10745,6 +10763,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
 "Wi" = (
@@ -11108,7 +11127,6 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
@@ -11119,6 +11137,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled/dark,
 /area/tempeterra/seconddeck/hallway/midships)
 "XB" = (
@@ -11523,6 +11542,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/item/modular_computer/tablet/preset/custom_loadout/advanced,
 /turf/simulated/floor/tiled/techfloor,
 /area/tempeterra/engineering/foyer)
 "ZR" = (
@@ -16268,7 +16288,7 @@ oG
 PJ
 PJ
 Mx
-WC
+MG
 pu
 WC
 US
@@ -16432,7 +16452,7 @@ oG
 PJ
 PJ
 wz
-WC
+Gu
 pu
 WC
 US
@@ -16513,8 +16533,8 @@ oG
 oG
 PJ
 PJ
-WC
-WC
+AQ
+Et
 ys
 WC
 rI
@@ -16931,7 +16951,7 @@ vM
 Ep
 oF
 KN
-kG
+oF
 eV
 kk
 uD
@@ -17011,7 +17031,7 @@ Eu
 Qc
 Qr
 Xx
-ty
+oF
 cw
 oF
 gi
