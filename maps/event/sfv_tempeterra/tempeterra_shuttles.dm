@@ -20,7 +20,7 @@
 	move_time = 15
 	shuttle_area = list(/area/tempeterra/shuttle, /area/tempeterra/shuttle/fuel, /area/tempeterra/shuttle/airlock)
 	current_location = "nav_hangar_tempeterra"
-	landmark_transition = "nav_transit_wolfe"
+	landmark_transition = "nav_transit_sfc_wolfe"
 	range = 1
 	fuel_consumption = 2
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
@@ -35,7 +35,7 @@
 
 /obj/shuttle_landmark/transit/sfc_wolfe
 	name = "In transit"
-	landmark_tag = "nav_transit_wolfe"
+	landmark_tag = "nav_transit_sfc_wolfe"
 
 /obj/shuttle_landmark/tempeterra/generic
 	name = "Dock One"
