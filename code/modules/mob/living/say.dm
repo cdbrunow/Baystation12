@@ -19,6 +19,7 @@ var/global/list/department_radio_keys = list(
 	  ":y" = "Exploration",		".y" = "Exploration",
 	  ":o" = "Response Team",".o" = "Response Team", //ERT
 	  ":j" = "Hailing", ".j" = "Hailing",
+	  ":f" = "Phone", ".f" = "Phone",
 
 	  ":R" = "right ear",	".R" = "right ear",
 	  ":L" = "left ear",	".L" = "left ear",
@@ -39,6 +40,8 @@ var/global/list/department_radio_keys = list(
 	  ":Y" = "Exploration",		".Y" = "Exploration",
 	  ":O" = "Response Team", ".O" = "Response Team",
 	  ":J" = "Hailing", ".J" = "Hailing",
+	  ":F" = "Phone", ".f" = "Phone",
+
 
 	  //kinda localization -- rastaf0
 	  //same keys as above, but on russian keyboard layout.
@@ -61,6 +64,7 @@ var/global/list/department_radio_keys = list(
 	  ":н" = "Exploration",		".н" = "Exploration",
 	  ":щ" = "Response Team",".щ" = "Response Team",
 	  ":о" = "Hailing", ".о" = "Hailing",
+	  ":ф" = "Phone", ".ф" = "Phone",
 
 	  ":К" = "right ear",	".К" = "right ear",
 	  ":Д" = "left ear",	".Д" = "left ear",
@@ -81,6 +85,7 @@ var/global/list/department_radio_keys = list(
 	  ":Н" = "Exploration",		".Н" = "Exploration",
 	  ":Щ" = "Response Team",".Щ" = "Response Team",
 	  ":О" = "Hailing", ".О" = "Hailing",
+	  ":Ф" = "Phone", ".Ф" = "Phone,"
 )
 
 

@@ -206,6 +206,18 @@
 		if("whisper") //It's going to get sanitized again immediately, so decode.
 			whisper_say(html_decode(message), speaking, alt_name)
 			return 1
+		if("Phone")
+			var/obj/item/device/handset/H
+			var/has_phone = 0
+			if(l_hand && istype(l_hand,/obj/item/device/handset))
+				H = l_hand
+				has_phone = 1
+			if(r_hand && istype(r_hand,/obj/item/device/handset))
+				H = r_hand
+				has_phone = 1
+			if(has_phone)
+				H.talk_into(src,message,null,verb,speaking)
+				used_radios += H
 		else
 			if(message_mode)
 				if(l_ear && istype(l_ear,/obj/item/device/radio))
