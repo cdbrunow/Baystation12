@@ -110,7 +110,6 @@
 	..()
 
 /obj/item/mech_equipment/shields/on_update_icon()
-	. = ..()
 	if(!aura)
 		return
 	if(aura.active)
@@ -186,7 +185,6 @@
 
 
 /obj/aura/mechshield/on_update_icon()
-	. = ..()
 	if(active)
 		icon_state = "shield"
 	else
@@ -239,16 +237,6 @@
 		do_attack_effect(target, "smash")
 		if (target.mob_size < user.mob_size) //Damaging attacks overwhelm smaller mobs
 			target.throw_at(get_edge_target_turf(target,get_dir(user, target)),1, 1)
-
-/obj/item/material/hatchet/machete/mech/resolve_attackby(atom/A, mob/user, click_params)
-	//Case 1: Default, you are hitting something that isn't a mob. Just do whatever, this isn't dangerous or op.
-	if (!istype(A, /mob/living))
-		return ..()
-
-	if (user.a_intent == I_HURT)
-		user.visible_message(SPAN_DANGER("\The [user] swings \the [src] at \the [A]!"))
-		playsound(user, 'sound/mecha/mechmove03.ogg', 35, 1)
-		return ..()
 
 /obj/item/material/hatchet/machete/mech/attack_self(mob/living/user)
 	. = ..()
@@ -558,8 +546,8 @@
 	if(owner && holding)
 		update_icon()
 
-/obj/item/mech_equipment/mounted_system/flamethrower/attackby(obj/item/W as obj, mob/user as mob)
-	if(!CanPhysicallyInteract(user))	return
+/obj/item/mech_equipment/mounted_system/flamethrower/use_tool(obj/item/W, mob/living/user, list/click_params)
+	if(!CanPhysicallyInteract(user))	return ..()
 
 	var/obj/item/flamethrower/full/mech/FM = holding
 	if(istype(FM))
@@ -568,20 +556,19 @@
 				user.visible_message(SPAN_NOTICE("\The [user] pries out \the [FM.beaker] using \the [W]."))
 				FM.beaker.dropInto(get_turf(user))
 				FM.beaker = null
-			return
+				return TRUE
 
 		if (istype(W, /obj/item/reagent_containers) && W.is_open_container() && (W.w_class <= FM.max_beaker))
 			if(FM.beaker)
 				to_chat(user, SPAN_NOTICE("There is already a tank inserted!"))
-				return
+				return TRUE
 			if(user.unEquip(W, FM))
 				user.visible_message(SPAN_NOTICE("\The [user] inserts \the [W] inside \the [src]."))
 				FM.beaker = W
-			return
-	..()
+			return TRUE
+	return ..()
 
 /obj/item/mech_equipment/mounted_system/flamethrower/on_update_icon()
-	. = ..()
 	if(owner && holding)
 		var/obj/item/flamethrower/full/mech/FM = holding
 		if(istype(FM))

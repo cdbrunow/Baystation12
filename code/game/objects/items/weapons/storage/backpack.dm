@@ -459,7 +459,7 @@
 	storage_slots = 5
 	max_w_class = ITEM_SIZE_NORMAL
 	max_storage_space = 15
-	cant_hold = list(/obj/item/storage/backpack/satchel/flat) //muh recursive backpacks
+	contents_banned = list(/obj/item/storage/backpack/satchel/flat)
 	startswith = list(
 		/obj/item/stack/tile/floor,
 		/obj/item/crowbar
@@ -476,11 +476,11 @@
 	anchored = i ? TRUE : FALSE
 	alpha = i ? 128 : initial(alpha)
 
-/obj/item/storage/backpack/satchel/flat/attackby(obj/item/W, mob/user)
+/obj/item/storage/backpack/satchel/flat/use_tool(obj/item/tool, mob/living/user, list/click_params)
 	var/turf/T = get_turf(src)
 	if(hides_under_flooring() && isturf(T) && !T.is_plating())
 		to_chat(user, SPAN_WARNING("You must remove the plating first."))
-		return 1
+		return TRUE
 	return ..()
 
 //ERT backpacks.

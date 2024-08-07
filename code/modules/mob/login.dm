@@ -95,7 +95,7 @@
 	darksight = new()
 	client.screen += darksight
 
-	CreateRenderers()
+	AddDefaultRenderers()
 
 	refresh_client_images()
 	reload_fullscreen() // Reload any fullscreen overlays this mob has.
@@ -108,6 +108,9 @@
 	if (SScharacter_setup.initialized && SSchat.initialized && !isnull(client.chatOutput))
 		if(client.get_preference_value(/datum/client_preference/goonchat) == GLOB.PREF_YES)
 			client.chatOutput.start()
+
+	if(ability_master && ability_master.ability_objects)
+		ability_master.update_abilities(TRUE, src)
 
 	//set macro to normal incase it was overriden (like cyborg currently does)
 	winset(src, null, "mainwindow.macro=macro hotkey_toggle.is-checked=false input.focus=true input.background-color=#d3b5b5")

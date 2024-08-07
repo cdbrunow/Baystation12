@@ -2976,11 +2976,11 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/folder/blue,
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/item/folder/yellow,
 /turf/simulated/floor/lino,
 /area/tcommsat/computer)
 "ku" = (
@@ -3049,12 +3049,12 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/clothing/suit/storage/hooded/wintercoat/engineering,
 /obj/machinery/power/apc/super/critical{
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
 	},
+/obj/item/clothing/suit/storage/hooded/wintercoat/solgov,
 /turf/simulated/floor/lino,
 /area/tcommsat/computer)
 "kH" = (
@@ -12744,6 +12744,7 @@
 /obj/random_multi/single_item/memo_research,
 /obj/random_multi/single_item/memo_exploration,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/item/folder/envelope/exploorder,
 /turf/simulated/floor/tiled,
 /area/command/pathfinder)
 "QI" = (
@@ -13427,6 +13428,7 @@
 	pixel_x = 32
 	},
 /obj/random_multi/single_item/memo_supply,
+/obj/item/folder/envelope/dcorder,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
 "Sz" = (

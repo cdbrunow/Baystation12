@@ -648,7 +648,7 @@
 	name = "peanut"
 	seed_name = "peanut"
 	display_name = "peanut plant"
-	chems = list(/datum/reagent/nutriment = list(1,10))
+	chems = list(/datum/reagent/nutriment/groundpeanuts = list(3,5))
 	kitchen_tag = "peanut"
 
 /datum/seed/peanuts/New()
@@ -1279,7 +1279,7 @@
 	set_trait(TRAIT_PRODUCTION,5)
 	set_trait(TRAIT_YIELD,4)
 	set_trait(TRAIT_POTENCY,10)
-	set_trait(TRAIT_PRODUCT_ICON,"grass2")
+	set_trait(TRAIT_PRODUCT_ICON,"algae")
 	set_trait(TRAIT_PRODUCT_COLOUR,"#84bd82")
 	set_trait(TRAIT_PLANT_COLOUR,"#6d9c6b")
 	set_trait(TRAIT_PLANT_ICON,"algae")
@@ -1548,7 +1548,7 @@
 	set_trait(TRAIT_PRODUCTION,5)
 	set_trait(TRAIT_YIELD,4)
 	set_trait(TRAIT_POTENCY,10)
-	set_trait(TRAIT_PRODUCT_ICON,"vine3")
+	set_trait(TRAIT_PRODUCT_ICON,"algae")
 	set_trait(TRAIT_PRODUCT_COLOUR,"#e93e1c")
 	set_trait(TRAIT_PLANT_COLOUR,"#6d9c6b")
 	set_trait(TRAIT_PLANT_ICON,"algae")
@@ -1823,7 +1823,7 @@
 	name = "almond"
 	seed_name = "almond"
 	display_name = "almond plant"
-	chems = list(/datum/reagent/nutriment = list(1,10))
+	chems = list(/datum/reagent/nutriment/almondmeal = list(4,7))
 	kitchen_tag = "almond"
 
 /datum/seed/almond/New()

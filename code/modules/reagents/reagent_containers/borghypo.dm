@@ -207,7 +207,7 @@
 /obj/item/reagent_containers/borghypo/service
 	name = "cyborg drink synthesizer"
 	desc = "A portable drink dispencer."
-	icon = 'icons/obj/food/drinks.dmi'
+	icon = 'icons/obj/food/drinks/misc.dmi'
 	icon_state = "shaker"
 	charge_cost = 5
 	recharge_time = 3
@@ -301,9 +301,11 @@
 		if (istype(hypo))
 			to_chat(user, "Its contents are available to \the [hypo].")
 
-// Extra message for if you try to pick up beakers
-/obj/item/robot_rack/bottle/resolve_attackby(obj/O, mob/user, click_params)
-	if (!istype(O, object_type) && istype(O, /obj/item/reagent_containers/glass))
-		to_chat(user, SPAN_WARNING("\The [O] is the wrong shape for \the [src]."))
-		return
-	. = ..()
+
+/obj/item/robot_rack/bottle/use_before(atom/target, mob/living/user, click_parameters)
+	// Can't pick up beakers
+	if (istype(target, object_type) && istype(target, /obj/item/reagent_containers/glass))
+		USE_FEEDBACK_FAILURE("\The [target] is the wrong shape for \the [src].")
+		return TRUE
+
+	return ..()

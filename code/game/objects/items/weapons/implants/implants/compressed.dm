@@ -8,7 +8,7 @@
 	var/obj/item/scanned
 
 /obj/item/implant/compressed/trigger(emote, mob/source)
-	if (src.scanned == null)
+	if (isnull(src.scanned))
 		return 0
 
 	if (emote == src.activation_emote)
@@ -53,10 +53,10 @@
 	var/obj/item/implant/compressed/c = imp
 	if (!c || !istype(M, /mob/living/carbon))
 		return FALSE
-	if (c.scanned == null)
+	if (isnull(c.scanned))
 		to_chat(user, "Please compress an object with the implanter first.")
 		return TRUE
-	else return ..()
+	return ..()
 
 /obj/item/implanter/compressed/use_after(obj/item/A, mob/living/user, click_parameters)
 	if(istype(A) && imp)

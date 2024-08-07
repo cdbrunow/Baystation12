@@ -282,6 +282,13 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 	speed = 0.2
 
 
+/obj/overmap/visitable/placeholder/scg_shikra
+	name = "Shikra-Model Recon Fighter"
+	desc = "A strike craft made to fill in the gap between the Kestrel, and the Eagle-II. It has since been shifted into a recon role, with its mini-AWACS suite and EM stealth capabilities, sacrificing some of its payload."
+	icon = 'scg-32.dmi'
+	icon_state = "sf-shikra"
+	speed = 0.1
+
 /obj/overmap/visitable/placeholder/scg_hermes
 	name = "Hermes-Model Utility Pod"
 	desc = "A tiny workhorse found across human space, able to carry a pilot and some cargo a short distance."
@@ -306,3 +313,11 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 	icon = 'gen-32.dmi'
 	icon_state = "sf-mantaray"
 	speed = 0.2
+
+/obj/overmap/visitable/placeholder/ec_komarov
+	name = "SEV Komarov"
+	desc = "A hulking mass of redundant systems and extensive electromagnetic shielding. The hull is tattered with a myriad of warped and charred paneling, this ship looks like it just tore out from hell itself, most likely because it has. The Transponder reads, 'SEV Komarov, HSC-2-07-X'"
+	icon = 'scg-64.dmi'
+	icon_state = "ec-komarov"
+	pixel_x = -17
+	pixel_y = -12

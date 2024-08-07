@@ -16,6 +16,8 @@
 	power_channel = ENVIRON
 	interact_offline = FALSE
 
+	health_flags = HEALTH_FLAG_BREAKABLE
+
 	explosion_resistance = 10
 	/// Boolean. Whether or not the AI control mechanism is disabled.
 	var/ai_control_disabled = FALSE
@@ -53,19 +55,19 @@
 	var/secured_wires = FALSE
 
 	/// Soundfile. The sound played when opening the door while powered.
-	var/open_sound_powered = 'sound/machines/airlock_open.ogg'
+	var/open_sound_powered = 'sound/obj/machinery/door/airlock/open.ogg'
 	/// Soundfile. The sound played when opening the door while unpowered.
-	var/open_sound_unpowered = 'sound/machines/airlock_open_force.ogg'
+	var/open_sound_unpowered = 'sound/obj/machinery/door/airlock/open_force.ogg'
 	/// Soundfile. The sound played when the door refuses to open due to access.
-	var/open_failure_access_denied = 'sound/machines/buzz-two.ogg'
+	var/open_failure_access_denied = 'sound/obj/machinery/door/airlock/access.ogg'
 	/// Soundfile. The sound played when the door closes while powered.
-	var/close_sound_powered = 'sound/machines/airlock_close.ogg'
+	var/close_sound_powered = 'sound/obj/machinery/door/airlock/close.ogg'
 	/// Soundfile. The sound played when the door closes while unpowered.
-	var/close_sound_unpowered = 'sound/machines/airlock_close_force.ogg'
+	var/close_sound_unpowered = 'sound/obj/machinery/door/airlock/close_force.ogg'
 	/// Soundfile. The sound played when the door is unlocked/unbolted.
-	var/bolts_rising = 'sound/machines/bolts_up.ogg'
+	var/bolts_rising = 'sound/obj/machinery/door/airlock/bolts_up.ogg'
 	/// Soundfile. The sound played when the door is locked/bolted.
-	var/bolts_dropping = 'sound/machines/bolts_down.ogg'
+	var/bolts_dropping = 'sound/obj/machinery/door/airlock/bolts_down.ogg'
 
 	/// Integer. The amount of damage dealt by the door when it closes on someone or something.
 	var/door_crush_damage = DOOR_CRUSH_DAMAGE
@@ -646,6 +648,29 @@ About the new airlock wires panel:
 	set_airlock_overlays(state)
 
 
+/obj/machinery/door/airlock/on_broken()
+	if (health_dead())
+		return // Anything here is redundant since it's going to qdel anyway
+	set_broken(TRUE, MACHINE_BROKEN_HEALTH)
+	health_min_damage = floor(initial(health_min_damage) * 3.5) // The frame is beefier than the control panel.
+	update_icon()
+
+
+/obj/machinery/door/airlock/on_unbroken()
+	set_broken(FALSE, MACHINE_BROKEN_HEALTH)
+	health_min_damage = initial(health_min_damage)
+	update_icon()
+
+
+/obj/machinery/door/airlock/on_death()
+	visible_message(SPAN_DANGER("\The [src] completely breaks apart!"))
+	var/obj/structure/broken_door/broken_door = new(loc)
+	transfer_fingerprints_to(broken_door)
+	broken_door.icon = icon
+	broken_door.dir = dir
+	qdel_self()
+
+
 /obj/machinery/door/airlock/proc/set_airlock_overlays(state)
 	set_light(0)
 	var/list/new_overlays = list()
@@ -750,9 +775,9 @@ About the new airlock wires panel:
 			set_airlock_overlays(AIRLOCK_DENY)
 			if(density && arePowerSystemsOn())
 				flick("deny", src)
-				if(secured_wires && world.time > next_clicksound)
+				if(world.time > next_clicksound)
 					next_clicksound = world.time + CLICKSOUND_INTERVAL
-					playsound(loc, open_failure_access_denied, 50, 0)
+					playsound(src, open_failure_access_denied, 40)
 			update_icon(AIRLOCK_CLOSED)
 		if("emag")
 			set_airlock_overlays(AIRLOCK_EMAG)
@@ -804,6 +829,16 @@ About the new airlock wires panel:
 				var/datum/effect/spark_spread/s = new /datum/effect/spark_spread
 				s.set_up(5, 1, src)
 				s.start()
+	return ..()
+
+/obj/machinery/door/airlock/attack_hand(mob/user)
+	if (MUTATION_FERAL in user.mutations)
+		if (src.welded)
+			to_chat(user, SPAN_WARNING("You can't pry \the [src] open, it's welded shut!"))
+			return
+		if (src.locked)
+			to_chat(user, SPAN_WARNING("You can't pry \the [src] open, it's bolted tight!"))
+			return
 	return ..()
 
 /obj/machinery/door/airlock/physical_attack_hand(mob/user)
@@ -963,7 +998,7 @@ About the new airlock wires panel:
 /obj/machinery/door/airlock/use_tool(obj/item/C, mob/living/user, list/click_params)
 	// Brace is considered installed on the airlock, so interacting with it is protected from electrification.
 	if(brace && C && (istype(C.GetIdCard(), /obj/item/card/id) || istype(C, /obj/item/material/twohanded/jack)))
-		return brace.attackby(C, user)
+		return brace.use_tool(C, user)
 
 	if(!brace && istype(C, /obj/item/airlock_brace))
 		var/obj/item/airlock_brace/A = C
@@ -1151,9 +1186,9 @@ About the new airlock wires panel:
 
 	//if the door is unpowered then it doesn't make sense to hear the woosh of a pneumatic actuator
 	if(arePowerSystemsOn())
-		playsound(src.loc, open_sound_powered, 100, 1)
+		playsound(src, open_sound_powered, 50, TRUE)
 	else
-		playsound(src.loc, open_sound_unpowered, 100, 1)
+		playsound(src, open_sound_unpowered, 50, TRUE)
 
 	return ..()
 
@@ -1203,9 +1238,9 @@ About the new airlock wires panel:
 
 	use_power_oneoff(360)	//360 W seems much more appropriate for an actuator moving an industrial door capable of crushing people
 	if(arePowerSystemsOn())
-		playsound(src.loc, close_sound_powered, 100, 1)
+		playsound(src, close_sound_powered, 50, TRUE)
 	else
-		playsound(src.loc, close_sound_unpowered, 100, 1)
+		playsound(src, close_sound_unpowered, 50, TRUE)
 
 	..()
 
@@ -1353,6 +1388,8 @@ About the new airlock wires panel:
 		to_chat(user, "The bolt cover has been cut open.")
 	if (lock_cut_state == BOLTS_CUT)
 		to_chat(user, "The door bolts have been cut.")
+	if (health_broken())
+		to_chat(user, SPAN_WARNING("The control panel is broken open."))
 	if(brace)
 		to_chat(user, "\The [brace] is installed on \the [src], preventing it from opening.")
 		brace.examine_damage_state(user)

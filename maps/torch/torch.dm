@@ -1,10 +1,14 @@
 #if !defined(using_map_DATUM)
 
+	#include "../../packs/deepmaint/_pack.dm"
+	#include "../../packs/event_2022jul30/_pack.dm"
+	#include "../../packs/event_2024jul20/_pack.dm"
+
+	#include "../../packs/factions/commonwealth/_pack.dm"
+	#include "../../packs/factions/fa/_pack.dm"
 	#include "../../packs/factions/iccgn/_pack.dm"
 	#include "../../packs/factions/scga/_pack.dm"
 	#include "../../packs/factions/scgec/_pack.dm"
-	#include "../../packs/event_2022jul30/_pack.dm"
-	#include "../../packs/deepmaint/_pack.dm"
 
 	#include "torch_announcements.dm"
 	#include "torch_antagonism.dm"
@@ -189,6 +193,9 @@
 	#include "../event/placeholders/placeholders.dm"
 	#include "../event/empty/empty.dm"
 	#include "../event/sfv_tempeterra/tempeterra.dm"
+
+	#include "../bluespace_interlude/bluespace_interlude.dm"
+	#include "../bluespace_interlude/bluespace_interlude.dmm"
 
 
 	#define using_map_DATUM /datum/map/torch

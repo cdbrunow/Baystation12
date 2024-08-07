@@ -44,6 +44,7 @@ var/global/list/admin_verbs_admin = list(
 	/client/proc/cmd_admin_visible_narrate,
 	/client/proc/cmd_admin_audible_narrate,
 	/client/proc/cmd_admin_local_narrate,
+	/client/proc/cmd_admin_legion_narrate,
 	/client/proc/cmd_admin_world_narrate,	//sends text to all players with no padding,
 	/client/proc/cmd_admin_create_centcom_report,
 	/client/proc/check_ai_laws,			//shows AI and borg laws,
@@ -97,8 +98,8 @@ var/global/list/admin_verbs_admin = list(
 	/datum/admins/proc/sendFax,
 	/client/proc/check_fax_history,
 	/client/proc/cmd_admin_notarget,
-	/datum/admins/proc/setroundlength,
-	/datum/admins/proc/toggleroundendvote,
+	/datum/admins/proc/SetRoundLength,
+	/datum/admins/proc/ToggleContinueVote,
 	/datum/admins/proc/togglemoderequirementchecks,
 	/client/proc/delete_crew_record
 )
@@ -243,6 +244,7 @@ var/global/list/admin_verbs_hideable = list(
 	/client/proc/cmd_admin_visible_narrate,
 	/client/proc/cmd_admin_audible_narrate,
 	/client/proc/cmd_admin_local_narrate,
+	/client/proc/cmd_admin_legion_narrate,
 	/client/proc/cmd_admin_world_narrate,
 	/client/proc/play_local_sound,
 	/client/proc/play_sound,
@@ -672,10 +674,10 @@ var/global/list/admin_verbs_mod = list(
 
 	switch(alert("Do you wish for [H] to be allowed to select non-whitelisted races?","Alter Mob Appearance","Yes","No","Cancel"))
 		if("Yes")
-			log_and_message_admins("has allowed [H] to change \his appearance, ignoring allow lists.")
+			log_and_message_admins("has allowed [H] to change their appearance, ignoring allow lists.")
 			H.change_appearance(APPEARANCE_COMMON | APPEARANCE_SKIP_ALLOW_LIST_CHECK)
 		if("No")
-			log_and_message_admins("has allowed [H] to change \his appearance, respecting allow lists.")
+			log_and_message_admins("has allowed [H] to change their appearance, respecting allow lists.")
 			H.change_appearance(APPEARANCE_COMMON)
 
 /client/proc/change_security_level()

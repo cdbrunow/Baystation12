@@ -106,7 +106,7 @@
 	var/aw_EPR = FALSE
 
 	var/list/threshholds = list( // List of lists defining the amber/red labeling threshholds in readouts. Numbers are minminum red and amber and maximum amber and red, in that order
-		list("name" = SUPERMATTER_DATA_EER,         "min_h" = -1, "min_l" = -1,  "max_l" = 150,  "max_h" = 300),
+		list("name" = SUPERMATTER_DATA_EER,         "min_h" = -1, "min_l" = -1,  "max_l" = 1100,  "max_h" = 1300),
 		list("name" = SUPERMATTER_DATA_TEMPERATURE, "min_h" = -1, "min_l" = -1,  "max_l" = 4000, "max_h" = 5000),
 		list("name" = SUPERMATTER_DATA_PRESSURE,    "min_h" = -1, "min_l" = -1,  "max_l" = 5000, "max_h" = 10000),
 		list("name" = SUPERMATTER_DATA_EPR,         "min_h" = -1, "min_l" = 1.0, "max_l" = 2.5,  "max_h" = 4.0)
@@ -476,8 +476,9 @@
 	ui_interact(user)
 
 /obj/machinery/power/supermatter/attack_hand(mob/user as mob)
+	var/datum/pronouns/pronouns = user.choose_from_pronouns()
 	user.visible_message(
-		SPAN_WARNING("\The [user] reaches out and touches \the [src], inducing a resonance. For a brief instant, \his body glows brilliantly, then flashes into ash."),
+		SPAN_WARNING("\The [user] reaches out and touches \the [src], inducing a resonance. For a brief instant, [pronouns.his] body glows brilliantly, then flashes into ash."),
 		SPAN_DANGER(FONT_LARGE("You reach out and touch \the [src]. Instantly, you feel a curious sensation as your body turns into new and exciting forms of plasma. That was not a wise decision.")),
 		SPAN_WARNING("You hear an unearthly ringing, then what sounds like a shrilling kettle as you are washed with a wave of heat.")
 	)
@@ -527,15 +528,17 @@
 	if (user.drop_from_inventory(W))
 		Consume(W)
 		return TRUE
-	else return ..()
+	return ..()
 
 
 /obj/machinery/power/supermatter/Bumped(atom/AM as mob|obj)
 	if(istype(AM, /obj/effect))
 		return
 	if(istype(AM, /mob/living))
+		var/mob/victim = AM
+		var/datum/pronouns/pronouns = victim.choose_from_pronouns()
 		AM.visible_message(
-			SPAN_WARNING("\The [AM] slams into \the [src], inducing a resonance. For a brief instant, \his body glows brilliantly, then flashes into ash."),
+			SPAN_WARNING("\The [AM] slams into \the [src], inducing a resonance. For a brief instant, [pronouns.his] body glows brilliantly, then flashes into ash."),
 			SPAN_DANGER(FONT_LARGE("You slam into \the [src], and your mind fills with unearthly shrieking. Your vision floods with light as your body instantly dissolves into dust.")),
 			SPAN_WARNING("You hear an unearthly ringing, then what sounds like a shrilling kettle as you are washed with a wave of heat.")
 		)
@@ -614,7 +617,7 @@
 
 /obj/machinery/power/supermatter/randomsample/Initialize()
 	. = ..()
-	nitrogen_retardation_factor = rand(0.01, 1)	//Higher == N2 slows reaction more
+	nitrogen_retardation_factor = Frand(0.01, 1)	//Higher == N2 slows reaction more
 	thermal_release_modifier = rand(100, 1000000)		//Higher == more heat released during reaction
 	phoron_release_modifier = rand(0, 100000)		//Higher == less phoron released by reaction
 	oxygen_release_modifier = rand(0, 100000)		//Higher == less oxygen released at high temperature/power

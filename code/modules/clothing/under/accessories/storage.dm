@@ -38,9 +38,10 @@
 		..(over_object)
 
 
-/obj/item/clothing/accessory/storage/attackby(obj/item/I, mob/user)
+/obj/item/clothing/accessory/storage/use_tool(obj/item/tool, mob/living/user, list/click_params)
 	if (container)
-		return container.attackby(I, user)
+		return container.use_tool(tool, user)
+	return ..()
 
 
 /obj/item/clothing/accessory/storage/emp_act(severity)
@@ -149,7 +150,7 @@
 /obj/item/clothing/accessory/storage/knifeharness/Initialize()
 	. = ..()
 	if (container)
-		container.can_hold = list(
+		container.contents_allowed = list(
 			/obj/item/material/hatchet,
 			/obj/item/material/knife
 		)
@@ -168,7 +169,7 @@
 /obj/item/clothing/accessory/storage/bandolier/Initialize()
 	. = ..()
 	if (container)
-		container.can_hold = list(
+		container.contents_allowed = list(
 			/obj/item/ammo_casing,
 			/obj/item/grenade,
 			/obj/item/material/knife,

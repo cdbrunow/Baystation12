@@ -15,7 +15,7 @@
 	damage = 5
 	agony = 20
 	life_span = 15 //if the shell hasn't hit anything after travelling this far it just explodes.
-	muzzle_type = /obj/projectile/bullet/muzzle
+	muzzle_type = /obj/projectile/bullet
 	var/flash_range = 1
 	var/brightness = 7
 	var/light_colour = "#ffffff"
@@ -165,8 +165,6 @@
 	var/ear_safety = 0
 	if(M.get_sound_volume_multiplier() < 0.2)
 		ear_safety += 2
-	if(MUTATION_HULK in M.mutations)
-		ear_safety += 1
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if(istype(H.head, /obj/item/clothing/head/helmet))

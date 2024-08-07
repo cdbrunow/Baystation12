@@ -8,7 +8,7 @@
 	max_w_class = ITEM_SIZE_SMALL
 	max_storage_space = ITEM_SIZE_SMALL * 3
 	slot_flags = SLOT_ID
-	can_hold = list(
+	contents_allowed = list(
 		/obj/item/spacecash,
 		/obj/item/card,
 		/obj/item/clothing/mask/smokable,
@@ -27,6 +27,7 @@
 		/obj/item/paper,
 		/obj/item/pen,
 		/obj/item/photo,
+		/obj/item/phototrinket,
 		/obj/item/reagent_containers/pill,
 		/obj/item/device/encryptionkey,
 		/obj/item/key,
