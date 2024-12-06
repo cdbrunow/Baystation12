@@ -1,5 +1,5 @@
 /turf/proc/ReplaceWithLattice(material)
-	var base_turf = get_base_turf_by_area(src, TRUE)
+	var/base_turf = get_base_turf_by_area(src, TRUE)
 	if(type != base_turf)
 		src.ChangeTurf(get_base_turf_by_area(src, TRUE))
 	if(!locate(/obj/structure/lattice) in src)
@@ -105,7 +105,7 @@
 		recalc_atom_opacity()
 		lighting_overlay = old_lighting_overlay
 		affecting_lights = old_affecting_lights
-		if (old_opacity != opacity || dynamic_lighting != old_dynamic_lighting || force_lighting_update)
+		if (old_opacity != opacity || dynamic_lighting != old_dynamic_lighting || z_flags != old_zflags || force_lighting_update)
 			reconsider_lights()
 			updateVisibility(src)
 

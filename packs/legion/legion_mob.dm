@@ -17,14 +17,6 @@
 	if (spawner)
 		linked_beacon = spawner
 
-	if (!mapload)
-		new /obj/explosion(loc)
-		playsound(src, 'sound/effects/EMPulse.ogg', 25, TRUE)
-		if (linked_beacon)
-			visible_message(SPAN_WARNING("\The [linked_beacon] warps \a [src] in!"))
-		else
-			visible_message(SPAN_WARNING("\A [src] warps in!"))
-
 
 /mob/living/simple_animal/hostile/legion/Destroy()
 	if (linked_beacon)

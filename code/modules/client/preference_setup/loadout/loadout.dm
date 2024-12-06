@@ -178,7 +178,7 @@ var/global/list/gear_datums = list()
 		var/ticked = (G.display_name in pref.gear_list[pref.gear_slot])
 		entry += "<tr style='vertical-align:top;'><td width=25%><a style='white-space:normal;' [ticked ? "class='linkOn' " : ""]href='?src=\ref[src];toggle_gear=\ref[G]'>[G.display_name]</a></td>"
 		entry += "<td width = 10% style='vertical-align:top'>[G.cost]</td>"
-		entry += "<td>[FONT_NORMAL(G.get_description(get_gear_metadata(G,1)))]"
+		entry += "<td>[FONT_NORMAL(G.get_description(get_gear_metadata(G,1), ticked))]"
 		var/allowed = 1
 		if(allowed && G.allowed_roles)
 			var/good_job = 0
@@ -236,6 +236,22 @@ var/global/list/gear_datums = list()
 				skill_checks += skill_entry
 
 			entry += "[english_list(skill_checks)]</i>"
+
+		if (allowed && G.allowed_traits)
+			var/datum/species/picked_species = all_species[pref.species]
+			var/list/species_traits = picked_species.traits
+			var/trait_checks = list()
+			entry += "<br><i>"
+			for (var/trait_type in G.allowed_traits)
+				var/singleton/trait/trait = GET_SINGLETON(trait_type)
+				var/trait_entry = "[trait.name]"
+				if (LAZYISIN(pref.picked_traits, trait_type) || LAZYISIN(species_traits, trait_type))
+					trait_entry = SPAN_COLOR("#55cc55", "[trait_entry]")
+				else
+					trait_entry = SPAN_COLOR("#cc5555", "[trait_entry]")
+					allowed = FALSE
+				trait_checks += trait_entry
+			entry += "[english_list(trait_checks)]</i>"
 
 		entry += "</tr>"
 		if(ticked)
@@ -325,6 +341,8 @@ var/global/list/gear_datums = list()
 	var/list/allowed_roles //Roles that can spawn with this item.
 	var/list/allowed_branches //Service branches that can spawn with it.
 	var/list/allowed_skills //Skills required to spawn with this item.
+	///Traits required to spawn with this item.
+	var/list/allowed_traits
 	var/whitelisted        //Term to check the whitelist for..
 	var/sort_category = "General"
 	var/flags              //Special tweaks in New
@@ -350,10 +368,10 @@ var/global/list/gear_datums = list()
 	if(custom_setup_proc)
 		gear_tweaks += new/datum/gear_tweak/custom_setup(custom_setup_proc)
 
-/datum/gear/proc/get_description(metadata)
+/datum/gear/proc/get_description(metadata, include_extended_description)
 	. = description
 	for(var/datum/gear_tweak/gt in gear_tweaks)
-		. = gt.tweak_description(., metadata["[gt]"])
+		. = gt.tweak_description(., metadata["[gt]"], include_extended_description && (flags & GEAR_HAS_EXTENDED_DESCRIPTION))
 
 /datum/gear_data
 	var/path

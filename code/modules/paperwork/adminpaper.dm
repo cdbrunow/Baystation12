@@ -90,7 +90,7 @@
 		if(!t)
 			return
 
-		var last_fields_value = fields
+		var/last_fields_value = fields
 
 		unformatedText = t
 
@@ -164,5 +164,6 @@
 
 	if (href_list["changelanguage"])
 		choose_language(usr, TRUE)
+		generateInteractions()
 		updateDisplay()
 		return

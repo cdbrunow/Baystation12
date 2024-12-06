@@ -90,6 +90,8 @@ var/global/floorIsLava = 0
 		<A HREF='?src=\ref[src];connections=\ref[M]'>Check Connections</A> |
 		<A HREF='?src=\ref[src];bans=\ref[M]'>Check Bans</A> |
 	"}
+	if (M.ckey)
+		body += {"<a target="_blank" href="https://www.byond.com/members/[M.ckey]">View Byond Account</a> | "}
 
 	if (!istype(M, /mob/new_player) && !istype(M, /mob/observer))
 		body += "<A HREF='?src=\ref[src];cryo=\ref[M]'>Cryo Character</A> | "
@@ -1615,6 +1617,28 @@ GLOBAL_VAR_INIT(skip_allow_lists, FALSE)
 /datum/admins/proc/SetRoundLength()
 	set category = "Server"
 	set name = "Set Round Length"
+	set desc = "Set how long before the initial continue vote occurs (in minutes)."
+	if (GAME_STATE > RUNLEVEL_GAME)
+		to_chat(usr, SPAN_WARNING("The game is already ending!"))
+		return
+	var/current = round(round_duration_in_ticks / 600, 0.1)
+	var/response = input(usr, "Time in minutes before the continue vote will occur, or 0 to set to default.\nCurrent time: [current]m") as null | num
+	current = round(round_duration_in_ticks / 600, 0.1)
+	if (!isnum(response))
+		return
+	if (!response)
+		log_and_message_admins("set the time to first continue vote to default.")
+		config.vote_autotransfer_initial = initial(config.vote_autotransfer_initial)
+	else if (response > current)
+		log_and_message_admins("set time to first continue vote to [response] minutes.")
+		config.vote_autotransfer_initial = response
+		SSroundend.vote_check = (round_duration_in_ticks / 600) + response
+	else
+		to_chat(usr, SPAN_WARNING("You cannot set a continue vote time in the past."))
+
+/datum/admins/proc/SetMaximumRoundLength()
+	set category = "Server"
+	set name = "Set Maximum Round Length"
 	set desc = "Set the maximum length of a round in minutes."
 	if (GAME_STATE > RUNLEVEL_GAME)
 		to_chat(usr, SPAN_WARNING("The game is already ending!"))

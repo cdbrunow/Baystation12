@@ -231,7 +231,7 @@
  * - `mover` - The atom that's attempting to move.
  * - `target` - The detination turf `mover` is attempting to move to.
  *
- * Returns boolean. If `FALSE`, blocks movement and calls `mover.Bump(src)`.
+ * Returns boolean. If `FALSE`, blocks movement and calls `mover.Bump(src, TRUE)`.
  */
 /atom/proc/CheckExit(atom/movable/mover, turf/target)
 	return TRUE
@@ -1044,3 +1044,9 @@
 /atom/proc/clear_bulletholes()
 	for(var/obj/overlay/bmark/bullet_mark in src)
 		qdel(bullet_mark)
+
+/atom/proc/get_overhead_text_x_offset()
+	return 0
+
+/atom/proc/get_overhead_text_y_offset()
+	return 0
