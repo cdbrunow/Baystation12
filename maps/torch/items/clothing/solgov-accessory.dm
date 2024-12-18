@@ -440,7 +440,7 @@ badges
 	owner_branch = H.char_branch && H.char_branch.name
 	var/singleton/cultural_info/culture = H.get_cultural_value(TAG_RELIGION)
 	var/religion = culture ? culture.name : "Unset"
-	desc = "[initial(desc)]\nName: [H.real_name] ([H.get_species()])[H.char_branch ? "\nBranch: [H.char_branch.name]" : ""]\nReligion: [religion]\nBlood type: [H.b_type]"
+	desc = "[desc]\nName: [H.real_name] ([H.get_species()])[H.char_branch ? "\nBranch: [H.char_branch.name]" : ""]\nReligion: [religion]\nBlood type: [H.b_type]"
 
 /obj/item/clothing/accessory/badge/solgov/representative
 	name = "representative's badge"
@@ -709,10 +709,10 @@ ranks - ec
 	desc = "Insignia denoting the rank of Admiral."
 	icon_state = "ecrank_o8"
 
-/obj/item/clothing/accessory/solgov/rank/ec/officer/o8_alt
-	name = "ranks (O-8 commandant of the expeditionary corps)"
+/obj/item/clothing/accessory/solgov/rank/ec/officer/o10
+	name = "ranks (O-10 commandant of the expeditionary corps)"
 	desc = "Insignia denoting the rank of Commandant of the Expeditonary Corps."
-	icon_state = "ecrank_o8_alt"
+	icon_state = "ecrank_o10"
 
 /************
 ranks - fleet

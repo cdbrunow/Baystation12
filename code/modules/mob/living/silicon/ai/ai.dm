@@ -105,6 +105,8 @@ var/global/list/ai_verbs_default = list(
 	var/default_ai_icon = /singleton/ai_icon/blue
 	var/static/list/custom_ai_icons_by_ckey_and_name
 
+	idcard = /obj/item/card/id/synthetic/ai
+
 /mob/living/silicon/ai/proc/add_ai_verbs()
 	src.verbs |= ai_verbs_default
 	src.verbs -= /mob/living/verb/ghost
@@ -144,7 +146,7 @@ var/global/list/ai_verbs_default = list(
 
 	additional_law_channels["Holopad"] = ":h"
 
-	if (istype(loc, /turf))
+	if (isturf(loc))
 		add_ai_verbs(src)
 
 	//Languages
@@ -686,7 +688,7 @@ var/global/list/ai_verbs_default = list(
 	return 0
 
 /mob/living/silicon/ai/proc/is_in_chassis()
-	return istype(loc, /turf)
+	return isturf(loc)
 
 /mob/living/silicon/ai/proc/multitool_mode()
 	set name = "Toggle Multitool Mode"

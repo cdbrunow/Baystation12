@@ -235,7 +235,7 @@ SUBSYSTEM_DEF(supply)
 			info +="[length(shoppinglist)] PACKAGES IN THIS SHIPMENT<br>"
 			info +="CONTENTS:<br><ul>"
 
-			slip = new /obj/item/paper/manifest(A, JOINTEXT(info))
+			slip = new /obj/item/paper/manifest(A, jointext(info, null))
 			slip.is_copy = FALSE
 
 		//spawn the stuff, finish generating the manifest while you're at it
@@ -266,6 +266,7 @@ SUBSYSTEM_DEF(supply)
 
 /datum/supply_order
 	var/ordernum
+	var/timestamp
 	var/singleton/hierarchy/supply_pack/object = null
 	var/orderedby = null
 	var/comment = null

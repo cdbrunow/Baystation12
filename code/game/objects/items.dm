@@ -101,14 +101,11 @@
 	var/attack_ignore_harm_check = FALSE
 
 
-/obj/item/New()
-	..()
-	if(randpixel && (!pixel_x && !pixel_y) && isturf(loc)) //hopefully this will prevent us from messing with mapper-set pixel_x/y
-		pixel_x = rand(-randpixel, randpixel)
-		pixel_y = rand(-randpixel, randpixel)
-
 /obj/item/Initialize()
 	. = ..()
+	if(randpixel && (!pixel_x && !pixel_y) && isturf(loc))
+		pixel_x = rand(-randpixel, randpixel)
+		pixel_y = rand(-randpixel, randpixel)
 	if(islist(armor))
 		for(var/type in armor)
 			if(armor[type]) // Don't set it if it gives no armor anyway, which is many items.
@@ -164,6 +161,12 @@
 		if(istype(hand) && hand.is_usable())
 			return TRUE
 	return FALSE
+
+
+/obj/item/update_icon()
+	..()
+	update_twohanding()
+
 
 /obj/item/ex_act(severity)
 	..()
@@ -526,7 +529,7 @@ var/global/list/slot_flags_enumeration = list(
 	if (!usr.HasFreeHand())
 		to_chat(usr, SPAN_WARNING("Your hands are full."))
 		return
-	if(!istype(src.loc, /turf)) //Object is on a turf
+	if(!isturf(loc)) //Object is on a turf
 		to_chat(usr, SPAN_WARNING("You can't pick that up!"))
 		return
 	//All checks are done, time to pick it up!

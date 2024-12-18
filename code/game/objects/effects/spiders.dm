@@ -171,7 +171,7 @@
 	GLOB.moved_event.unregister(src, src, /obj/spider/spiderling/proc/disturbed)
 	START_PROCESSING(SSobj, src)
 
-/obj/spider/spiderling/Bump(atom/user)
+/obj/spider/spiderling/Bump(atom/user, called)
 	if(istype(user, /obj/structure/table))
 		forceMove(user.loc)
 	else
@@ -212,7 +212,7 @@
 			return
 
 	if(travelling_in_vent)
-		if(istype(src.loc, /turf))
+		if(isturf(loc))
 			travelling_in_vent = 0
 			entry_vent = null
 	else if(entry_vent)
@@ -284,7 +284,7 @@
 	else if(prob(1))
 		src.visible_message(SPAN_NOTICE("\The [src] skitters."))
 
-	if ((istype(loc, /turf) || istype(loc, /obj/item/organ/external)) && amount_grown > 0)
+	if ((isturf(loc) || istype(loc, /obj/item/organ/external)) && amount_grown > 0)
 		amount_grown += rand(0,2)
 
 /obj/decal/cleanable/spiderling_remains
@@ -294,7 +294,13 @@
 	icon_state = "greenshatter"
 	anchored = TRUE
 	layer = BLOOD_LAYER
-
+/obj/decal/cleanable/ling_vomit
+	name = "green goop"
+	desc = "Green squishy mess."
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "greenshatter"
+	anchored = TRUE
+	layer = BLOOD_LAYER
 /obj/spider/cocoon
 	name = "cocoon"
 	desc = "Something wrapped in silky spider web."

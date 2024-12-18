@@ -47,7 +47,7 @@
 			edit_area()
 		if ("delete_area")
 			//skip the sanity checking, delete_area() does it anyway
-			delete_area()
+			delete_area(user)
 
 /obj/item/blueprints/proc/get_header()
 	return "<h2>[station_name()] blueprints</h2><small>Property of [GLOB.using_map.company_name]. For heads of staff only. Store in high-secure storage.</small><hr>"
@@ -86,7 +86,7 @@
 //	log_debug("create_area")
 
 	var/res = detect_room(get_turf(usr))
-	if(!istype(res,/list))
+	if(!islist(res))
 		switch(res)
 			if(ROOM_ERR_SPACE)
 				to_chat(usr, SPAN_WARNING("The new area must be completely airtight!"))
@@ -130,13 +130,13 @@
 	to_chat(usr, SPAN_NOTICE("You set the area '[prevname]' title to '[str]'."))
 	interact()
 
-/obj/item/blueprints/proc/delete_area()
+/obj/item/blueprints/proc/delete_area(mob/user)
 	var/area/A = get_area(src)
 	if (get_area_type(A)!=AREA_STATION || A.apc) //let's just check this one last time, just in case
 		interact()
 		return
 	to_chat(usr, SPAN_NOTICE("You scrub [A.name] off the blueprint."))
-	log_and_message_admins("deleted area [A.name] via station blueprints.")
+	log_and_message_admins("deleted area [A.name] via station blueprints.", user)
 	qdel(A)
 	interact()
 

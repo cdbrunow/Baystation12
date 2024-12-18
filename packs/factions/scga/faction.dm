@@ -69,7 +69,8 @@
 	name = "Private"
 	name_short = "Pvt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e1
+		/obj/item/clothing/accessory/scga_rank/e1,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 10
 
@@ -78,7 +79,8 @@
 	name = "Private Second Class"
 	name_short = "Pv2"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e2
+		/obj/item/clothing/accessory/scga_rank/e2,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 20
 
@@ -87,7 +89,8 @@
 	name = "Private First Class"
 	name_short = "PFC"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e3
+		/obj/item/clothing/accessory/scga_rank/e3,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 30
 
@@ -96,7 +99,8 @@
 	name = "Corporal"
 	name_short = "Cpl"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e4
+		/obj/item/clothing/accessory/scga_rank/e4,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 40
 
@@ -105,7 +109,8 @@
 	name = "Sergeant"
 	name_short = "Sgt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e5
+		/obj/item/clothing/accessory/scga_rank/e5,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 50
 
@@ -114,7 +119,8 @@
 	name = "Staff Sergeant"
 	name_short = "SSgt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e6
+		/obj/item/clothing/accessory/scga_rank/e6,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 60
 
@@ -123,7 +129,8 @@
 	name = "Sergeant First Class"
 	name_short = "SFC"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e7
+		/obj/item/clothing/accessory/scga_rank/e7,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 70
 
@@ -132,7 +139,8 @@
 	name = "Master Sergeant"
 	name_short = "MSgt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e8
+		/obj/item/clothing/accessory/scga_rank/e8,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
 	sort_order = 80
 
@@ -141,132 +149,147 @@
 	name = "First Sergeant"
 	name_short = "1Sgt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e8_alt
+		/obj/item/clothing/accessory/scga_rank/e8_alt,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
-	sort_order = 90
+	sort_order = 81
 
 
 /datum/mil_rank/scga/e9
 	name = "Sergeant Major"
 	name_short = "SgtM"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e9
+		/obj/item/clothing/accessory/scga_rank/e9,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
-	sort_order = 100
+	sort_order = 90
 
 
 /datum/mil_rank/scga/e9_alt1
 	name = "Command Sergeant Major"
 	name_short = "CSM"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e9_alt1
+		/obj/item/clothing/accessory/scga_rank/e9_alt1,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
-	sort_order = 110
+	sort_order = 91
 
 
 /datum/mil_rank/scga/e9_alt2
 	name = "Sergeant Major of the Army"
 	name_short = "SMA"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/e9_alt2
+		/obj/item/clothing/accessory/scga_rank/e9_alt2,
+		/obj/item/clothing/accessory/scga_badge/enlisted
 	)
-	sort_order = 120
+	sort_order = 92
 
 
 /datum/mil_rank/scga/o1
 	name = "Second Lieutenant"
 	name_short = "2Lt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o1
+		/obj/item/clothing/accessory/scga_rank/o1,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 130
+	sort_order = 110
 
 
 /datum/mil_rank/scga/o2
 	name = "First Lieutenant"
 	name_short = "1Lt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o2
+		/obj/item/clothing/accessory/scga_rank/o2,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 140
+	sort_order = 120
 
 
 /datum/mil_rank/scga/o3
 	name = "Captain"
 	name_short = "Cpt"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o3
+		/obj/item/clothing/accessory/scga_rank/o3,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 150
+	sort_order = 130
 
 
 /datum/mil_rank/scga/o4
 	name = "Major"
 	name_short = "Mjr"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o4
+		/obj/item/clothing/accessory/scga_rank/o4,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 160
+	sort_order = 140
 
 
 /datum/mil_rank/scga/o5
 	name = "Lieutenant Colonel"
 	name_short = "LtC"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o5
+		/obj/item/clothing/accessory/scga_rank/o5,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 170
+	sort_order = 150
 
 
 /datum/mil_rank/scga/o6
 	name = "Colonel"
 	name_short = "Col"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o6
+		/obj/item/clothing/accessory/scga_rank/o6,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 180
+	sort_order = 160
 
 
 /datum/mil_rank/scga/o7
 	name = "Brigadier General"
 	name_short = "BrgG"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o7
+		/obj/item/clothing/accessory/scga_rank/o7,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 190
+	sort_order = 170
 
 
 /datum/mil_rank/scga/o8
 	name = "Major General"
 	name_short = "MjrG"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o8
+		/obj/item/clothing/accessory/scga_rank/o8,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 200
+	sort_order = 180
 
 
 /datum/mil_rank/scga/o9
 	name = "Lieutenant General"
 	name_short = "LtG"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o9
+		/obj/item/clothing/accessory/scga_rank/o9,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 210
+	sort_order = 190
 
 
 /datum/mil_rank/scga/o10
 	name = "General"
 	name_short = "Gen"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o10
+		/obj/item/clothing/accessory/scga_rank/o10,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 220
+	sort_order = 200
 
 
 /datum/mil_rank/scga/o10_alt
 	name = "Field-Marshal"
 	name_short = "FldM"
 	accessory = list(
-		/obj/item/clothing/accessory/scga_rank/o10_alt
+		/obj/item/clothing/accessory/scga_rank/o10_alt,
+		/obj/item/clothing/accessory/scga_badge/officer
 	)
-	sort_order = 230
+	sort_order = 201

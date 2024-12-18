@@ -65,16 +65,16 @@
 
 		"}
 
-/obj/item/folder/nt/rd
+/obj/item/material/folder/nt/rd
 
-/obj/item/folder/envelope/captain
+/obj/item/material/folder/envelope/preset/captain
 	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - TORCH UMBRA'."
 
-/obj/item/folder/envelope/captain/Initialize()
+/obj/item/material/folder/envelope/preset/captain/Initialize()
 	..()
 	return INITIALIZE_HINT_LATELOAD
 
-/obj/item/folder/envelope/captain/LateInitialize(mapload)
+/obj/item/material/folder/envelope/preset/captain/LateInitialize(mapload)
 	var/obj/overmap/visitable/torch = map_sectors["[z]"]
 	var/memo = {"
 	<tt><center><b>[SPAN_COLOR("red", "SECRET - CODE WORDS: TORCH")]</b>
@@ -110,10 +110,11 @@
 	new/obj/item/paper(src, memo, "Standing Orders")
 	new/obj/item/paper/umbra(src)
 
-/obj/item/folder/envelope/rep
+/obj/item/material/folder/envelope/preset/rep
 	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - TORCH UMBRA'."
+	seal_stamp = "General Secretary rubber stamp"
 
-/obj/item/folder/envelope/rep/Initialize()
+/obj/item/material/folder/envelope/preset/rep/Initialize()
 	. = ..()
 	new/obj/item/paper/umbra(src)
 

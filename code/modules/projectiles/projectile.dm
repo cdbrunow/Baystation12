@@ -60,7 +60,7 @@
 	var/space_knockback = 0	//whether or not it will knock things back in space
 
 	var/hitscan = FALSE		// whether the projectile should be hitscan
-	var/step_delay = 1	// the delay between iterations if not a hitscan projectile
+	var/step_delay = 0.65	// the delay between iterations if not a hitscan projectile
 
 	// effect types to be used
 	var/muzzle_type
@@ -267,7 +267,7 @@
 
 	//admin logs
 	if(!no_attack_log)
-		if(istype(firer, /mob))
+		if(ismob(firer))
 
 			var/attacker_message = "shot with \a [src.type]"
 			var/victim_message = "shot with \a [src.type]"
@@ -284,13 +284,13 @@
 	return 1
 
 
-/obj/item/projectile/Bump(atom/atom, forced)
+/obj/item/projectile/Bump(atom/atom, called)
 	if (atom == src)
 		return FALSE
 	if (atom == firer)
 		forceMove(atom.loc)
 		return FALSE
-	if (bumped && !forced || (atom in permutated))
+	if (bumped && !called || (atom in permutated))
 		return FALSE
 	bumped = TRUE
 	var/passthrough
@@ -366,7 +366,7 @@
 		if(!bumped && !isturf(original))
 			if(loc == get_turf(original))
 				if(!(original in permutated))
-					if(Bump(original))
+					if(Bump(original, TRUE))
 						return
 
 		if(first_step)
@@ -447,7 +447,7 @@
 	var/result = 0 //To pass the message back to the gun.
 	var/atom/hit_thing
 
-/obj/item/projectile/test/Bump(atom/A as mob|obj|turf|area, forced=0)
+/obj/item/projectile/test/Bump(atom/A, called)
 	if(A == firer)
 		forceMove(A.loc)
 		return //cannot shoot yourself

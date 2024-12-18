@@ -429,7 +429,7 @@ This function completely restores a damaged organ to perfect condition.
 
 	// remove embedded objects and drop them on the floor
 	for(var/obj/implanted_object in implants)
-		if(!istype(implanted_object,/obj/item/implant))	// We don't want to remove REAL implants. Just shrapnel etc.
+		if(!istype(implanted_object,/obj/item/implant,) || istype(implanted_object,/obj/item/organ/internal/augment))	// We don't want to remove REAL implants. Just shrapnel etc.
 			implanted_object.forceMove(get_turf(src))
 			implants -= implanted_object
 
@@ -906,7 +906,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 			forceMove(get_turf(src))
 			if(!clean)
 				// Throw limb around.
-				if(src && istype(loc,/turf))
+				if(src && isturf(loc))
 					throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),5)
 				dir = 2
 		if(DROPLIMB_BURN)

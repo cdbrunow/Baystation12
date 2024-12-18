@@ -111,18 +111,15 @@
 	var/contained = carry.get_reagents()
 	var/area/A = get_area(location)
 
-	var/where = "[A.name] | [location.x], [location.y]"
-	var/whereLink = "<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[location.x];Y=[location.y];Z=[location.z]'>[where]</a>"
-
 	if(show_log)
 		if(carry.my_atom.fingerprintslast)
 			var/mob/M = get_mob_by_key(carry.my_atom.fingerprintslast)
 			var/more = ""
 			if(M)
 				more = "(<A HREF='?_src_=holder;adminmoreinfo=\ref[M]'>?</a>)"
-			log_and_message_admins("A chemical smoke reaction has taken place in ([whereLink])[contained]. Last associated key is [carry.my_atom.fingerprintslast][more].")
+			log_and_message_admins("A chemical smoke reaction has taken place in [A.name] ([location.x],[location.y],[location.z]) [contained]. Last associated key is [carry.my_atom.fingerprintslast][more].", null, location)
 		else
-			log_and_message_admins("A chemical smoke reaction has taken place in ([whereLink]). No associated key.")
+			log_and_message_admins("A chemical smoke reaction has taken place in [A.name] ([location.x],[location.y],[location.z]). No associated key.", null, location)
 
 //Runs the chem smoke effect
 // Spawns damage over time loop for each reagent held in the cloud.
@@ -139,7 +136,7 @@
 		for(var/turf/T in targetTurfs)
 			chemholder.reagents.touch_turf(T)
 			for(var/atom/A in T.contents)
-				if(istype(A, /obj/effect/smoke/chem) || istype(A, /mob))
+				if(ismob(A) || istype(A, /obj/effect/smoke/chem))
 					continue
 				else if(isobj(A) && !A.simulated)
 					chemholder.reagents.touch_obj(A)

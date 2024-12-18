@@ -136,7 +136,8 @@
 		/obj/item/swapper,
 		/obj/item/device/drone_designator,
 		/obj/item/modular_computer/tablet,
-		/obj/item/modular_computer/pda
+		/obj/item/modular_computer/pda,
+		/obj/item/rcd
 		)
 
 
@@ -302,9 +303,9 @@
 		/obj/item/device/flash,
 		/obj/item/melee/telebaton,
 		/obj/item/device/taperecorder,
-		/obj/item/folder,
+		/obj/item/material/folder,
 		/obj/item/paper,
-		/obj/item/material/clipboard,
+		/obj/item/material/folder/clipboard,
 		/obj/item/modular_computer/tablet,
 		/obj/item/device/flashlight,
 		/obj/item/modular_computer/pda,
@@ -338,8 +339,8 @@
 
 /obj/item/storage/belt/general/full/Initialize()
 	. = ..()
-	new /obj/item/material/clipboard(src)
-	new /obj/item/folder(src)
+	new /obj/item/material/folder/clipboard(src)
+	new /obj/item/material/folder(src)
 	new /obj/item/device/taperecorder(src)
 	new /obj/item/device/camera(src)
 	new /obj/item/taperoll/research(src)
@@ -380,9 +381,9 @@
 		/obj/item/device/flash,
 		/obj/item/melee/telebaton,
 		/obj/item/device/taperecorder,
-		/obj/item/folder,
+		/obj/item/material/folder,
 		/obj/item/paper,
-		/obj/item/material/clipboard,
+		/obj/item/material/folder/clipboard,
 		/obj/item/modular_computer/tablet,
 		/obj/item/device/flash,
 		/obj/item/device/flashlight,
@@ -431,7 +432,7 @@
 		/obj/item/device/taperecorder,
 		/obj/item/device/tape,
 		/obj/item/clothing/gloves,
-		/obj/item/folder,
+		/obj/item/material/folder,
 		/obj/item/paper,
 		/obj/item/photo,
 		/obj/item/paper_bundle,
@@ -467,7 +468,7 @@
 		/obj/item/device/taperecorder,
 		/obj/item/device/tape,
 		/obj/item/clothing/gloves,
-		/obj/item/folder,
+		/obj/item/material/folder,
 		/obj/item/paper,
 		/obj/item/photo,
 		/obj/item/paper_bundle,
@@ -505,7 +506,7 @@
 		/obj/item/device/scanner/mining,
 		/obj/item/device/scanner/xenobio,
 		/obj/item/device/scanner/plant,
-		/obj/item/folder,
+		/obj/item/material/folder,
 		/obj/item/paper,
 		/obj/item/pen,
 		/obj/item/shuttle_beacon,

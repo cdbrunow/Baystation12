@@ -16,7 +16,7 @@ env:
 
 jobs:
   PreFlight:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
@@ -28,13 +28,13 @@ jobs:
     outputs:
       dm: ${{ steps.filter.outputs.dm }}
   DreamChecker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: PreFlight
     if: needs.PreFlight.outputs.dm == 'true'
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Setup Cache
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57
         with:
           path: ~/spaceman_dmm/${{ env.SPACEMAN_DMM_VERSION }}
           key: ${{ runner.os }}-spacemandmm-${{ env.SPACEMAN_DMM_VERSION }}
@@ -54,7 +54,7 @@ jobs:
           chmod +x send.sh
           ./send.sh failure $WEBHOOK_URL
   Code:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs:
     - PreFlight
     - DreamChecker
@@ -62,7 +62,7 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Setup Cache
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57
         with:
           path: ~/BYOND-${{ env.BYOND_MAJOR }}.${{ env.BYOND_MINOR }}
           key: ${{ runner.os }}-byond-${{ env.BYOND_MAJOR }}-${{ env.BYOND_MINOR }}
@@ -84,7 +84,7 @@ jobs:
           chmod +x send.sh
           ./send.sh failure $WEBHOOK_URL
   ExampleMap:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs:
     - PreFlight
     - DreamChecker
@@ -92,7 +92,7 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Setup Cache
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57
         with:
           path: ~/BYOND-${{ env.BYOND_MAJOR }}.${{ env.BYOND_MINOR }}
           key: ${{ runner.os }}-byond-${{ env.BYOND_MAJOR }}-${{ env.BYOND_MINOR }}
@@ -113,7 +113,7 @@ jobs:
           chmod +x send.sh
           ./send.sh failure $WEBHOOK_URL
   TorchMap:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs:
     - PreFlight
     - DreamChecker
@@ -121,7 +121,7 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Setup Cache
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57
         with:
           path: ~/BYOND-${{ env.BYOND_MAJOR }}.${{ env.BYOND_MINOR }}
           key: ${{ runner.os }}-byond-${{ env.BYOND_MAJOR }}-${{ env.BYOND_MINOR }}
@@ -142,7 +142,7 @@ jobs:
           chmod +x send.sh
           ./send.sh failure $WEBHOOK_URL
   AwaySites:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs:
     - PreFlight
     - DreamChecker
@@ -150,7 +150,7 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Setup Cache
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57
         with:
           path: ~/BYOND-${{ env.BYOND_MAJOR }}.${{ env.BYOND_MINOR }}
           key: ${{ runner.os }}-byond-${{ env.BYOND_MAJOR }}-${{ env.BYOND_MINOR }}

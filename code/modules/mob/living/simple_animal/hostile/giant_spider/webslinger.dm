@@ -73,7 +73,7 @@
 	stacks = stacks + 1
 	stacks = clamp(stacks, 1, max_stacks)
 
-	if (stacks >= max_stacks && istype(user.loc, /turf))
+	if (stacks >= max_stacks && isturf(user.loc))
 
 		var/obj/spider/cocoon/C = new(user.loc)
 		user.forceMove(C)
@@ -172,12 +172,8 @@
 	if (web)
 		web.remove_webbing(owner)
 
-/mob/living/movement_delay()
+/mob/living/movement_delay(singleton/move_intent/using_intent = move_intent)
 	. = ..()
-
-	if (!auras)
-		return .
-
 	for (var/obj/aura/web/W in auras)
 		var/tally = W.stacks * 2
 		return . + tally

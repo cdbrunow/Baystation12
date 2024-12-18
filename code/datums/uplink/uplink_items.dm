@@ -105,7 +105,7 @@ var/global/datum/uplink/uplink = new()
 	return
 
 /datum/uplink_item/proc/purchase_log(obj/item/device/uplink/U, mob/user, cost)
-	log_and_message_admins("used \the [U.loc] to buy \a [src]")
+	log_and_message_admins("used \the [U.loc] to buy \a [src]", user)
 	if(user)
 		uplink_purchase_repository.add_entry(user.mind, src, cost)
 
@@ -122,7 +122,7 @@ var/global/datum/uplink/uplink = new()
 	if(!I)
 		return
 
-	if(istype(I, /list))
+	if(islist(I))
 		var/list/L = I
 		if(length(L)) I = L[1]
 

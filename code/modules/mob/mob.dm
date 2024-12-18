@@ -208,27 +208,28 @@
 	return -1
 
 
-/mob/proc/movement_delay()
+/mob/proc/movement_delay(singleton/move_intent/using_intent = move_intent)
 	. = 0
-	if(istype(loc, /turf))
-		var/turf/T = loc
-		. += T.movement_delay
-
+	if(isturf(loc))
+		var/turf/turf = loc
+		. += turf.movement_delay
 	if (drowsyness > 0)
 		. += 6
 	if(lying) //Crawling, it's slower
 		. += (8 + ((weakened * 3) + (confused * 2)))
-	. += move_intent.move_delay
+	if (ispath(using_intent))
+		using_intent = GET_SINGLETON(using_intent)
+	. += using_intent.move_delay
 	. += encumbrance() * (0.5 + 1.5 * (SKILL_MAX - get_skill_value(SKILL_HAULING))/(SKILL_MAX - SKILL_MIN)) //Varies between 0.5 and 2, depending on skill
 
 //How much the stuff the mob is pulling contributes to its movement delay.
 /mob/proc/encumbrance()
 	. = 0
 	if(pulling)
-		if(istype(pulling, /obj))
+		if(isobj(pulling))
 			var/obj/O = pulling
 			. += clamp(O.w_class, 0, ITEM_SIZE_GARGANTUAN) / 5
-		else if(istype(pulling, /mob))
+		else if(ismob(pulling))
 			var/mob/M = pulling
 			. += max(0, M.mob_size) / MOB_MEDIUM
 		else
@@ -307,7 +308,7 @@
 /mob/proc/reset_view(atom/A)
 	if (client)
 		A = A ? A : eyeobj
-		if (istype(A, /atom/movable))
+		if (ismovable(A))
 			client.perspective = EYE_PERSPECTIVE
 			client.eye = A
 		else
@@ -468,7 +469,7 @@
 	if (.)
 		return
 	if (href_list["flavor_change"] && !isadmin(usr) && (usr != src))
-		log_and_message_admins(usr, "is suspected of trying to change flavor text on [key_name_admin(src)] via Topic exploits.")
+		log_and_message_admins("is suspected of trying to change flavor text on [key_name_admin(src)] via Topic exploits.")
 	return ..()
 
 /mob/proc/pull_damage()
@@ -601,7 +602,9 @@
 
 		else //Otherwise we're probably just holding their arm to lead them somewhere
 			var/grabtype
-			if(H.has_organ(BP_L_ARM) || H.has_organ(BP_R_ARM)) //If they have at least one arm
+			if ((H.has_organ(BP_L_HAND) || H.has_organ(BP_R_HAND)) && (zone_sel.selecting == BP_L_HAND || zone_sel.selecting == BP_R_HAND))
+				grabtype = "hand"
+			else if(H.has_organ(BP_L_ARM) || H.has_organ(BP_R_ARM)) //If they have at least one arm
 				grabtype = "arm"
 			else //If they have no arms
 				grabtype = "shoulder"
@@ -678,7 +681,7 @@
 
 	if(client.holder)
 		if(statpanel("MC"))
-			var/time = Uptime()
+			var/time = uptime()
 			if(Master)
 				Master.UpdateStat(time)
 			else
@@ -1277,3 +1280,9 @@
 
 /mob/get_mass()
 	return mob_size
+
+/mob/get_overhead_text_x_offset()
+	return offset_overhead_text_x
+
+/mob/get_overhead_text_y_offset()
+	return offset_overhead_text_y

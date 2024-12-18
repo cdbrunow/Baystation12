@@ -3696,7 +3696,7 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/folder/blue,
+/obj/item/material/folder/blue,
 /turf/simulated/floor/lino,
 /area/command/pilot)
 "iL" = (
@@ -3740,7 +3740,7 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/folder/blue,
+/obj/item/material/folder/blue,
 /obj/floor_decal/corner/mauve/mono,
 /obj/structure/sign/ecplaque{
 	pixel_y = 30
@@ -3764,15 +3764,6 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
-"iR" = (
-/obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/mech_recharger,
-/mob/living/exosuit/premade/powerloader/old,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/quartermaster/storage)
 "iS" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -3849,8 +3840,8 @@
 /obj/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/machinery/computer/guestpass{
-	pixel_y = 32
+/obj/machinery/light/spot{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
@@ -3969,11 +3960,11 @@
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/item/tape_roll,
-/obj/machinery/light/small,
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -25
 	},
+/obj/machinery/light/spot,
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
 "jo" = (
@@ -3992,8 +3983,8 @@
 /area/maintenance/fifthdeck/fore)
 "jp" = (
 /obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/light/small,
 /obj/structure/closet/crate/freezer/rations,
+/obj/machinery/light/spot,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "jq" = (
@@ -7487,10 +7478,6 @@
 /obj/floor_decal/corner/brown{
 	dir = 1
 	},
-/obj/machinery/alarm{
-	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
-	},
 /obj/structure/sign/deck/fifth{
 	pixel_y = 32
 	},
@@ -9705,7 +9692,7 @@
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/folder/nt,
+/obj/item/material/folder/nt,
 /obj/item/pen,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/analysis)
@@ -10284,7 +10271,7 @@
 /obj/random/maintenance/clean,
 /obj/random/maintenance/clean,
 /obj/random/maintenance/clean,
-/obj/item/folder/nt,
+/obj/item/material/folder/nt,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
 "xu" = (
@@ -11613,7 +11600,7 @@
 /obj/random/maintenance/clean,
 /obj/random/maintenance/clean,
 /obj/random/maintenance/clean,
-/obj/item/folder/nt,
+/obj/item/material/folder/nt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/cyan{
@@ -13563,7 +13550,7 @@
 /area/quartermaster/hangar)
 "Kh" = (
 /obj/structure/table/standard,
-/obj/item/folder/nt,
+/obj/item/material/folder/nt,
 /obj/item/stack/nanopaste,
 /obj/machinery/newscaster{
 	pixel_x = 32
@@ -14302,9 +14289,6 @@
 /obj/structure/closet/medical_wall/filled{
 	pixel_y = 32
 	},
-/obj/machinery/light/small{
-	dir = 1
-	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
 "MX" = (
@@ -14856,7 +14840,7 @@
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
 	dir = 8
 	},
-/obj/item/folder/nt,
+/obj/item/material/folder/nt,
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "west bump";
@@ -15953,8 +15937,8 @@
 /area/hallway/primary/fifthdeck/aft)
 "TM" = (
 /obj/structure/table/glass,
-/obj/item/folder/nt,
-/obj/item/folder/nt,
+/obj/item/material/folder/nt,
+/obj/item/material/folder/nt,
 /turf/simulated/floor/lino,
 /area/shuttle/petrov/rd)
 "TO" = (
@@ -16160,13 +16144,9 @@
 /obj/item/stack/material/glass/reinforced{
 	amount = 30
 	},
-/obj/item/stack/material/glass/reinforced{
-	amount = 30
-	},
-/obj/item/stack/material/glass/reinforced{
-	amount = 30
-	},
 /obj/floor_decal/industrial/outline/yellow,
+/obj/item/stack/material/glass,
+/obj/item/stack/material/glass,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "UM" = (
@@ -16924,7 +16904,7 @@
 "Yg" = (
 /obj/structure/table/steel,
 /obj/item/book/manual/nt_regs,
-/obj/item/folder/nt,
+/obj/item/material/folder/nt,
 /obj/structure/cable/cyan{
 	d1 = 2;
 	d2 = 8;
@@ -38392,7 +38372,7 @@ Fk
 Em
 Em
 Em
-Em
+hy
 hE
 hE
 Em
@@ -38591,8 +38571,8 @@ lh
 Vz
 xl
 TL
-hy
-iR
+Em
+ou
 ou
 oy
 if

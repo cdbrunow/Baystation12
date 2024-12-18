@@ -34,7 +34,7 @@
 	var/name				//replaces mob/var/original_name
 	var/mob/living/current
 	var/mob/living/original	//TODO: remove.not used in any meaningful way ~Carn. First I'll need to tweak the way silicon-mobs handle minds.
-	var/active = 0
+	var/active = FALSE
 
 	var/assigned_role
 	var/special_role
@@ -82,7 +82,7 @@
 	if(current)					//remove ourself from our old body's mind variable
 		if(changeling)
 			current.remove_changeling_powers()
-			current.verbs -= /datum/changeling/proc/EvolutionMenu
+			current.verbs -= /datum/changeling/proc/EvolutionTree
 		current.mind = null
 
 		SSnano.user_transferred(current, new_character) // transfer active NanoUI instances to new user
@@ -96,9 +96,6 @@
 
 	if(learned_spells && length(learned_spells))
 		restore_spells(new_character)
-
-	if(changeling)
-		new_character.make_changeling()
 
 	if(active)
 		new_character.key = key		//now transfer the key to link the client to our new body
